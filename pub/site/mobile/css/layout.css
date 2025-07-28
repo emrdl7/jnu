@@ -3,13 +3,13 @@
 /*  S:공용 */
 @font-face {
   font-family: "s-core_dream4_regular";
-  src: url("../../../../pub/site/portal/css/font/scdream4.woff2") format("woff2"), url("../../../../pub/site/portal/css/font/scdream4.woff") format("woff");
+  src: url("pub/site/portal/css/font/scdream4.woff2") format("woff2"), url("pub/site/portal/css/font/scdream4.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "s-core_dream6_bold";
-  src: url("../../../../pub/site/portal/css/font/scdream6.woff2") format("woff2"), url("../../../../pub/site/portal/css/font/scdream6.woff") format("woff");
+  src: url("pub/site/portal/css/font/scdream6.woff2") format("woff2"), url("pub/site/portal/css/font/scdream6.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -44,13 +44,12 @@ i span {
 /**/
 /*  S:레이아웃 */
 header {
-  position: absolute;
+  position: fixed;
   z-index: 800;
   top: 0;
   left: 0;
   right: 0;
   background: #3282f0;
-  margin-top: 0px;
 }
 header div.container {
   position: relative;
@@ -86,6 +85,9 @@ header div.container div.head-util {
   right: 4vw;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
 }
 @media (min-width: 700px) {
   header div.container div.head-util {
@@ -95,23 +97,20 @@ header div.container div.head-util {
 header div.container div.head-util a,
 header div.container div.head-util button {
   display: inline-block;
+  text-align: center;
   position: relative;
-  font-size: 0;
+  font-size: 1.6vw;
   border: none;
   background: none;
-  margin: 0 0 0 4vw;
+  color: #fff;
   padding: 0;
-}
-@media (min-width: 700px) {
-  header div.container div.head-util a,
-  header div.container div.head-util button {
-    margin: 0 0 0 2vw;
-  }
 }
 header div.container div.head-util a i,
 header div.container div.head-util button i {
+  display: block;
   font-size: 6vw;
   color: #fff;
+  margin: 0 auto 0.6vw;
 }
 @media (min-width: 700px) {
   header div.container div.head-util a i,
@@ -857,6 +856,9 @@ section.login div.login-box p.input-form input {
   height: 38px;
   outline: none;
 }
+section.login div.login-box p.input-form input::-moz-placeholder {
+  color: #999999;
+}
 section.login div.login-box p.input-form input::placeholder {
   color: #999999;
 }
@@ -915,35 +917,41 @@ section.main div.util {
   padding: 5vw 4vw 12vw;
   border-bottom: 4vw solid #f2f2f2;
   font-size: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 13vw));
+  justify-content: center;
+  gap: 4vw;
 }
 @media (min-width: 700px) {
   section.main div.util {
     padding: 2.5vw 2vw 8vw;
     border-bottom-width: 2vw;
+    gap: 2vw;
+    grid-template-columns: repeat(5, minmax(0, 10vw));
   }
 }
 section.main div.util a {
-  display: inline-block;
-  width: 20%;
   position: relative;
   text-align: center;
   line-height: 1;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #666666;
 }
 section.main div.util i {
   position: relative;
-  border: 1px solid #ccc;
-  width: 13vw;
-  height: 13vw;
-  border-radius: 50%;
-  color: #666666;
-  margin: 0 0 1vw;
+  width: 100%;
   font-size: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 700px) {
   section.main div.util i {
-    width: 10vw;
-    height: 10vw;
-    margin: 0 0 1vw;
     font-size: 3vw;
   }
 }
@@ -956,6 +964,7 @@ section.main div.util i:before {
 section.main div.util span {
   display: block;
   position: absolute;
+  top: 116%;
   left: 0;
   right: 0;
   font-size: 3vw;
@@ -978,6 +987,7 @@ section.main div.links {
   overflow-x: auto;
   font-size: 0;
   border-bottom: 4vw solid #f2f2f2;
+  -webkit-overflow-scrolling: touch;
 }
 @media (min-width: 700px) {
   section.main div.links {
@@ -987,28 +997,36 @@ section.main div.links {
   }
 }
 section.main div.links p {
-  margin: 0;
-  text-align: center;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 26vw);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: row;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 3vw;
+  white-space: nowrap;
+}
+@media (min-width: 700px) {
+  section.main div.links p {
+    grid-template-columns: repeat(4, 14vw);
+  }
 }
 section.main div.links p a {
-  display: inline-block;
-  vertical-align: top;
-  width: 26vw;
-  height: 26vw;
-  border: 0vw solid #dbdbdb;
-  margin: 0 3vw 3vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   font-size: 4vw;
   color: #114b9f;
   border-radius: 1vw;
   line-height: 1.2;
   box-shadow: 0vw 0vw 3vw rgba(0, 0, 0, 0.2);
   padding: 3vw;
+  text-align: center;
+  aspect-ratio: 1;
 }
 @media (min-width: 700px) {
   section.main div.links p a {
-    width: 14vw;
-    height: 14vw;
-    margin: 0 3vw 3vw 0;
     font-size: 2vw;
     border-radius: 0.5vw;
     line-height: 1.2;
@@ -1076,12 +1094,12 @@ section.main div.links p a.link6 {
   }
 }
 section.main div.links p a.link7 {
-  background: url(../images/p_icon_07.svg) no-repeat right 3vw bottom 3vw/8vw auto;
+  background: url(../images/p_icon_07.svg) no-repeat right 3vw bottom 3vw/7vw auto;
 }
 @media (min-width: 700px) {
   section.main div.links p a.link7 {
     background-position: right 1.5vw bottom 1.5vw;
-    background-size: 4vw auto;
+    background-size: 3vw auto;
   }
 }
 section.main div.links p a.link8 {
@@ -1089,6 +1107,15 @@ section.main div.links p a.link8 {
 }
 @media (min-width: 700px) {
   section.main div.links p a.link8 {
+    background-position: right 1.5vw bottom 1.5vw;
+    background-size: 4vw auto;
+  }
+}
+section.main div.links p a.link9 {
+  background: url(../images/p_icon_26.svg) no-repeat right 3vw bottom 3vw/8vw auto;
+}
+@media (min-width: 700px) {
+  section.main div.links p a.link9 {
     background-position: right 1.5vw bottom 1.5vw;
     background-size: 4vw auto;
   }
@@ -1499,7 +1526,8 @@ section.sub-content h2.stitle button.share i, div.sub-index h2.stitle button.sha
 .modal.id-card .modal-body .id-card-content div.canvas-outline p.qr img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modal.id-card .modal-body .id-card-content div.canvas-outline p.repeat {
   position: absolute;
@@ -1555,7 +1583,8 @@ section.sub-content h2.stitle button.share i, div.sub-index h2.stitle button.sha
 .modal.id-card .modal-body .id-card-content div.profile p.photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .modal.id-card .modal-body .id-card-content div.profile dl {
@@ -1586,6 +1615,83 @@ section.sub-content h2.stitle button.share i, div.sub-index h2.stitle button.sha
 .modal.id-card .modal-body .id-card-content p.attention span {
   display: block;
 }
+.modal.id-card .modal-body .tag-content {
+  padding: 0 10px 10px;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 170px;
+  height: 170px;
+  border: 4px solid #3282f0;
+  border-radius: 50%;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline #time-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  background: transparent;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline p.tag {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 108px;
+  height: 108px;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline p.tag img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal.id-card .modal-body .tag-content div.canvas-outline #time-display {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #3366cc;
+  position: absolute;
+  top: 135px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.modal.id-card .modal-body .tag-content p.attention {
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.modal.id-card .modal-body .tag-content p.attention span {
+  display: block;
+}
+.modal.id-card .modal-body .tag-content p.attention strong {
+  font-weight: 700px;
+  color: #3282f0;
+}
+.modal.id-card .modal-body .tag-content a.how {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #666;
+  width: 232px;
+  line-height: 42px;
+  margin: 0 auto;
+}
 
 /*  E:모바일신분증 */
 #userPortlet131 .meal-box {
@@ -1598,41 +1704,4 @@ section.sub-content h2.stitle button.share i, div.sub-index h2.stitle button.sha
 
 .portlet-modal .modal-content {
   min-height: 350px;
-}
-
-/*# sourceMappingURL=layout.css.map */
-
-
-
-/* 헤더 상단 배너 */
-.top-banner{
-  position: relative;
-  top: 0;
-}
-.top-banner img{
-  margin : 0 auto;
-}
-.top-banner .close-btn {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-@media (min-width: 700px) {
-  .top-banner .close-btn {
-    top: 15px;
-    right: 15%;
-    bottom: auto;
-  }
-}
-.top-banner .close-btn a{
-  background-color: rgb(0,0,0,0.7) ;
-  padding:8px 10px;
-  color: #ffffff;
-}
-.top-banner .close-btn a i small {
-  display: none;}
-@media (min-width: 700px) {
-  .top-banner .close-btn a i small {
-    display: inline-block;
-  }
-}
+}/*# sourceMappingURL=layout.css.map */
