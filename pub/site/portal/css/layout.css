@@ -734,18 +734,51 @@ body {
 	content:"▶";
 	position:absolute;
 	right:0;
-	top:57px;
+	top: 28px;px;
 	transform: translateX(50%);
 	font-size:24px;
 	color:#0869A1;
 }
 
-.certify-wrap strong {
-	font-size:24px;
+.certify-wrap span.text-black {
+	position:relative;
+	font-size:20px;
+	padding:10px 10px 10px 54px;
+	margin:0 0 10px;
+	background:#fff;
+}
+
+.certify-wrap span.text-black>strong {
+	position:absolute;
+	left:10px;
+	top:10px;
 	font-weight:900;
+	font-size:18px;
+	padding:6px;
+	line-height:1;
+	margin-right:10px;
+	background:#0869A1;
+	color:#fff;
 }
 
 .certify-wrap p {
 	font-size:14px;
 	text-align:center;
+	margin-bottom:20px;
+}
+
+
+@media (max-width: 990px) {
+
+
+.certify-wrap p {
+	word-break: normal;
+}
+}
+
+
+.certify-wrap a {
+	line-height:42px;
+	font-size:16px;
+	border-bottom:3px solid rgba(0,0,0,.4);
 }
