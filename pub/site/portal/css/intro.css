@@ -1,0 +1,1943 @@
+.text-red {
+    color: #CF1B1B !important;
+}
+
+.text-blue {
+    color: #042880 !important;
+}
+
+@media (min-width: 992px) {
+    .m-true{display: none;}
+    .pc-true{display: block;}
+    .intro-wrap {
+        padding-top:34px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .intro-wrap h1 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .intro-wrap h1 img {
+        width: 132px;
+    }
+
+    .intro-wrap h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    .intro-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro-wrap .in-box {
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+    .intro-wrap .in-box .top-img {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .intro-wrap .in-box .info-text {
+        margin-bottom: 10px;
+    }
+
+    .intro-wrap .in-box .info-text dl {
+        margin-bottom: 20px;
+    }
+
+    .intro-wrap .in-box .info-text dl:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro-wrap .in-box .info-text dl dt {
+        float: left;
+        height: 32px;
+        font-weight: normal;
+        width: 94px;
+        margin-right: 10px;
+        background: #0D76CF;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-size: 16px;
+        letter-spacing: -1.5px;
+    }
+
+    .intro-wrap .in-box .info-text dl dd {
+        float: left;
+        width: calc(100% - 104px);
+    }
+
+    .intro-wrap .in-box .info-text dl.text1 dd {
+        font-size: 22px;
+        color: #333;
+        font-weight: bold;
+        padding-top: 1px;
+    }
+
+    .intro-wrap .in-box .info-text dl.text1 dd strong {
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .intro-wrap .in-box .info-text dl.text2 dd {
+        font-size: 18px;
+        color: #333;
+        padding-top: 3px;
+    }
+
+    .intro-wrap .in-box .info-text p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.8;
+    }
+
+    .intro-wrap .in-box .info-text2 {
+        border-top: 1px solid #DBDBDB;
+    }
+
+    .intro-wrap .in-box .info-text2 li {
+        padding-top: 15px;
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.6;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .intro-wrap .in-box .info-text2 li strong {
+        font-weight: bold;
+        color: #CF1B1B;
+    }
+
+    .intro-wrap .in-box .info-text2 li i {
+        position: absolute;
+        top: 21px;
+        left: 0px;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .intro-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .intro-wrap .link-wrap a {
+        margin: 0 10px;
+        position: relative;
+        display: inline-block;
+        width: 230px;
+        height: 58px;
+        line-height: 58px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 23.5px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro-wrap .link-wrap a i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .intro-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .intro2-wrap {
+        padding-top: 34px;
+        /*padding-top:110px;*/
+        width: 700px;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .intro2-wrap h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .intro2-wrap h1 img {
+        width: 102px;
+    }
+
+    .intro2-wrap h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        letter-spacing: -1.5px;
+        line-height: 1.5;
+    }
+
+    .intro2-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro2-wrap .in-box {
+        width: 100%;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+    .intro2-wrap .in-box .bell-text {
+        background: url(../images/common/bell.png) no-repeat left 5px;
+        background-size: 31.6px 32.88px;
+        padding-left: 45px;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .intro2-wrap .in-box .bell-text strong {
+        font-size: bold;
+    }
+
+    .intro2-wrap .in-box .info-text {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        /*border-top:2px solid #dbdbdb;  */
+    }
+
+    .intro2-wrap .in-box .info-text dl {
+        margin-bottom: 10px;
+    }
+
+    .intro2-wrap .in-box .info-text dl:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro2-wrap .in-box .info-text dl dt {
+        float: left;
+        height: 32px;
+        font-weight: normal;
+        width: 104px;
+        margin-right: 10px;
+        background: #0D76CF;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-size: 16px;
+        letter-spacing: -1.5px;
+    }
+
+    .intro2-wrap .in-box .info-text dl dd {
+        float: left;
+        width: calc(100% - 114px);
+    }
+
+    .intro2-wrap .in-box .info-text dl.text1 dd {
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        padding-top: 1px;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text1 dd strong {
+        font-size: 16px;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text2 dd {
+        font-size: 18px;
+        color: #333;
+        padding-top: 3px;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text2 dd span {
+        font-size: 16px;
+    }
+
+    .intro2-wrap .in-box .info-text p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.8;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel {
+        margin-top: 20px;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span {
+        display: block;
+        float: left;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span.title {
+        width: 65px;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span.text {
+        width: calc(100% - 65px);
+    }
+
+    .intro2-wrap .in-box .info-text2 {
+        border-top: 1px solid #DBDBDB;
+        padding-top: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2 h3 {
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2.text-dot p {
+        color: #333;
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 2px;
+        line-height: unset;
+    }
+
+    .intro2-wrap .in-box .info-text2.text-dot p:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box {
+        background: #F2F2F2;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dl {
+        font-size: 16px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dt {
+        color: #0D76CF;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dd {
+        color: #333;
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 2px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dd:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro2-wrap .in-box .info-text2 ul li {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+        line-height: 1.5;
+    }
+
+    .intro2-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .intro2-wrap .link-wrap a {
+        margin: 0 10px;
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 48px;
+        line-height: 48px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        padding-left: 20px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro2-wrap .link-wrap a i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .intro2-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .text-box {
+        background: #F2F2F2;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .intro3-wrap {
+        padding-top: 67px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .intro3-wrap h3 {
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: -0.8px;
+        margin-bottom: 12px;
+        line-height: 28px;
+    }
+
+    .intro3-wrap h2 {
+        font-size: 40px;
+        letter-spacing: -0.8px;
+        color: #0571AF;
+        text-align: center;
+        line-height: 56px;
+        margin-bottom: 28px;
+    }
+
+    .intro3-wrap .tit-box {
+        border: 1px solid #C3E2F4;
+        border-radius: 15px;
+        width: 100%;
+        background: url(/pub/site/jejunu/images/intro/bell_blue.png) no-repeat 30px 21px;
+        height: 90px;
+        padding: 19.5px 0;
+        margin-bottom: 32px;
+    }
+
+    .intro3-wrap .tit-box .tit-text {
+        padding: 0 63px 0 92px;
+        color: #076093;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+
+    .intro3-wrap .in-box {
+        height: 454px;
+        margin-bottom: 70px;
+    }
+
+    .intro3-wrap .in-box .img {
+        float: left;
+        margin-right: 40px;
+        width: 48.2%;
+    }
+
+    .intro3-wrap .in-box .text {
+        float: left;
+        width: calc((100% - 48.2%) - 40px);
+    }
+
+    .intro3-wrap .in-box .text h3 {
+        text-align: left;
+        margin-bottom: 16px;
+        letter-spacing: -0.4px;
+    }
+
+    .intro3-wrap .in-box .text h3 span {
+        display: block;
+        color: #1877B2;
+    }
+
+    .intro3-wrap .in-box .text ul {
+        padding-left: 14px;
+        margin-bottom: 41px;
+    }
+
+    .intro3-wrap .in-box .text ul li {
+        position: relative;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+        margin-bottom: 6px;
+    }
+
+    .intro3-wrap .in-box .text ul:last-child li {
+        margin-bottom: 11px;
+    }
+
+    .intro3-wrap .in-box .text ul li:before {
+        position: absolute;
+        top: 8px;
+        left: -10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro3-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 93px;
+    }
+
+    .intro3-wrap .link-wrap a {
+        margin-left: 31px;
+        position: relative;
+        display: inline-block;
+        width: 231px;
+        height: 58px;
+        line-height: 58px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        text-align: left;
+        background: #0D76CF;
+    }
+
+    .intro3-wrap .link-wrap a i {
+        position: absolute;
+        top: 19px;
+        right: 19.5px;
+    }
+
+    .intro3-wrap .link-wrap img {
+        margin-top: -12px;
+    }
+
+    .intro4-wrap {
+        padding-top: 34px;
+        width: 700px;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .intro4-wrap h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .intro4-wrap h1 img {
+        width: 180px;
+    }
+
+    .intro4-wrap h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 27px;
+        letter-spacing: -0.7px;
+        line-height: 39px;
+    }
+
+    .intro4-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro4-wrap .in-box {
+        width: 100%;
+        padding: 30px;
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+        margin-bottom: 30px;
+    }
+
+    .intro4-wrap .in-box h3 {
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        font-weight: bold;
+        margin-bottom: 13.5px;
+        padding-top: 31px;
+    }
+
+    .intro4-wrap .in-box h3:first-child {
+        padding-top: 0px;
+    }
+
+    .intro4-wrap .in-box .intro-text {
+        padding: 18px 21px;
+    }
+
+    .intro4-wrap .in-box dl {
+        font-size: 16px;
+        letter-spacing: -0.4px;
+    }
+
+    .intro4-wrap .in-box .text-box dd {
+        color: #333333;
+        padding-left: 10px;
+        position: relative;
+        line-height: 32px;
+        padding-bottom: 12px;
+    }
+
+    .intro4-wrap .in-box dd:last-child {
+        padding-bottom: 0px;
+    }
+
+    .intro4-wrap .in-box dd:before {
+        content: '';
+        position: absolute;
+        top: 9.5px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #014099;
+    }
+
+    .intro4-wrap .in-box .text-box dd:before {
+        top: 14px;
+    }
+
+    .intro4-wrap .in-box dd span {
+        color: #014099;
+    }
+
+    .intro4-wrap .in-box dd strong {
+        font-size: 18px;
+    }
+
+    .intro4-wrap .in-box .btn1 {
+        margin-right: 10px;
+        position: relative;
+        display: inline-block;
+        width: 114px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 10px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro4-wrap .in-box .btn1 i {
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
+
+    .intro4-wrap .in-box p {
+        padding-bottom: 13px;
+    }
+
+    .intro4-wrap .in-box .info-text > dl dd {
+        color: #333333;
+        padding-left: 10px;
+        position: relative;
+        line-height: 23px;
+        padding-bottom: 12px;
+    }
+
+    .intro4-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 93px;
+    }
+
+    .intro4-wrap .link-wrap a {
+        position: relative;
+        display: inline-block;
+        width: 231px;
+        height: 58px;
+        line-height: 58px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        text-align: left;
+        background: #0D76CF;
+    }
+
+    .intro4-wrap .link-wrap a i {
+        position: absolute;
+        top: 19px;
+        right: 19.5px;
+    }
+
+    .intro4-wrap .link-wrap img {
+        margin-top: -12px;
+    }
+
+    .intro5-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 34px;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .intro5-wrap h1 {
+        text-align: center;
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+    .intro5-wrap h1 img {
+        width: 102px;
+    }
+
+    .intro5-wrap .left, .intro5-wrap .right {
+        width: 670px;
+        margin: 0 auto;
+    }
+
+    .intro5-wrap .left {
+        margin-right: 30px;
+    }
+
+    .intro5-wrap .right {
+        margin-left: 30px;
+    }
+
+    .intro5-wrap h2 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 21px;
+        letter-spacing: -0.44px;
+        line-height: 30px;
+    }
+
+    .intro5-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro5-wrap .in-box {
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        border: 1px solid #DBDBDB;
+        height: 946px;
+    }
+
+    .intro5-wrap .in-box .bell-text {
+        margin-bottom: 17.5px;
+    }
+
+    .intro5-wrap .in-box h3 {
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        color: #333333;
+        margin-bottom: 11px;
+    }
+
+    .intro5-wrap .in-box .info-text dl {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .intro5-wrap .in-box .info-text dl:last-child {
+        margin-bottom: 0px;
+    }
+
+    .intro5-wrap .in-box .info-text dl:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro5-wrap .in-box .info-text dl dt {
+        float: left;
+        min-width: 70px;
+        margin-right: 10px;
+        padding-left: 10px;
+        color: #0D76CF;
+        line-height: 29px;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .intro5-wrap .in-box .info-text dl dt:before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #0D76CF;
+    }
+
+    .intro5-wrap .in-box .info-text dl dd {
+        float: left;
+        font-size: 14px;
+        color: #1D1D1D;
+        letter-spacing: -0.28px;
+        font-weight: bold;
+        padding-top: 1px;
+        line-height: 29px;
+    }
+
+    .intro5-wrap .in-box .info-text dl dd span {
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+
+    .intro5-wrap .in-box .info-text .btn1 {
+        margin-right: 6px;
+        position: relative;
+        display: inline-block;
+        width: 104px;
+        height: 29px;
+        line-height: 29px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 11px;
+        text-align: left;
+        background: #014099;
+    }
+
+    .intro5-wrap .in-box .info-text .btn1 i {
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
+
+    .intro5-wrap .in-box .info-text > p {
+        margin-bottom: 23px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box {
+        background: #EAF7FA;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dl {
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dt {
+        color: #0D76CF;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dd {
+        color: #1D1D1D;
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 13px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dd:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #1D1D1D;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro5-wrap .in-box .info-text2.text-dot p {
+        color: #1D1D1D;
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 2px;
+        line-height: unset;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .info-text2.text-dot p:before {
+        position: absolute;
+        top: 8px;
+        left: 2px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #1D1D1D;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro5-wrap .left .in-box .info-text > h3+p {
+        margin-bottom: 17px;
+    }
+
+    .intro5-wrap .in-box .intro-table {
+        width: 100%;
+        border-top: 1px solid #DBDBDB;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .intro-table table {
+        width: 99.9999%;
+        border-collapse: collapse;
+        border-left: 1px solid #DBDBDB;
+    }
+
+    .intro5-wrap .in-box .intro-table table thead th {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .intro-table table tbody th {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .intro-table table tbody td {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 12px;
+    }
+
+    .intro5-wrap .link-wrap a {
+        margin: 0 10px;
+        position: relative;
+        display: inline-block;
+        min-width: 201px;
+        height: 42px;
+        line-height: 42px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        padding-left: 23.5px;
+        padding-right: 39px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro5-wrap .link-wrap a i {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+    }
+
+    .intro5-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .intro5-wrap .link-wrap a.btn3 {
+        background: #333333;
+    }
+
+    .intro5-wrap .text-box {
+        padding: 17.5px 20px;
+    }
+
+    .intro5-wrap .link-wrap {
+        width: 100%;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1419px) {
+    .intro5-wrap {
+        flex-direction: column;
+    }
+
+    .intro5-wrap .left {
+        margin-right: auto;
+    }
+
+    .intro5-wrap .right {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .m-true{display: block;}
+    .pc-true{display: none;}
+    .intro-wrap {
+        padding:20px 15px;
+    }
+
+    .intro-wrap h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .intro-wrap h1 img {
+        width: 104px;
+    }
+
+    .intro-wrap h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .intro-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro-wrap .in-box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .intro-wrap .in-box .top-img {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .intro-wrap .in-box .top-img img {
+        width: 100%;
+    }
+
+    .intro-wrap .in-box .info-text {
+        margin-bottom: 10px;
+    }
+
+    .intro-wrap .in-box .info-text dl {
+        margin-bottom: 18px;
+    }
+
+    .intro-wrap .in-box .info-text dl dt {
+        height: 32px;
+        width: 80px;
+        font-weight: normal;
+        margin-bottom: 15px;
+        background: #0D76CF;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-size: 14px;
+        letter-spacing: -1.5px;
+    }
+
+    .intro-wrap .in-box .info-text dl dd {
+    }
+
+    .intro-wrap .in-box .info-text dl.text1 dd {
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .intro-wrap .in-box .info-text dl.text1 dd strong {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .intro-wrap .in-box .info-text dl.text2 dd {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .intro-wrap .in-box .info-text p {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .intro-wrap .in-box .info-text2 {
+        border-top: 1px solid #DBDBDB;
+    }
+
+    .intro-wrap .in-box .info-text2 li {
+        padding-top: 15px;
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.6;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .intro-wrap .in-box .info-text2 li strong {
+        font-weight: bold;
+        color: #CF1B1B;
+    }
+
+    .intro-wrap .in-box .info-text2 li i {
+        position: absolute;
+        top: 21px;
+        left: 0px;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .intro-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .intro-wrap .link-wrap a {
+        margin: 0 2px;
+        text-align: center;
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 14.5px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro-wrap .link-wrap a i {
+        display: inline-block;
+    }
+
+    .intro-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .intro2-wrap {
+        padding: 20px 15px;
+        word-break: keep-all;
+    }
+
+    .intro2-wrap h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .intro2-wrap h1 img {
+        width: 104px;
+    }
+
+    .intro2-wrap h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .intro2-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro2-wrap .in-box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .intro2-wrap .in-box .bell-text {
+        background: url(../images/common/bell.png) no-repeat left 5px;
+        background-size: 31.6px 32.88px;
+        padding-left: 45px;
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .intro2-wrap .in-box .bell-text strong {
+        font-size: bold;
+    }
+
+    .intro2-wrap .in-box .info-text {
+        margin-bottom: 10px;
+        padding-top: 15px;
+        /*border-top:1px solid #dbdbdb;*/
+    }
+
+    .intro2-wrap .in-box .info-text dl {
+        margin-bottom: 20px;
+    }
+
+    .intro2-wrap .in-box .info-text dl dt {
+        height: 32px;
+        width: 90px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        background: #0D76CF;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-size: 14px;
+        letter-spacing: -1.5px;
+    }
+
+    .intro2-wrap .in-box .info-text dl dd {
+    }
+
+    .intro2-wrap .in-box .info-text dl.text1 dd {
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text1 dd strong {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text2 dd {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .intro2-wrap .in-box .info-text dl.text2 dd span {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .intro2-wrap .in-box .info-text p {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span {
+        display: block;
+        float: left;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span.title {
+        width: 65px;
+    }
+
+    .intro2-wrap .in-box .info-text p.tel span.text {
+        width: calc(100% - 65px);
+    }
+
+    .intro2-wrap .in-box .info-text2 {
+        border-top: 1px solid #DBDBDB;
+        padding-top: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2 h3 {
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2.text-dot p {
+        color: #333;
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 2px;
+    }
+
+    .intro2-wrap .in-box .info-text2.text-dot p:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box {
+        background: #F2F2F2;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dl {
+        font-size: 14px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dt {
+        color: #0D76CF;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dd {
+        color: #333;
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 2px;
+    }
+
+    .intro2-wrap .in-box .info-text2 .text-box dd:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro2-wrap .in-box .info-text2 ul li {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+        line-height: 1.5;
+    }
+
+    .intro2-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .intro2-wrap .link-wrap a {
+        margin: 0 2px;
+        text-align: center;
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 14.5px;
+        text-align: left;
+        background: #042880;
+        margin-bottom: 10px;
+    }
+
+    .intro2-wrap .link-wrap a i {
+        display: inline-block;
+    }
+
+    .intro2-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .text-box {
+        background: #F2F2F2;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .intro3-wrap {
+        padding-top: 26px;
+        padding: 26px 15.5px;
+        margin: 0 auto;
+    }
+
+    .intro3-wrap h3 {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: -0.64px;
+        margin-bottom: 6px;
+        line-height: 23px;
+    }
+
+    .intro3-wrap h2 {
+        font-size: 30px;
+        letter-spacing: -0.6px;
+        color: #0571AF;
+        text-align: center;
+        line-height: 42px;
+        margin-bottom: 28.5px;
+    }
+
+    .intro3-wrap .tit-box {
+        border: 1px solid #C3E2F4;
+        border-radius: 15px;
+        width: 100%;
+        background: url(/pub/site/jejunu/images/intro/bell_blue.png) no-repeat 12px 15px;
+        max-height: 151px;
+        padding: 18px 0;
+        margin-bottom: 25px;
+    }
+
+    .intro3-wrap .tit-box .tit-text {
+        padding: 0 22px 0 73px;
+        color: #076093;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .intro3-wrap .in-box {
+        margin-bottom: 38px;
+    }
+
+    .intro3-wrap .in-box .img {
+        margin-bottom: 38.5px;
+    }
+
+    .intro3-wrap .in-box .text h3 {
+        text-align: left;
+        margin-bottom: 21px;
+        letter-spacing: -0.36px;
+        line-height: 27px;
+    }
+
+    .intro3-wrap .in-box .text h3 span {
+        display: block;
+        color: #1877B2;
+    }
+
+    .intro3-wrap .in-box .text ul {
+        padding-left: 12px;
+        margin-bottom: 36px;
+    }
+
+    .intro3-wrap .in-box .text ul li {
+        position: relative;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        margin-bottom: 13px;
+    }
+
+    .intro3-wrap .in-box .text ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .intro3-wrap .in-box .text ul:last-child li {
+        margin-bottom: 17px;
+    }
+
+    .intro3-wrap .in-box .text ul li:before {
+        position: absolute;
+        top: 6px;
+        left: -10px;
+        width: 3.5px;
+        height: 3.5px;
+        border-radius: 100%;
+        background: #333;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro3-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 93px;
+    }
+
+    .intro3-wrap .link-wrap a {
+        position: relative;
+        display: inline-block;
+        width: 231px;
+        height: 58px;
+        line-height: 58px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        text-align: left;
+        background: #0D76CF;
+    }
+
+    .intro3-wrap .link-wrap a i {
+        position: absolute;
+        top: 17px;
+        right: 19.5px;
+    }
+
+    .intro3-wrap .link-wrap > span {
+        display: block;
+        margin-bottom: 36px;
+    }
+
+    .intro4-wrap {
+        padding-top: 26px;
+        padding: 26px 15.5px;
+        margin: 0 auto;
+    }
+
+    .intro4-wrap h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .intro4-wrap h1 img {
+        width: 180px;
+    }
+
+    .intro4-wrap h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 27px;
+        letter-spacing: -0.7px;
+        line-height: 1.5;
+    }
+
+    .intro4-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro4-wrap .in-box {
+        width: 100%;
+        border-top: 1px solid #DBDBDB;
+        margin-bottom: 40px;
+    }
+
+    .intro4-wrap .in-box h3 {
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        padding-top: 35px;
+    }
+
+    .intro4-wrap .in-box h3:first-child {
+        padding-top: 0px;
+    }
+
+    .intro4-wrap .in-box .info-text {
+        padding-top: 21.5px;
+    }
+
+    .intro4-wrap .in-box dl {
+        font-size: 16px;
+        letter-spacing: -0.4px;
+    }
+
+    .intro4-wrap .in-box .text-box dd {
+        color: #333333;
+        padding-left: 10px;
+        position: relative;
+        line-height: 32px;
+        padding-bottom: 12px;
+    }
+
+    .intro4-wrap .in-box dd:last-child {
+        padding-bottom: 0px;
+    }
+
+    .intro4-wrap .in-box dd:before {
+        content: '';
+        position: absolute;
+        top: 9.5px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #014099;
+    }
+
+    .intro4-wrap .in-box .text-box dd:before {
+        top: 14px;
+    }
+
+    .intro4-wrap .in-box dd span {
+        color: #014099;
+    }
+
+    .intro4-wrap .in-box dd strong {
+        display: block;
+        font-size: 18px;
+        letter-spacing: -0.45px;
+    }
+
+    .intro4-wrap .in-box dd strong+br {
+        display: none;
+    }
+
+    .intro4-wrap .in-box .btn1 {
+        margin-right: 10px;
+        position: relative;
+        display: inline-block;
+        width: 114px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 10px;
+        text-align: left;
+        background: #042880;
+    }
+
+    .intro4-wrap .in-box .btn1 i {
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
+
+    .intro4-wrap .in-box p {
+        padding-bottom: 13px;
+    }
+
+    .intro4-wrap .in-box .info-text > dl dd {
+        color: #333333;
+        padding-left: 10px;
+        position: relative;
+        line-height: 23px;
+        padding-bottom: 12px;
+    }
+
+    .intro4-wrap .in-box .text-box {
+        padding: 19px 10px;
+    }
+
+    .intro4-wrap .in-box p+.text-box {
+        margin-bottom: 0px;
+    }
+
+    .intro4-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 93px;
+    }
+
+    .intro4-wrap .link-wrap a {
+        position: relative;
+        display: inline-block;
+        width: 231px;
+        height: 58px;
+        line-height: 58px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        text-align: left;
+        background: #0D76CF;
+    }
+
+    .intro4-wrap .link-wrap a i {
+        position: absolute;
+        top: 19px;
+        right: 19.5px;
+    }
+
+    .intro4-wrap .link-wrap img {
+        margin-top: -12px;
+    }
+
+    .intro5-wrap {
+        padding: 20px 15px;
+        word-break: keep-all;
+    }
+
+    .intro5-wrap h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .intro5-wrap h1 img {
+        width: 104px;
+    }
+
+    .intro5-wrap .right {
+        border-top: 1px solid #DBDBDB;
+        padding-top: 25px;
+    }
+
+    .intro5-wrap h2 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 21px;
+        letter-spacing: -0.44px;
+        line-height: 30px;
+    }
+
+    .intro5-wrap h2 strong {
+        color: #0D76CF;
+    }
+
+    .intro5-wrap .in-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .intro5-wrap .in-box .bell-text {
+        margin-bottom: 17.5px;
+    }
+
+    .intro5-wrap .in-box h3 {
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        color: #333333;
+        margin-bottom: 11px;
+    }
+
+    .intro5-wrap .in-box .info-text dl {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .intro5-wrap .in-box .info-text dl:last-child {
+        margin-bottom: 0px;
+    }
+
+    .intro5-wrap .in-box .info-text dl:after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    .intro5-wrap .in-box .info-text dl dt {
+        float: left;
+        min-width: 70px;
+        margin-right: 10px;
+        padding-left: 10px;
+        color: #0D76CF;
+        line-height: 29px;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .intro5-wrap .in-box .info-text dl dt:before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #0D76CF;
+    }
+
+    .intro5-wrap .in-box .info-text dl dd {
+        float: left;
+        font-size: 14px;
+        color: #1D1D1D;
+        letter-spacing: -0.28px;
+        font-weight: bold;
+        padding-top: 1px;
+        line-height: 29px;
+    }
+
+    .intro5-wrap .in-box .info-text dl dd span {
+        display: block;
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+
+    .intro5-wrap .in-box .info-text .btn1 {
+        margin-right: 6px;
+        position: relative;
+        display: inline-block;
+        width: 104px;
+        height: 29px;
+        line-height: 29px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding-left: 11px;
+        text-align: left;
+        background: #014099;
+    }
+
+    .intro5-wrap .in-box .info-text .btn1 i {
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
+
+    .intro5-wrap .in-box .info-text > p {
+        margin-bottom: 23px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box {
+        background: #EAF7FA;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dl {
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dt {
+        color: #0D76CF;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dd {
+        color: #1D1D1D;
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 13px;
+    }
+
+    .intro5-wrap .in-box .info-text2 .text-box dd:before {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #1D1D1D;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro5-wrap .in-box .info-text2.text-dot p {
+        color: #1D1D1D;
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 2px;
+        line-height: unset;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .info-text2.text-dot p:before {
+        position: absolute;
+        top: 8px;
+        left: 2px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #1D1D1D;
+        content: '';
+        display: inline-block;
+    }
+
+    .intro5-wrap .left .in-box .info-text > h3+p {
+        margin-bottom: 17px;
+    }
+
+    .intro5-wrap .in-box .intro-table {
+        width: 100%;
+        border-top: 1px solid #DBDBDB;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .in-box .intro-table table {
+        width: 99.9999%;
+        border-collapse: collapse;
+        border-left: 1px solid #DBDBDB;
+    }
+
+    .intro5-wrap .in-box .intro-table table thead th {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .intro-table table tbody th {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .in-box .intro-table table tbody td {
+        padding: 10px 15px;
+        color: #1D1D1D;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        font-size: 14px;
+    }
+
+    .intro5-wrap .link-wrap {
+        text-align: center;
+        margin-bottom: 25px;
+        padding-top: 12px;
+    }
+
+    .intro5-wrap .link-wrap a {
+        margin: 0 10px;
+        position: relative;
+        display: inline-block;
+        min-width: 201px;
+        height: 42px;
+        line-height: 42px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        padding-left: 23.5px;
+        padding-right: 39px;
+        text-align: left;
+        background: #042880;
+        margin-bottom: 15px;
+    }
+
+    .intro5-wrap .link-wrap a i {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+    }
+
+    .intro5-wrap .link-wrap a.btn2 {
+        background: #0D76CF;
+    }
+
+    .intro5-wrap .link-wrap a.btn3 {
+        background: #333333;
+    }
+
+    .intro5-wrap .text-box {
+        padding: 17.5px 20px;
+    }
+
+    .intro5-wrap .link-wrap {
+        width: 100%;
+    }
+}

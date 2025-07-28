@@ -1,0 +1,26 @@
+;(function($) {
+'use strict';
+$(function() {
+	const form = $('#BookingGroupPayConfigForm'), gruopList = form.find('.groups');
+	function fillGroups(groups, depth) {
+		_.each(groups, function(g) {
+			if(g.depth == depth) {
+				const blank = _.repeat('&nbsp;', (depth - 1) * 4) + (depth > 1 ? ' └' : '')
+				const a = $('<a>', {
+					class: 'dropdown-item',
+					html: blank + g.name
+				});
+				a.click(function() {
+				
+				});
+				a.appendTo(gruopList);
+				if (g.childCount > 0) fillGroups(g.childs, depth + 1);
+			}
+		});
+	}
+	$.getJSON('/api/group/mapall', function(data) {
+		fillGroups(data, 1);
+	});
+});
+
+}(jQuery));

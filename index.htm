@@ -1,0 +1,1159 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>제주대학교</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="pub/plugin/bootstrap/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="pub/plugin/fa/css/all.min.css">
+<link rel="stylesheet" href="pub/plugin/jquery-ui/jquery-ui.min.css">
+<!--<link rel="stylesheet" href="pub/plugin/waitme/waitMe.min.css">-->
+<!--<link rel="stylesheet" href="pub/plugin/gritter/css/jquery.gritter.css">-->
+<!--<link rel="stylesheet" href="pub/site/portal/css/layout.css">
+<link rel="stylesheet" href="pub/site/portal/css/contents.css">-->
+<link rel="stylesheet" href="pub/site/mobile/css/layout.css?version=new">
+<style>
+	section.sub-content, div.sub-index {
+		z-index: auto !important;
+	}
+</style>
+<link rel="stylesheet" href="pub/site/portal/css/common.css">
+<link rel="stylesheet" href="pub/plugin/sweetalert2/sweetalert2.min.css">
+<link rel="stylesheet" href="pub/plugin/swiper/swiper-bundle.min.css">
+
+<script>
+	const _CONF = {"prefix": "mobile", "suffix": ".htm", "uri": "index.htm", "act": "index", "cmd": "", "server": "mobile.jejunu.ac.kr", "ADD":  false  , "EDIT":  false  };
+	const _SITE = {"id": "mobile", "name": "제주대학교"};
+	
+</script>
+	<link rel="stylesheet" href="pub/plugin/swiper/swiper-bundle.min.css">
+	<!--    <link rel="stylesheet" href="pub/site/portal/css/index.css">-->
+</head>
+<body >
+
+<header id="header" class="header">
+    <div class="container">
+        <h1><a href="index.htm">제주대학교</a></h1>
+
+        <div class="head-util">
+	    <!--<a href="mypage/qr.htm"  class="js-global-view-modal" data-modal-id="idCard" data-modal-class="id-card"><i class="fa-regular fa-address-card mr-2"></i>모바일 신분증</a>-->
+	
+		<a href="#" id="lnkIdCard" class="js-global-view-modal"><i class="fa-regular fa-address-card mr-2"></i>모바일 신분증</a>
+		<a href="mypage/pushlist.htm"><i class="fa-solid fa-bell"></i>알림 <span class="js-push-unread">0</span></a>
+		<button class="search"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+        </div>
+
+    </div>
+
+    <form action="sitehelp/searchmenu.htm" onsubmit="return loadingDisplay()">
+        <div class="search-form">
+            <label for="q">메뉴검색</label>
+            <div class="focus">
+                <input id="q" name="q" type="text">
+                <button type="submit" class="submit"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+            </div>
+            <button type="button" class="btn-close"><i class="fa-regular fa-xmark"></i>검색폼닫기</button>
+        </div>
+    </form>
+
+    <style>
+        #loadingDiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</header>
+
+
+	
+
+<div id="loadingDiv" style="display: none">
+	<img src="pub/common/images/spinner.gif" alt="Loading...">
+</div>
+
+<section class="main">
+	<div class="container">
+
+		<div class="util row">
+
+			<a  href=" intent://canvas.jejunu.ac.kr#Intent;scheme=canvas-student;package=com.instructure.candroid.xinics2.production;end "    target="_BLANK"><i class="fa-regular fa-chalkboard"></i><span><u>JNU</u>class</span></a>
+
+			<a  href=" Intent://login?#Intent;scheme=jjnumobile;package=kr.co.swit.jjnu;end "    target="_BLANK"><i class="fa-regular fa-arrow-pointer"></i><span>수강신청</span></a>
+
+			<a  class="js-portlet"  data-portlet="{}" data-portlet-seq="200" data-portlet-name="수강정보"  target="_SELF"><i class="fa-light fa-memo-circle-info"></i><span>수강정보</span></a>
+
+			<a  class="js-portlet"  data-portlet="{}" data-portlet-seq="23978" data-portlet-name="시간표"  target="_SELF"><i class="fa-light fa-table"></i><span>시간표</span></a>
+
+			<a  href=" https://play.google.com/store/apps/details?id=com.jeju.jeju_abookn "    target="_BLANK"><i class="fa-regular fa-calendar-circle-user"></i><span>전자출결</span></a>
+			
+		</div>
+
+		<div class="links row">
+			<p>
+ 					<a class="link1 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":178,"portletSeq":59,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":2,"x":0,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":59,"name":"학사일정","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_02.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_02.svg );"><span>학사일정</span></a>
+    					<a class="link3 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":183,"portletSeq":6,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":2,"x":4,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":6,"name":"캠퍼스 순환버스","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":2,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_04.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_04.svg );"><span>캠퍼스 순환버스</span></a>
+    					<a class="link5 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":22312,"portletSeq":110,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":0,"y":2,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":110,"name":"JNUclass 메시지함","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_07.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_07.svg );"><span>JNUclass 메시지함</span></a>
+    					<a class="link7 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":23984,"portletSeq":111,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":0,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":111,"name":"비교과 프로그램","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_00.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_00.svg );"><span>비교과 프로그램</span></a>
+ 			</p>
+			<p>
+   					<a class="link2 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":179,"portletSeq":14,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":2,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":14,"name":"오늘의 식단","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_03.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_03.svg );"><span>오늘의 식단</span></a>
+    					<a class="link4 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":6433,"portletSeq":105,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":2,"y":1,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":105,"name":"도서관 서비스","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":"https://lib.jejunu.ac.kr/","linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_05.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_05.svg );"><span>도서관 서비스</span></a>
+    					<a class="link6 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":6435,"portletSeq":46,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":4,"y":2,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":46,"name":"언어교육원","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":"activities/language/class.htm","linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_11.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_11.svg );"><span>언어교육원</span></a>
+   			</p>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="bbs">
+			<div class="tabs">
+					<button class="" data-target="tab1" data-link="board/notice.htm" data-api="board/notice.htm?_out=json&pageSize=5" data-cat="${b.cat}" data-cht="jnuboard" data-no="1">공지</button>
+					<button class="" data-target="tab2" data-link="board/undergraduate/classwork.htm" data-api="board/undergraduate/classwork.htm?_out=json&pageSize=5" data-cat="236" data-cht="jnuboard" data-no="2">수업</button>
+					<button class="" data-target="tab3" data-link="board/undergraduate/registration.htm" data-api="board/undergraduate/registration.htm?_out=json&pageSize=5" data-cat="237" data-cht="jnuboard" data-no="3">등록</button>
+					<button class="" data-target="tab4" data-link="board/undergraduate/scholarships.htm" data-api="board/undergraduate/scholarships.htm?_out=json&pageSize=5" data-cat="238" data-cht="jnuboard" data-no="4">장학</button>
+					<button class="" data-target="tab5" data-link="board/jnuclass.htm" data-api="api/jnu/class/get.jsp" data-cat="${b.cat}" data-cht="jnuclass" data-no="5">JNUclass</button>
+			</div>
+				<div class="tab-data tab1">
+					<ul class="list-unstyled article-list"></ul>
+					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab1',this);" class="more refresh">새로고침<span>⟳</span></a>
+					<a href="board/notice.htm" class="more">더보기<span>+</span></a>
+				</div>
+				<div class="tab-data tab2">
+					<ul class="list-unstyled article-list"></ul>
+					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab2',this);" class="more refresh">새로고침<span>⟳</span></a>
+					<a href="board/undergraduate/classwork.htm" class="more">더보기<span>+</span></a>
+				</div>
+				<div class="tab-data tab3">
+					<ul class="list-unstyled article-list"></ul>
+					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab3',this);" class="more refresh">새로고침<span>⟳</span></a>
+					<a href="board/undergraduate/registration.htm" class="more">더보기<span>+</span></a>
+				</div>
+				<div class="tab-data tab4">
+					<ul class="list-unstyled article-list"></ul>
+					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab4',this);" class="more refresh">새로고침<span>⟳</span></a>
+					<a href="board/undergraduate/scholarships.htm" class="more">더보기<span>+</span></a>
+				</div>
+				<div class="tab-data tab5">
+					<ul class="list-unstyled article-list"></ul>
+					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab5',this);" class="more refresh">새로고침<span>⟳</span></a>
+					<a href="board/jnuclass.htm" class="more">더보기<span>+</span></a>
+				</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+
+<nav id="allMenu">
+	<div class="head">
+
+		<div class="util">
+			<a class="logout" href="login.htm?act=logout"><i class="fa-solid fa-right-from-bracket"></i> 로그아웃</a>
+			<button class="language"><i class="fa-solid fa-globe"></i>언어</button>
+			<div class="language">
+				<a href="?lang=ko">한국어</a>
+				<a href="?lang=en">ENGLISH</a>
+			</div>
+			<button class="btn-close"><i class="fa-regular fa-xmark"></i>닫기</button>
+		</div>
+
+	</div>
+
+	<div class="menu-box">
+
+
+		<ul class="list-unstyled">
+   					<li>
+							<h3><a class="" href="service.htm">서비스 이용안내</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class=" " href="service/manual.htm" target="">서비스 이용안내</a>
+								</li>
+ 						</ul>
+					</li>
+  					<li>
+							<h3><a class="" href="info.htm">학사안내</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class=" " href="info/course.htm" target="">교육과정</a>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/records.htm" target="">학적</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/records/records1.htm">복학</a></li>
+  													<li><a class="" href="info/records/records2.htm">휴학</a></li>
+  													<li><a class="" href="info/records/records3.htm">유급</a></li>
+  													<li><a class="" href="info/records/records4.htm">퇴학</a></li>
+  													<li><a class="" href="info/records/records5.htm">제적</a></li>
+  													<li><a class="" href="info/records/records6.htm">전과</a></li>
+  													<li><a class="" href="info/records/records7.htm">재입학</a></li>
+  													<li><a class="" href="info/records/records8.htm">학적부정정</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/graduation.htm" target="">졸업</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/graduation/graduation1.htm">졸업학점</a></li>
+  													<li><a class="" href="info/graduation/graduation2.htm">교양이수</a></li>
+  													<li><a class="" href="info/graduation/graduation3.htm">복수전공</a></li>
+  													<li><a class="" href="info/graduation/graduation4.htm">교직이수</a></li>
+  													<li><a class="" href="info/graduation/graduation5.htm">학생설계전공</a></li>
+  													<li><a class="" href="info/graduation/graduation6.htm">마이크로디그리과정</a></li>
+  													<li><a class="" href="info/graduation/graduation7.htm">졸업자격</a></li>
+  													<li><a class="" href="info/graduation/graduation8.htm">졸업신청</a></li>
+  													<li><a class="" href="info/graduation/delay.htm">학사취득유예</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/registration.htm" target="">등록</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/registration/registration1.htm">납입금등록</a></li>
+  													<li><a class="" href="info/registration/registration2.htm">분할납부</a></li>
+  													<li><a class="" href="info/registration/registration3.htm">납입금반환</a></li>
+  													<li><a class="" href="info/registration/registration4.htm">수업연한초과자</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/scholarships.htm" target="">장학</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/scholarships/scholarships1.htm">장학금안내</a></li>
+  													<li><a class="" href="info/scholarships/scholarships2.htm">국가장학</a></li>
+  													<li><a class="" href="info/scholarships/scholarships3.htm">교내장학</a></li>
+  													<li><a class="" href="info/scholarships/scholarships4.htm">발전기금장학</a></li>
+  													<li><a class="" href="info/scholarships/scholarships5.htm">기타장학</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/policy.htm" target="">학사제도</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/policy/policy1.htm">수업</a></li>
+  													<li><a class="" href="info/policy/policy2.htm">수강신청</a></li>
+  													<li><a class="" href="info/policy/policy3.htm">교과목이수</a></li>
+  													<li><a class="" href="info/policy/policy4.htm">온라인수강 -&gt; 원격수업	</a></li>
+  													<li><a class="" href="info/policy/policy5.htm">성적</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="info/credit.htm" target="">학점교류</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="info/credit/exchange1.htm">타대학학점교류</a></li>
+  													<li><a class="" href="info/credit/exchange2.htm">군복무중학점특별취득</a></li>
+  													<li><a class="" href="info/credit/exchange3.htm">K-MOOC 학점취득</a></li>
+  													<li><a class="" href="info/credit/exchange4.htm">제주권역(JejuUDEC)</a></li>
+  													<li><a class="" href="info/credit/exchange5.htm">거점국립대학(KNU10)</a></li>
+  													<li><a class="" href="info/credit/exchange6.htm">한국열린사이버대학교(OCU)</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class=" " href="info/conscription.htm" target="">병무행정</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="info/certificate.htm" target="">증명발급안내</a>
+								</li>
+   						</ul>
+					</li>
+  					<li>
+							<h3><a class="" href="classwork.htm">수업/성적</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class="  menu-3deps " href="classwork/academic.htm" target="">학사일정</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="classwork/academic/calendar.htm">학사일정</a></li>
+   										</ul>
+								</li>
+    								<li>
+									
+										<a class="  menu-3deps " href="classwork/syllabus.htm" target="">교수계획서</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="classwork/syllabus/syllabussearch.htm">교수계획서조회</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="classwork/management.htm" target="">수강관리</a>
+										<ul class="list-unstyled ">
+       													<li><a class="" href="classwork/management/alternative.htm">대치교과목조회</a></li>
+      													<li><a class="" href="classwork/management/all.htm">전체수업시간표조회</a></li>
+  													<li><a class="" href="classwork/management/offerings.htm">개설교과목조회</a></li>
+      													<li><a class="" href="classwork/management/mypracticumapply.htm">현장실습신청내역</a></li>
+   										</ul>
+								</li>
+        								<li>
+									
+										<a class="  menu-3deps " href="classwork/grade.htm" target="">성적관리</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="classwork/grade/overall.htm">전체성적조회</a></li>
+         										</ul>
+								</li>
+   						</ul>
+					</li>
+  					<li>
+							<h3><a class="" href="student.htm">학적/졸업</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class="  menu-3deps " href="student/profile.htm" target="">학적</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="student/profile/basic.htm">학적기본</a></li>
+  													<li><a class="" href="student/profile/history.htm">학적변동이력</a></li>
+  													<li><a class="" href="student/profile/teaching.htm">교직이수</a></li>
+  													<li><a class="" href="student/profile/exchange.htm">교류수학</a></li>
+  													<li><a class="" href="student/profile/contact.htm">연락처변경</a></li>
+  													<li><a class="" href="student/profile/strecord.htm">학적정정신청</a></li>
+     										</ul>
+								</li>
+                 						</ul>
+					</li>
+    					<li>
+							<h3><a class="" href="career.htm">경력관리</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class=" " href="career/dashboard.htm" target="">대시보드</a>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="career/ability.htm" target="">학생역량</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="career/ability/examguide.htm">직업심리검사안내</a></li>
+  													<li><a class="" href="career/ability/exam.htm">직업심리검사</a></li>
+    													<li><a class="" href="career/ability/desiredjob.htm">희망직무탐색</a></li>
+  													<li><a class="" href="career/ability/coursearch.htm">역량별교과목조회</a></li>
+    													<li><a class="" href="career/ability/setting.htm">진로목표설정</a></li>
+  													<li><a class="" href="career/ability/recommendation.htm">학과추천</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="career/comparative.htm" target="">비교과프로그램</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="career/comparative/guide.htm">비교과프로그램 소개</a></li>
+  													<li><a class="" href="career/comparative/notice.htm">비교과프로그램 공지사항</a></li>
+  													<li><a class="" href="career/comparative/apply.htm">비교과프로그램 신청하기</a></li>
+  													<li><a class="" href="career/comparative/applysearch.htm">비교과프로그램 신청내역</a></li>
+  													<li><a class="" href="career/comparative/survey.htm">비교과프로그램 설문조사</a></li>
+  													<li><a class="" href="career/comparative/mileage.htm">비교과프로그램 마일리지</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="career/certification.htm" target="">자격인증</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="career/certification/certificate.htm">자격증 등록</a></li>
+  													<li><a class="" href="career/certification/language.htm">어학능력 등록</a></li>
+  													<li><a class="" href="career/certification/socialservice.htm">사회봉사 등록</a></li>
+  													<li><a class="" href="career/certification/other.htm">기타경력사항 등록</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class=" " href="career/certcomdiagnosis.htm" target="">자격증이수진단</a>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="career/empmanage.htm" target="">취업관리</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="career/empmanage/work24.htm">고용24 채용정보 탐색</a></li>
+  													<li><a class="" href="career/empmanage/jobalio.htm">잡알리오 채용정보 탐색</a></li>
+  													<li><a class="" href="career/empmanage/jobkorea.htm">잡코리아 채용정보 탐색</a></li>
+  													<li><a class="" href="career/empmanage/strongcompany.htm">강소기업 탐색</a></li>
+  													<li><a class="" href="career/empmanage/monthlycalendar.htm">월간 공채달력 조회</a></li>
+  													<li><a class="" href="career/empmanage/mentorapply.htm">동문멘토 신청관리</a></li>
+  													<li><a class="" href="career/empmanage/questions.htm">동문멘토 질문하기</a></li>
+  													<li><a class="" href="career/empmanage/questionlist.htm">동문멘토 나의 질문목록</a></li>
+  													<li><a class="" href="career/empmanage/answer.htm">동문멘토 답변하기</a></li>
+  													<li><a class="" href="career/empmanage/graduates.htm">졸업생 취업현황</a></li>
+  													<li><a class="" href="career/empmanage/handwriting.htm">취업수기</a></li>
+  													<li><a class="" href="career/empmanage/passself.htm">합격자소서</a></li>
+  													<li><a class="" href="career/empmanage/resume.htm">이력서관리</a></li>
+  													<li><a class="" href="career/empmanage/empsurvey.htm">취업경로조사</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="career/counseling.htm" target="">통합상담</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="career/counseling/professor.htm">교수상담</a></li>
+    													<li><a class="" href="career/counseling/career.htm">진로취업상담</a></li>
+   										</ul>
+								</li>
+      								<li>
+									
+										<a class=" " href="career/auland.htm" target="">아우란트 검사</a>
+								</li>
+  								<li>
+									
+										<a href="https://www.jobplanet.co.kr/job"  target="_blank" >잡플래닛</a>
+								</li>
+ 						</ul>
+					</li>
+    					<li>
+							<h3><a class="" href="activities.htm">교내활동</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class="  menu-3deps " href="activities/information.htm" target="">캠퍼스안내</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="activities/information/bus.htm">캠퍼스순환버스</a></li>
+  													<li><a class="" href="activities/information/map.htm">캠퍼스맵</a></li>
+  													<li><a class="" href="activities/information/cafeteria.htm">식당메뉴안내</a></li>
+  													<li><a class="" href="activities/information/facility.htm">시설이용안내</a></li>
+  													<li><a class="" href="activities/information/office365.htm">오피스365인증</a></li>
+  													<li><a class="" href="activities/information/software.htm">학내SW이용안내</a></li>
+  													<li><a class="" href="activities/information/wifi.htm">WIFI이용안내</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="activities/onestop.htm" target="">ONE-STOP서비스</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="activities/onestop/repair.htm">시설물보수신청</a></li>
+   										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="activities/field.htm" target="">현장실습</a>
+										<ul class="list-unstyled ">
+                     													<li><a class="" href="activities/field/print.htm">수료증 출력</a></li>
+ 										</ul>
+								</li>
+        								<li>
+									
+										<a class="  menu-3deps " href="activities/lifelong.htm" target="">평생교육원</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="activities/lifelong/information.htm">평생교육원 안내</a></li>
+  													<li><a class="" href="activities/lifelong/class.htm">수강신청/강좌조회</a></li>
+  													<li><a class="" href="activities/lifelong/myclass.htm">수강신청내역</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="activities/language.htm" target="">언어교육원</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="activities/language/information.htm">언어교육원 안내</a></li>
+  													<li><a class="" href="activities/language/class.htm">수강신청/강좌조회</a></li>
+  													<li><a class="" href="activities/language/myclass.htm">수강신청내역</a></li>
+ 										</ul>
+								</li>
+          								<li>
+									
+										<a class=" " href="activities/staffsearch.htm" target="">교직원검색</a>
+								</li>
+         						</ul>
+					</li>
+  					<li>
+							<h3><a class="" href="board.htm">게시판</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class=" " href="board/notice.htm" target="">공지사항</a>
+								</li>
+          								<li>
+									
+										<a class="  menu-3deps " href="board/undergraduate.htm" target="">학생공지</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="board/undergraduate/academic.htm">학사안내</a></li>
+  													<li><a class="" href="board/undergraduate/classwork.htm">수업</a></li>
+  													<li><a class="" href="board/undergraduate/scholarships.htm">장학</a></li>
+  													<li><a class="" href="board/undergraduate/registration.htm">등록</a></li>
+  													<li><a class="" href="board/undergraduate/volunteer.htm">봉사</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class=" " href="board/event.htm" target="">행사알림</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="board/jnuclass.htm" target="">JNUclass(연계)</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="board/jnunews.htm" target="">JNU NEWS</a>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="board/recruitment.htm" target="">채용정보</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="board/recruitment/eclips.htm">채용정보</a></li>
+  													<li><a class="" href="board/recruitment/staffing.htm">교내채용정보</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class=" " href="board/jnuboard.htm" target="">제주대게시판</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="board/portalnotice.htm" target="">포털공지사항</a>
+								</li>
+         						</ul>
+					</li>
+  					<li>
+							<h3><a class="" href="book.htm">시설물예약</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class="  menu-3deps " href="book/sports.htm" target="">체육시설물</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="book/sports/info.htm">시설안내</a></li>
+  													<li><a class="" href="book/sports/map.htm">위치안내</a></li>
+  													<li><a class="" href="book/sports/notice.htm">공지사항</a></li>
+  													<li><a class="" href="book/sports/apply.htm">예약신청</a></li>
+  													<li><a class="" href="book/sports/check.htm">나의예약</a></li>
+  													<li><a class="" href="book/sports/data.htm">주의사항</a></li>
+  													<li><a class="" href="book/sports/form.htm">신청양식</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="book/hall.htm" target="">아라컨벤션홀</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="book/hall/info.htm">시설안내</a></li>
+  													<li><a class="" href="book/hall/apply.htm">예약신청</a></li>
+  													<li><a class="" href="book/hall/check.htm">나의예약</a></li>
+  													<li><a class="" href="book/hall/status.htm">예약현황</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="book/training.htm" target="">제주대학교연수원</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="book/training/info.htm">시설안내</a></li>
+  													<li><a class="" href="book/training/apply.htm">예약신청</a></li>
+  													<li><a class="" href="book/training/check.htm">나의예약</a></li>
+  													<li><a class="" href="book/training/status.htm">예약현황</a></li>
+ 										</ul>
+								</li>
+  								<li>
+									
+										<a class="  menu-3deps " href="book/muse.htm" target="">아라뮤즈홀</a>
+										<ul class="list-unstyled ">
+ 													<li><a class="" href="book/muse/notice.htm">공지사항</a></li>
+  													<li><a class="" href="book/muse/info.htm">시설안내</a></li>
+  													<li><a class="" href="book/muse/event.htm">공연달력</a></li>
+  													<li><a class="" href="book/muse/apply.htm">정기대관</a></li>
+  													<li><a class="" href="book/muse/every.htm">수시대관</a></li>
+  													<li><a class="" href="book/muse/check.htm">나의예약</a></li>
+  													<li><a class="" href="book/muse/data.htm">서식자료</a></li>
+ 										</ul>
+								</li>
+ 						</ul>
+					</li>
+          					<li>
+							<h3><a class="" href="mypage.htm">마이페이지</a></h3>
+						<ul class="list-unstyled ">
+ 								<li>
+									
+										<a class=" " href="mypage/check.htm" target="">내정보확인</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="mypage/pushlist.htm" target="">알림목록</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="mypage/push.htm" target="">알림설정</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="mypage/setting.htm" target="">기기설정</a>
+								</li>
+  								<li>
+									
+										<a class=" " href="mypage/logdata.htm" target="">로그인이력</a>
+								</li>
+   						</ul>
+					</li>
+                 
+		</ul>
+
+	</div>
+</nav>
+
+<nav id="dock">
+	<a href="index.htm"><i class="fa-solid fa-house"></i>홈</a>
+	<a href="#back"  class="disable" onclick="return false" ><i class="fa-solid fa-reply"></i>뒤로</a>
+	<a href="mobile/board/all.htm"><i class="fa-solid fa-rectangle-list"></i>게시판</a>
+	<a href="#" class="open-pop"><i class="fa-solid fa-book-open"></i>중앙도서관</a>
+	<button class="menu"><i class="fa-regular fa-bars"></i>MENU</button>
+</nav>
+
+<div class="dock-library">
+		<a class="app" href="https://mobile.jejunu.ac.kr/mmm.slpck.jjnu" target="_blank" title="새창">App 열기</a>
+	<a class="web" href="https://lib.jejunu.ac.kr" target="_blank" title="새창">Web 열기</a>
+	<button><i class="fa-regular fa-xmark"></i>닫기</button>
+</div>
+<div id="formReceiverContaienr" class="d-none">
+	<iframe src="about:blank" title="모듈 처리 프레임" frameborder="0" id="formReceiver" name="formReceiver"></iframe>
+</div>
+
+
+
+<div id="globalViewModal" class="modal default-modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="globalViewModalTitle"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body" id="globalViewModalBody">
+			
+			
+			<div id="idCard" class="modal default-modal id-card show" tabindex="-1" style="display: block;" aria-modal="true" role="dialog"> 
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="globalViewModalTitle"><i class="fa-regular fa-address-card mr-2"></i>모바일 학생증</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						</div>
+						<div class="modal-body" id="globalViewModalBody">
+
+							<!-- ****************************************************** -->
+							<!-- ****************************************************** -->
+							<!-- 아트 소스에서 공통 팝업 부분으로, 여기서부터는 qr.htm 파일 안에 내용이 뿌려짐 -->
+							<!-- ****************************************************** -->
+							<!-- ****************************************************** -->
+							<div class="id-card-content">
+								<div class="canvas-outline">
+									<canvas id="time-canvas" width="240" height="240"></canvas>
+									<p class="qr" style="display: block;"><img src="pub/site/mobile/images/qr.jpg" alt="" class="js-qr-img"></p>
+									<p class="repeat js-qrpass-repeat" style="display: none;"><a onclick="a();"><i class="fa-solid fa-repeat"></i>새로고침</a></p>
+									<div id="time-display">0</div>
+								</div>
+
+								<div class="profile">
+									<p class="photo"><img src="pub/site/mobile/images/photo.png" alt=""></p>
+									<dl>
+										<dt>소속</dt>
+										<dd>행정학과</dd>
+
+										<dt>성명</dt>
+										<dd><strong>송경도</strong></dd>
+										<dt>아이디</dt>
+										<dd>0200811056</dd>
+										<dt>생년월일</dt>
+										<dd>19891120</dd>
+										<dt>신분</dt>
+										<dd>학부생(재학생)</dd>
+									</dl>
+								</div>
+								<p class="attention">
+									<span>이 모바일학생증은 본인 이외에는 사용할 수 없으며,</span>
+									<span>타인에게 양도 또는 대여할 수 없습니다.</span>
+								</p>
+
+							</div>
+
+
+
+							<script>
+								//$(function () {
+									
+
+									const canvas = document.getElementById('time-canvas');
+									const context = canvas.getContext('2d');
+									const parent = document.querySelector('#idCard');
+
+									// 원의 속성 설정
+									const centerX = canvas.width / 2;
+									const centerY = canvas.height / 2;
+									const radius = 110.58; // 원의 반지름을 원하는 크기로 설정
+									const lineWidth = 6;
+									const totalFrames = 100; // 1도씩 그리기
+									const frameDuration = 100; // 1초에 한 번 그리기
+
+									// 선의 색상을 파란색으로 설정
+									context.strokeStyle = '#CCCCCC';
+
+									let currentFrame = totalFrames; // 초기 프레임을 총 프레임으로 설정
+									let timerInterval = null; // 타이머 인터벌 ID
+
+									// 시간을 표시할 div 엘리먼트 가져오기
+									const timeDisplay = document.getElementById('time-display');
+
+									// 원을 그리는 함수
+									function drawCircle() {
+										if (currentFrame <= 0) {
+											//currentFrame = totalFrames;
+											clearInterval(timerInterval);
+											$(".canvas-outline p.qr").hide();
+											$(".canvas-outline p.repeat").show();
+										}
+
+										context.clearRect(0, 0, canvas.width, canvas.height);
+
+										const startAngle = -Math.PI / 2; // -90도, 12시 방향에서 시작
+										const endAngle = startAngle - (currentFrame / totalFrames) * 2 * Math.PI;
+
+										context.beginPath();
+										context.arc(centerX, centerY, radius, startAngle, endAngle);
+										context.lineWidth = lineWidth;
+										context.stroke();
+
+										// 시간 표시 업데이트
+										if((totalFrames-currentFrame)%10 == 0) {
+											timeDisplay.textContent = 10-((totalFrames-currentFrame)/10);
+										}
+
+										currentFrame--;
+									}
+
+									if (!timerInterval) {
+										timerInterval = setInterval(drawCircle, frameDuration);
+									}
+
+									function a() {
+										timeDisplay.textContent =  (totalFrames/10);
+										$(".js-qr-img").attr("src","pub/site/mobile/images/qr.jpg");
+										currentFrame = totalFrames;
+										timerInterval = setInterval(drawCircle, frameDuration);
+
+										$(".canvas-outline p.qr").show();
+										$(".canvas-outline p.repeat").hide();
+									};
+								
+									/*$(".js-qrpass-repeat").click(function() {
+									
+										timeDisplay.textContent =  (totalFrames/10);
+										$(".js-qr-img").attr("src","pub/site/mobile/images/qr.jpg");
+										currentFrame = totalFrames;
+										timerInterval = setInterval(drawCircle, frameDuration);
+
+										$(".canvas-outline p.qr").show();
+										$(".canvas-outline p.repeat").hide();
+
+									});*/
+
+								//});
+							</script>
+						</div>
+						<!-- ****************************************************** -->
+						<!-- ****************************************************** -->
+						<!-- ****************************************************** -->
+						<!-- ****************************************************** -->
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<script src="pub/plugin/lodash/lodash.min.js"></script>
+<script src="pub/plugin/jquery/jquery.min.js"></script>
+<!--<script src="pub/plugin/jquery-ui/jquery-ui.min.js"></script>-->
+<script src="pub/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="pub/plugin/moment/moment-with-locales.min.js"></script>
+<script src="pub/plugin/js-cookie/js.cookie.min.js"></script>
+<script src="pub/plugin/urijs/URI.min.js"></script>
+<script src="pub/plugin/sweetalert2/sweetalert2.min.js"></script>
+<script src="pub/plugin/bootbox/bootbox.min.js"></script>
+<!--<script src="pub/plugin/waitme/waitMe.min.js"></script>-->
+<!--<script src="pub/plugin/gritter/js/jquery.gritter.min.js"></script>-->
+<script src="pub/plugin/jsrender/jsrender.min.js"></script>
+
+<script src="pub/site/portal/js/layout.js"></script>
+<script src="pub/site/mobile/js/layout.js"></script>
+<script src="pub/common/js/functions.js"></script>
+<script src="pub/site/portal/js/report.js"></script>
+
+<script>
+	$(function () {
+		
+		$("#idCard").css("display", "none");
+
+		$("#lnkIdCard").click(function(e) {
+			 e.preventDefault();
+					
+			 $("#idCard").css("display", "block");
+			 
+		});
+	});
+</script>
+
+<script>
+	$(function () {
+		initDatepicker();
+
+
+		if($(".js-push-unread").length) {
+			$.ajax({
+				type : 'POST',
+				url : 'mypage/pushlist.htm',
+				data : {act: 'unread',_out : 'json'},
+				dataType : 'json',
+				success : function(data){
+					$(".js-push-unread").html(data.count);
+				},error : function (data) {
+				}
+			});
+
+		}
+
+
+	});
+	const $loadingDiv = $('#loadingDiv');
+	function loadingDisplay(){
+		$loadingDiv.show();
+		return true;
+	}
+
+	$loadingDiv.click(function (){
+		$(this).hide();
+	})
+
+
+</script>
+
+
+	<script id="modalTemplate" type="text/x-template">
+		<div class="modal portlet-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document"> <!--  modal-dialog-scrollable -->
+				<div class="modal-content">
+					<div class="modal-header  portlet-modal-header">
+						<h5 class="modal-title"></h5>
+						<div class="btn-group portlet-buttons">
+							<button type="button" class="btn btn-sm btn-secondary portlet-button portlet-button-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+					<div class="modal-body  portlet-modal-body">
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script>
+
+		let refreshDisabled = false;
+		let boardDataKey = {
+			'jnuboard': ['seq', 'title', 'wtime']
+			, 'board': ['seq', 'title', 'ctime']
+			, 'korus': ['pstNo', 'pstTtl', 'registDt']
+			, 'jnuclass': ['post_id', 'post_title', 'created_at']
+		};
+
+		//portlet 게시판 전체 새로고침
+		function portletBoardRefresh(tab,btn){
+			if(!refreshDisabled) {
+				refreshDisabled = true;
+				$(btn).addClass("disabled");
+
+				$(".bbs .tabs button").each(function () {
+					const data = $(this).data();
+					$(".bbs .tab-data." + data.target + " .article-list").empty();
+					localStorage.removeItem("pot_board_" + data.no);
+
+					if (data.target === tab) tab = $(this);
+				});
+				tab.click();
+
+				setTimeout(function() {
+					refreshDisabled = false;
+					$(btn).removeClass("disabled");
+				}, 3000);
+
+			}
+		}
+
+		$(document).on('click', '.js-global-portlet-view-modal', function () {
+			const _globalViewModal = $('#globalViewModal'), _globalViewModalTitle = $('#globalViewModalTitle'), _globalViewModalBody = $('#globalViewModalBody');
+			let url = $(this).attr('href');
+			let param = "";
+			_globalViewModalTitle.html($(this).data('title'));
+			_globalViewModalBody.load(url, param, function (data) {
+				if (!data.error) {
+					_globalViewModal.css('z-index', 1051);
+					_globalViewModal.modal();
+				}
+			});
+		});
+		$(document).ready(function () {
+			function timestampToMdDot(timestamp) {
+				const date = new Date(timestamp), month = (date.getMonth() + 1).toString().padStart(2, '0'), day = date.getDate().toString().padStart(2, '0');
+				return month + '.' + day;
+			}
+
+			function ymdToMdDot(ymdDate) {
+				return ymdDate.substring(5,7) + '.' + ymdDate.substring(8,10);
+			}
+
+			function escapeHTML(text) {
+				return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"g, "&quot;").replace(/'/g, "&#x27;").replace(/\//g, "&#x2F;");
+			}
+
+			//portlet 게시판 html 생성
+			function makeBoard(data, listItems){
+				if(listItems) {
+					const actUrl = data.link + '?act=view&seq=';
+					const _cht = data.cht;
+					const _target = $('.tab-data.' + data.target);
+
+					let html = '';
+					let count = 1;
+					if(listItems.length === 0){
+						_target.find('.article-list').html('<li><a href="#" class="">게시글이 없습니다.</a></li>');
+					} else{
+						_.each(listItems, function (a) {
+							if (count <= 5) {
+								if (_cht === "jnuboard") {
+									html += '<li>';
+									//if (a.stat === 'OK') {
+										html += '<a href="' + (actUrl + a.seq) + '">' + escapeHTML(a.title) + '</a>';
+									//} else {
+									//	html += '<a style="text-decoration: line-through;" > 삭제된 게시물 입니다.</a>';
+									//}
+									html += '<i>' + timestampToMdDot(a.wtime) + '</i>';
+									html += '</li>';
+								} else if (_cht === "board") {
+									html += '<li>';
+									if (a.stat.name === 'OK') {
+										html += '<a href="' + (actUrl + a.seq) + '">' + escapeHTML(a.title) + '</a>';
+									} else {
+										html += '<a style="text-decoration: line-through;" > 삭제된 게시물 입니다.</a>';
+									}
+									html += '<i>' + timestampToMdDot(a.ctime) + '</i>';
+									html += '</li>';
+								} else if (_cht === "korus") {
+									html += '<li>';
+									html += '<a href="' + data.link + '?act=view&pstNo=' + a.pstNo + '">' + escapeHTML(a.pstTtl) + '</a>';
+									html += '<i>' + ymdToMdDot(a.registDt) + '</i>'
+									html += '</li>';
+								} else if (_cht === "jnuclass") {
+									html += '<li>';
+									html += '<a href="' + data.link + '?act=view&postId=' + a.post_id + '">' + escapeHTML(a.post_title) + '</a>';
+									html += '<i>' + ymdToMdDot(a.created_at) + '</i>'
+									html += '</li>';
+								}
+							}
+							count++;
+						});
+						_target.find('.article-list').html(html);
+					}
+				}
+			}
+
+			//portlet 게시판 목록 불러오기
+			const loadArticles = {};
+			$('.bbs .tabs button').on('click', function () {
+				const _this = $(this), data = _this.data();
+				let items = JSON.parse(localStorage.getItem("pot_board_"+data.no));
+				let listItems;
+
+				// 생성시간에 따른 목록 초기화 (60 * 60 * 1000 = 1시간)
+				if (items && (new Date().getTime() - items.createTime <= 60 * 60 * 1000)) {
+					makeBoard(data, items.listItems);
+				} else if (!_.has(loadArticles, data.target)) {
+					$.ajax({
+						url: data.api,
+						type: 'GET',
+						dataType: 'json',
+						success: function (boardData) {
+							listItems = (_.has(boardData, 'articles')) ? boardData.articles
+									: (_.has(boardData, 'data')) ? boardData.data.articleList
+									: (_.has(boardData, 'list')) ? boardData.list
+									: (_.has(boardData, 'posts')) ? boardData.posts : [];
+
+							for (let item of listItems ) {
+								for (let key in item) {
+									if(!boardDataKey[data.cht].includes(key)) {
+										delete item[key];
+									}
+								}
+							}
+
+							localStorage.setItem("pot_board_"+data.no,JSON.stringify({
+								"createTime": new Date().getTime()
+								, "listItems" : listItems
+							}));
+							makeBoard(data, listItems);
+						},
+						error: function (error) {
+							console.warn('Error fetching data', error);
+						}
+					});
+				}
+			});
+			$('.bbs .tabs button:first').trigger('click');
+
+			const _head = $('head'), _body = $('body');
+			const _portletModal = $('#portletModal'), _portletModalTitle = $('#portletModalTitle'), _portletModalBody = $('#portletModalBody');
+			const _modalTemplate = $('#modalTemplate'), _modalTemplateHtml = _modalTemplate.html();
+			const _portlets = {};
+
+			$('.js-portlet').on('click', function () {
+				const _portlet = $(this), data = _portlet.data('portlet');
+
+				let potletNm,portletSeq;
+				if (data.seq == undefined)  {
+					potletNm = $(this).data('portlet-nm');
+					portletSeq= $(this).data('portlet-seq');
+				} else {
+					potletNm = data.master.name;
+					portletSeq = data.seq;
+				}
+
+				if (!_.has(_portlets, portletSeq)) {
+					$.getJSON('/portlet/' + portletSeq, function (output) {
+						_portletModalTitle.html(potletNm);
+						_portletModalBody.html(output.htm);
+
+						if (output.style) _head.append($('<style>' + output.style + '</style>'));
+						const modal = $(_modalTemplateHtml);
+						modal.find('.modal-title').html(output.title || potletNm);
+						modal.find('.modal-body').attr('id', output.portletId).html(output.html);
+						if (output.footer) {
+							const footer = $('<div class="modal-footer"></div>');
+							footer.html(output.footer);
+							modal.find('.modal-content').append(footer);
+						}
+						if (output.link) {
+							$('<a href="' + output.link + '" class="btn btn-sm btn-secondary portlet-button portlet-button-link"><i class="fas fa-plus"></i></a>').prependTo(modal.find('.portlet-buttons'));
+						}
+						_body.append(modal);
+						_portlets[portletSeq] = modal;
+						if (output.script) $('<script>').text(output.script).appendTo(_body);
+						modal.modal();
+					});
+				} else {
+					_portlets[portletSeq].modal();
+				}
+			});
+
+			/*for (let c of category) {
+				$.ajax({
+					url: c.apiUrl,
+					type: 'GET',
+					dataType: 'json',
+					success: function (response) {
+						var listItems = response.data.articleList;
+						let actUrl = c.actUrl + '?act=view&seq='
+
+						$(c.targetSelect).find('li').each(function (index, element) {
+							let a = $(element).find('a');
+							a.attr('href', actUrl + listItems[index].seq);
+							a.text(listItems[index].title);
+							$(element).find('i').text(timestampToMdDot(listItems[index].wtime));
+						});
+					},
+					error: function (error) {
+						console.error('Error fetching data', error);
+					}
+				});
+				$(c.targetSelect).children('.more').attr('href', c.actUrl);
+			}*/
+		})
+
+	</script>
+
+	<script>
+		$(function() {
+			/*팝업*/
+			if($('.popup-modal').length > 0) {
+				function setCookie(name, value, expiredays) {
+					var today = new Date();
+					console.log(today.getDate())
+					today.setDate(today.getDate() + expiredays);
+					document.cookie = name + '=' + escape(value) + '; expires=' + today.toGMTString();
+				}
+
+				function getCookie(name) {
+					var cookie = document.cookie;
+					if (document.cookie != "") {
+						var cookie_array = cookie.split("; ");
+						console.log(cookie_array)
+						for (var index in cookie_array) {
+							var cookie_name = cookie_array[index].split("=");
+							if (cookie_name[0] == name) {
+								return cookie_name[1];
+							}
+						}
+					}
+					return;
+				}
+
+				var popupSwiper = new Swiper('.popup-modal .swiper-container', {
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
+					loop: true,
+					pagination: {
+						el: '.popup-modal .swiper-pagination',
+						clickable: true,
+					}
+				});
+
+				$(".popup-modal .modal-today-close").click(function () {
+					$("#popupModal").modal("hide");
+					setCookie("mycookie", 'popupEnd', 1);
+				})
+
+				var checkCookie = getCookie("mycookie");
+				if (checkCookie == 'popupEnd') {
+					$("#popupModal").modal("hide");
+				} else {
+					$('#popupModal').modal("show");
+				}
+
+
+			}
+
+		});
+
+	</script>
+
+
+<script src="pub/plugin/simple-calendar-master/dist/jquery.simple-calendar.js" />
+
+<script>
+	$(function () {
+
+	});
+</script>
+
+
+
+
+
+	<script src="pub/plugin/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

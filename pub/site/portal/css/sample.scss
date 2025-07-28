@@ -1,0 +1,16 @@
+@mixin border-3-dash {
+  border-style: dashed;
+  border-width: 3px;
+}
+
+#samplePortlet {
+  .text {
+    font-size: 16px;
+    color: red;
+  }
+
+  &.active {
+    @include border-3-dash
+  }
+
+}

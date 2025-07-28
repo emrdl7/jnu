@@ -1,0 +1,233 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>모바일신분증 - 제주대학교</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"../>
+
+<link rel="stylesheet" href="../pub/plugin/bootstrap/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="../pub/plugin/fa/css/all.min.css"../>
+<link rel="stylesheet" href="../pub/plugin/jquery-ui/jquery-ui.min.css"../>
+<!--<link rel="stylesheet" href="../pub/plugin/waitme/waitMe.min.css"../>-->
+<!--<link rel="stylesheet" href="../pub/plugin/gritter/css/jquery.gritter.css"../>-->
+<!--<link rel="stylesheet" href="../pub/site/portal/css/layout.css"../>
+<link rel="stylesheet" href="../pub/site/portal/css/contents.css"../>-->
+<link rel="stylesheet" href="../pub/site/mobile/css/layout.css?version=new"../>
+<style>
+	section.sub-content, div.sub-index {
+		z-index: auto !important;
+	}
+</style>
+<link rel="stylesheet" href="../pub/site/portal/css/common.css"../>
+<link rel="stylesheet" href="../pub/plugin/sweetalert2/sweetalert2.min.css"../>
+<link rel="stylesheet" href="../pub/plugin/swiper/swiper-bundle.min.css">
+
+<script>
+	const _CONF = {"prefix": "../mobile", "suffix": ".htm", "uri": "../mypage/qr.htm", "act": "index", "cmd": "", "server": "mobile.jejunu.ac.kr", "ADD":  false  , "EDIT":  false  };
+	const _SITE = {"id": "mobile", "name": "제주대학교"};
+</script>
+</head>
+<body >
+		<div class="container">
+			
+
+
+                <div class="id-card-content">
+                    <div class="canvas-outline">
+                        <canvas id="time-canvas" width="240" height="240"></canvas>
+                        <p class="qr"><img src="../api/qrpass/v1/image" alt="" class="js-qr-img"></p>
+                        <p class="repeat js-qrpass-repeat" style="display:none"><a><i class="fa-solid fa-repeat"></i>새로고침</a></p>
+                        <div id="time-display">30</div>
+                    </div>
+
+                    <div class="profile">
+                        <p class="photo"><img src="../api/user/photo" alt=""></p>
+                        <dl>
+                            <dt>소속</dt>
+                            <dd>분자생명공학전공</dd>
+
+                            <dt>성명</dt>
+                            <dd><strong>부민경</strong></dd>
+                            <dt>아이디</dt>
+                            <dd>2010105091</dd>
+                            <dt>생년월일</dt>
+                            <dd>19911211</dd>
+                            <dt>신분</dt>
+                            <dd>학부생(재학생)</dd>
+                        </dl>
+                    </div>
+                    <p class="attention">
+                        <span>이 모바일학생증은 본인 이외에는 사용할 수 없으며,</span>
+                        <span>타인에게 양도 또는 대여할 수 없습니다.</span>
+                    </p>
+
+                </div>
+
+
+
+		</div>
+		
+
+<div id="formReceiverContaienr" class="d-none">
+	<iframe src="about:blank" title="모듈 처리 프레임" frameborder="0" id="formReceiver" name="formReceiver"></iframe>
+</div>
+
+<div id="globalViewModal" class="modal default-modal" tabindex="-1" role="dialog"> <!--  data-backdrop="static" data-keyboard="false" -->
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="globalViewModalTitle"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body" id="globalViewModalBody"></div>
+			
+		</div>
+	</div>
+</div>
+
+<script src="../pub/plugin/lodash/lodash.min.js"></script>
+<script src="../pub/plugin/jquery/jquery.min.js"></script>
+<!--<script src="../pub/plugin/jquery-ui/jquery-ui.min.js"></script>-->
+<script src="../pub/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../pub/plugin/moment/moment-with-locales.min.js"></script>
+<script src="../pub/plugin/js-cookie/js.cookie.min.js"></script>
+<script src="../pub/plugin/urijs/URI.min.js"></script>
+<script src="../pub/plugin/sweetalert2/sweetalert2.min.js"></script>
+<script src="../pub/plugin/bootbox/bootbox.min.js"></script>
+<!--<script src="../pub/plugin/waitme/waitMe.min.js"></script>-->
+<!--<script src="../pub/plugin/gritter/js/jquery.gritter.min.js"></script>-->
+<script src="../pub/plugin/jsrender/jsrender.min.js"></script>
+
+<script src="../pub/site/portal/js/layout.js"></script>
+<script src="../pub/site/mobile/js/layout.js"></script>
+<script src="../pub/common/js/functions.js"></script>
+<script src="../pub/site/portal/js/report.js"></script>
+
+<script>
+	$(function () {
+
+	});
+</script>
+
+<script>
+	$(function () {
+		initDatepicker();
+
+
+		if($(".js-push-unread").length) {
+			$.ajax({
+				type : 'POST',
+				url : '/mypage/pushlist.htm',
+				data : {act: 'unread',_out : 'json'},
+				dataType : 'json',
+				success : function(data){
+					$(".js-push-unread").html(data.count);
+				},error : function (data) {
+				}
+			});
+
+		}
+
+
+	});
+	const $loadingDiv = $('#loadingDiv');
+	function loadingDisplay(){
+		$loadingDiv.show();
+		return true;
+	}
+
+	$loadingDiv.click(function (){
+		$(this).hide();
+	})
+
+
+</script>
+
+
+    <script>
+        $(function () {
+
+            const canvas = document.getElementById('time-canvas');
+            const context = canvas.getContext('2d');
+            const parent = document.querySelector('#idCard');
+
+            // 원의 속성 설정
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = 110.58; // 원의 반지름을 원하는 크기로 설정
+            const lineWidth = 6;
+            const totalFrames = 300; // 1도씩 그리기
+            const frameDuration = 100; // 1초에 한 번 그리기
+
+            // 선의 색상을 파란색으로 설정
+            context.strokeStyle = '#CCCCCC';
+
+            let currentFrame = totalFrames; // 초기 프레임을 총 프레임으로 설정
+            let timerInterval = null; // 타이머 인터벌 ID
+
+            // 시간을 표시할 div 엘리먼트 가져오기
+            const timeDisplay = document.getElementById('time-display');
+
+            // 원을 그리는 함수
+            function drawCircle() {
+                if (currentFrame <= 0) {
+                    //currentFrame = totalFrames;
+                    clearInterval(timerInterval);
+                    $(".canvas-outline p.qr").hide();
+                    $(".canvas-outline p.repeat").show();
+                }
+
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+                const startAngle = -Math.PI / 2; // -90도, 12시 방향에서 시작
+                const endAngle = startAngle - (currentFrame / totalFrames) * 2 * Math.PI;
+
+                context.beginPath();
+                context.arc(centerX, centerY, radius, startAngle, endAngle);
+                context.lineWidth = lineWidth;
+                context.stroke();
+
+                // 시간 표시 업데이트
+                if((totalFrames-currentFrame)%10 == 0) {
+                    timeDisplay.textContent = 30-((totalFrames-currentFrame)/10);
+                }
+
+                currentFrame--;
+            }
+
+            if (!timerInterval) {
+                timerInterval = setInterval(drawCircle, frameDuration);
+            }
+
+
+            $(".js-qrpass-repeat").click(function() {
+                timeDisplay.textContent =  (totalFrames/10);
+                $(".js-qr-img").attr("src","../api/qrpass/v1/image?t="+Date.now());
+                currentFrame = totalFrames;
+                timerInterval = setInterval(drawCircle, frameDuration);
+
+                $(".canvas-outline p.qr").show();
+                $(".canvas-outline p.repeat").hide();
+
+            });
+
+        });
+    </script>
+
+
+<script src="../pub/plugin/simple-calendar-master/dist/jquery.simple-calendar.js" />
+
+<script>
+	$(function () {
+
+	});
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+
+@page {
+    size: A4;      /* 페이지의 크기 설정 */
+    margin: 1.5cm;   /* 페이지의 여백 설정 */
+    marks: crop | cross;
+    bleed: 3mm;
+}
+
+@page :first { /* 첫 페이지의 스타일 */
+    /*margin-top: 0;*/
+}
+
+body {
+    margin: 1.5cm;
+    font-family: 's-core_dream4_regular', sans-serif;
+    background-color: #fff;
+    color: #333;
+    /*width:210mm;*/
+    /*height:297mm;*/
+    /*font-size: 4.233mm;*/
+    border: 1px solid #000;
+}
+
+@media print {
+    body {
+        margin: 0;
+        width: 100%;
+        height:100vh !important;
+        overflow-y:hidden !important;
+        transform: scale(1);
+    }
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    nav, .no-print {
+        display: none; /* 네비게이션과 원치 않는 요소 숨기기 */
+    }
+}
+
+
+
+
+div.print {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    border:1px solid #000;
+    color:#000;
+    page-break-before: always;
+}
+@media print {
+    div.print {
+        margin: 0;
+    }
+}
+h1 {
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    margin:58px 0;
+}
+div.print_02 h1{
+    margin: 40px 0;
+}
+h1 + p{
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+table {
+    width:100%;
+    border-top:1px solid #000;
+}
+
+th,
+td {
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    padding:20px 5px;
+}
+div.print_02 td{
+    padding:10px 20px;
+}
+
+td p {
+    text-align:left;
+    padding:0 25px;
+}
+
+td u {
+    display:block;
+    text-decoration:none;
+}
+
+td:last-child {
+    border-right:none;
+}
+
+div.print div {
+    padding:30px;
+    margin:0 0 80px;
+}
+div.print_02 div {
+    margin: 0 0 20px;
+}
+div.print div p {
+    margin-bottom:15px;
+}
+div.print_02 div p{
+    margin-bottom:10px;
+}
+
+h2 {
+    text-align:center;
+    margin:0 auto 80px;
+}
+div.print_02 h2{
+    margin:0 auto 50px;
+}
+
+h2 small {
+    display:block;
+    font-size:16px;
+    font-weight:400;
+    margin-bottom:44px;
+}
+div.print_02 h2 small{
+    margin-bottom:30px;
+}
+
+h2 span {
+    display:inline-block;
+    position:relative;
+    font-size:28px;
+    font-weight:600;
+}
+
+h2 img {
+    display:block;
+    position:absolute;
+    z-index:-1;
+    right:-52px;
+    top:50%;
+    transform:translateY(-50%);
+    width:103px;
+    height:103px;
+    background:url(../images/booking/sign_stamp.png) no-repeat right center / 100% auto;
+}
+.table-border{
+    border: 1px solid #000;
+}

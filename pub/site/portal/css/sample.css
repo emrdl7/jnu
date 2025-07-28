@@ -1,0 +1,10 @@
+#samplePortlet .text {
+  font-size: 16px;
+  color: red;
+}
+#samplePortlet.active {
+  border-style: dashed;
+  border-width: 3px;
+}
+
+/*# sourceMappingURL=sample.css.map */

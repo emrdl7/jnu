@@ -1,0 +1,14 @@
+<svg id="벡터_고급_개체" data-name="벡터 고급 개체" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+	<defs>
+		<clipPath id="clip-path">
+			<rect id="사각형_24" data-name="사각형 24" width="27" height="28" transform="translate(0 0)" fill="none"/>
+		</clipPath>
+	</defs>
+	<g id="그룹_40" data-name="그룹 40">
+		<g id="그룹_39" data-name="그룹 39" clip-path="url(#clip-path)">
+			<path id="패스_95" data-name="패스 95" d="M18.662,15a2.562,2.562,0,0,0-2.549-2.575h-.191a2.876,2.876,0,1,0-2.864,0h-.191A2.562,2.562,0,0,0,10.317,15v2.409a2.594,2.594,0,0,0,.019.3,8.067,8.067,0,0,0,8.307,0,2.594,2.594,0,0,0,.019-.3Z" fill="#5686c5"/>
+			<path id="패스_96" data-name="패스 96" d="M26.056,12.582A11.514,11.514,0,1,1,14.543.953,11.572,11.572,0,0,1,26.056,12.582Z" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.897"/>
+			<path id="패스_97" data-name="패스 97" d="M1.58,26.518,1.467,26.4a1.819,1.819,0,0,1,0-2.554l2.5-2.522a1.775,1.775,0,0,1,2.528,0l.113.114a1.819,1.819,0,0,1,0,2.554l-2.5,2.522A1.775,1.775,0,0,1,1.58,26.518Z" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.897"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,22 @@
+<svg id="벡터_고급_개체" data-name="벡터 고급 개체" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+	<defs>
+		<clipPath id="clip-path">
+			<rect id="사각형_14" data-name="사각형 14" width="32" height="32" transform="translate(0 0)" fill="none"/>
+		</clipPath>
+	</defs>
+	<g id="그룹_22" data-name="그룹 22">
+		<g id="그룹_21" data-name="그룹 21" clip-path="url(#clip-path)">
+			<path id="패스_51" data-name="패스 51" d="M9.758,14.706a1.069,1.069,0,0,0-.841.408L7.045,17.5l-.978-2.164a1.068,1.068,0,0,0-.974-.626H2.135V2.122H18.106V11.4h2.135V1.83A1.791,1.791,0,0,0,18.5,0H1.744A1.791,1.791,0,0,0,0,1.83V15a1.791,1.791,0,0,0,1.744,1.83H4.4l1.421,3.142a1.066,1.066,0,0,0,.845.618A1.1,1.1,0,0,0,6.8,20.6a1.069,1.069,0,0,0,.841-.408l2.64-3.36h1.481V14.706Z" fill="#999"/>
+			<path id="패스_52" data-name="패스 52" d="M18.106,13.525V11.4H13.5a1.791,1.791,0,0,0-1.744,1.83v1.473h2.135v-1.18Z" fill="#999"/>
+			<path id="패스_53" data-name="패스 53" d="M30.256,11.4H20.241v2.122h9.624V26.109H26.254a1.069,1.069,0,0,0-.841.408L23.541,28.9l-.978-2.164a1.068,1.068,0,0,0-.974-.626h-7.7V16.828H11.759V26.4a1.791,1.791,0,0,0,1.745,1.83H20.9l1.421,3.142a1.066,1.066,0,0,0,.845.618,1.046,1.046,0,0,0,.128.008,1.07,1.07,0,0,0,.841-.408l2.64-3.36h3.481A1.791,1.791,0,0,0,32,26.4V13.233a1.791,1.791,0,0,0-1.744-1.83" fill="#999"/>
+			<rect id="사각형_12" data-name="사각형 12" width="2.135" height="2.122" transform="translate(11.759 14.706)" fill="#999"/>
+			<rect id="사각형_13" data-name="사각형 13" width="2.135" height="2.122" transform="translate(18.106 11.403)" fill="#999"/>
+		</g>
+	</g>
+	<text id="A" transform="translate(7.016 10.721)" fill="#5686c5" font-size="9" font-family="Bahnschrift">
+		<tspan x="0" y="0">A</tspan>
+	</text>
+	<text id="文" transform="translate(17.446 23.001)" fill="#5686c5" font-size="9" font-family="RixDongnimGothicPR, RixDongnimGothic_Pro">
+		<tspan x="0" y="0">文</tspan>
+	</text>
+</svg>
