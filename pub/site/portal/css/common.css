@@ -361,7 +361,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/pub/site/portal/images/common/no_contents.svg);
+    background-image: url(../images/common/no_contents.svg);
 
 }
 

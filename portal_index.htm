@@ -1,0 +1,4530 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>제주대학교 포털</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="함께 만드는 미래, 새로움을 향한 도약">
+<meta name="keywords" content="제주대 포털, 제주대학교 포털">
+
+<link rel="stylesheet" href="pub/plugin/bootstrap/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="pub/plugin/sweetalert2/sweetalert2.min.css">
+<link rel="stylesheet" href="pub/plugin/fa2/css/all.min.css">
+<link rel="stylesheet" href="pub/plugin/swiper/swiper-bundle.min.css">
+<!--<link rel="stylesheet" href="pub/plugin/waitme/waitMe.min.css">-->
+<!--<link rel="stylesheet" href="pub/plugin/gritter/css/jquery.gritter.css">-->
+<link rel="stylesheet" href="pub/site/portal/css/layout.css">
+<link rel="stylesheet" href="pub/site/portal/css/common.css">
+
+<script>
+	const _CONF = {"prefix": "", "suffix": ".htm", "uri": "index.htm", "act": "index", "cmd": "", "server": "portal.jejunu.ac.kr", "ADD":  false  , "EDIT":  false  };
+	const _SITE = {"id": "portal", "name": "제주대학교 포털"};
+</script>
+
+	<link rel="stylesheet" href="pub/plugin/gridstack/gridstack.css">
+	<style>
+		.portlet.height-1 {
+			height: 300px;
+		}
+
+		.portlet.height-2 {
+			height: 620px;
+		}
+
+		.gs-6 > .grid-stack-item[gs-x="1"] {
+			left: 16.666667%
+		}
+
+		.gs-6 > .grid-stack-item[gs-x="2"] {
+			left: 33.333333%
+		}
+
+		.gs-6 > .grid-stack-item[gs-x="3"] {
+			left: 50%
+		}
+
+		.gs-6 > .grid-stack-item[gs-x="4"] {
+			left: 66.666667%
+		}
+
+		.gs-6 > .grid-stack-item[gs-x="5"] {
+			left: 83.333333%
+		}
+
+		.gs-6 > .grid-stack-item {
+			width: 16.666667%
+		}
+
+		.gs-6 > .grid-stack-item[gs-w="2"] {
+			width: 33.333333%
+		}
+
+		.gs-6 > .grid-stack-item[gs-w="3"] {
+			width: 50%
+		}
+
+		.gs-6 > .grid-stack-item[gs-w="4"] {
+			width: 66.666667%
+		}
+
+		.gs-6 > .grid-stack-item[gs-w="5"] {
+			width: 83.333333%
+		}
+
+		.gs-6 > .grid-stack-item[gs-w="6"] {
+			width: 100%
+		}
+
+		.layout-MANAGED.layout-true .portlet-container {
+			opacity: .4;
+			cursor: no-drop;
+		}
+
+		body, html {
+			scroll-behavior:smooth;
+		}
+	</style>
+    <link rel="stylesheet" href="pub/plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="pub/site/portal/css/index.css">
+<style>#userPortlet11 .card-body {
+  padding: 15px;
+  color: #fff;
+  background: #0571AF; }
+
+@media (min-width: 1200px) {
+  #userPortlet11 .card-body {
+    padding: 20px; } }
+
+#userPortlet11 .card-body a {
+  color: #fff; }
+
+#userPortlet11 .name {
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet11 .name span {
+  display: inline-flex;
+  margin-left: 5px;
+  padding: 5px;
+  align-items: center;
+  font-size: 12px;
+  font-family: "s-core_dream6_bold";
+  background-color: #055E92; }
+
+#userPortlet11 .info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #E1F4FF;
+  font-size: 13px; }
+
+#userPortlet11 .info .certify {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 4px 10px 4px 4px;
+  margin-left: 20px;
+  color: #666;
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: #fff; }
+
+#userPortlet11 .info .certify::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -10px;
+  width: 1px;
+  height: 16px;
+  border-left: 1px solid #fff;
+  opacity: 0.5; }
+
+#userPortlet11 .info .certify span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: #F26600; }
+
+#userPortlet11 .info .certify.on span {
+  background-color: #3FA837; }
+
+#userPortlet11 .info .certify a {
+  display: inline-flex;
+  align-items: center;
+  color: #666; }
+
+#userPortlet11 .info .certify i {
+  margin-left: 8px; }
+
+#userPortlet11 .info .certify.on i {
+  display: none; }
+
+#userPortlet11 .link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 15px; }
+
+#userPortlet11 .link a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  font-size: 14px; }
+
+#userPortlet11 .link a span.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #2D9FE0; }
+
+#userPortlet11 .link a:hover {
+  text-decoration: none; }
+
+#userPortlet11 .access {
+  padding-top: 5px;
+  font-size: 14px;
+  border-top: 1px dashed #DBDBDB; }
+
+#userPortlet11 .access > div {
+  padding-top: 10px; }
+
+#userPortlet11 .alim {
+  position: absolute;
+  top: 20px;
+  right: 43px;
+  font-size: 12px; }
+
+#userPortlet11 .alim i {
+  margin-right: 5px;
+  font-size: 20px; }
+
+#userPortlet11 .alim span {
+  position: absolute;
+  top: -10px;
+  right: -32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 22px;
+  color: #0869A1;
+  font-size: 12px;
+  font-family: "s-core_dream6_bold";
+  border-radius: 11px;
+  background-color: #FFE65E; }
+
+#userPortlet11 .user-name {
+  color: blue;
+  font-weight: bold; }
+</style><style>#userPortlet115 .board-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 225px;
+  padding-bottom: 10px; }
+
+@media (min-width: 1200px) {
+  #userPortlet115 .board-wrap {
+    height: 100%; } }
+
+#userPortlet115 .board-tab .title {
+  position: relative;
+  height: 35px;
+  padding: 0 10px;
+  font-family: "s-core_dream6_bold";
+  z-index: 1; }
+
+#userPortlet115 .board-tab .title a {
+  color: #757575;
+  font-size: 16px; }
+
+#userPortlet115 .board-tab .title.active a {
+  color: #0571AF; }
+
+#userPortlet115 .board-tab .title.active::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid #0571AF; }
+
+#userPortlet115 .board-tab ul {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: calc( 100% - 35px);
+  margin: 0;
+  padding-top: 10px;
+  border-top: 2px solid #D2D2D2; }
+
+#userPortlet115 .board-tab ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 6px 0; }
+
+#userPortlet115 .board-tab ul li::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #333; }
+
+#userPortlet115 .board-tab ul li a {
+  display: block;
+  width: calc( 100% - 50px);
+  padding-left: 15px;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet115 .board-tab ul li .date {
+  padding-bottom: 2px;
+  color: #848484;
+  font-size: 12px; }
+</style><style>#userPortlet116 .board-list {
+  margin: 0; }
+
+#userPortlet116 .board-list li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 17px;
+  margin-bottom: 0;
+  position: relative; }
+
+#userPortlet116 .board-list li:last-child {
+  padding-bottom: 0; }
+
+#userPortlet116 .board-list li::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #333; }
+
+#userPortlet116 .board-list li a {
+  display: block;
+  width: calc( 100% - 85px);
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet116 .board-list li .date {
+  padding-bottom: 2px;
+  color: #848484;
+  font-size: 12px; }
+</style><style>#userPortlet247 .sso-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet247 .sso-link {
+    align-content: space-around; } }
+
+#userPortlet247 .sso-link div {
+  width: 25%;
+  text-align: center; }
+
+#userPortlet247 .sso-link div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-size: 14px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet247 .sso-link div a {
+    font-size: 12px; } }
+
+#userPortlet247 .sso-link div .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background-color: #F2F2F2; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet247 .sso-link div .icon {
+    width: 55px;
+    height: 55px; } }
+
+#userPortlet247 .sso-link div .txt {
+  line-height: 120%; }
+</style><style>#userPortlet24292 .label {
+  display: inline-block;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+#userPortlet24292 span.orange {
+  background-color: #F26600;
+  border: 1.5px solid #F26600; }
+
+#userPortlet24292 span.green {
+  /*background-color: #2C9A0A;*/
+  background-color: #fff;
+  border: 1.5px solid #F26600; }
+
+#userPortlet24292 span.text-orange {
+  color: #595959; }
+
+#userPortlet24292 span.text-green {
+  color: #595959; }
+
+#userPortlet24292 .schedule {
+  width: 100%;
+  height: 100%; }
+
+#userPortlet24292 .calendar {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
+#userPortlet24292 .calendar-wrap {
+  height: calc( 100% - 50px); }
+
+#userPortlet24292 .calendar-wrap .calendar {
+  height: 100%;
+  display: none; }
+
+#userPortlet24292 .calendar .date {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #0571AF;
+  padding-left: 0; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet24292 .calendar .date {
+    padding: 0 10px; } }
+
+#userPortlet24292 .calendar .date .year {
+  padding-right: 15px;
+  color: #0571AF;
+  font-size: 16px; }
+
+#userPortlet24292 .calendar .date .month {
+  display: inline-flex;
+  align-items: center;
+  color: #0571AF; }
+
+#userPortlet24292 .calendar .date .month a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #0571AF; }
+
+#userPortlet24292 .calendar .date .month span {
+  margin: 0 8px;
+  font-size: 22px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet24292 .calendar .label-groups {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 12px; }
+
+#userPortlet24292 .calendar .label-groups div {
+  margin-left: 15px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet24292 .calendar .label-groups {
+    top: 24px; }
+  #userPortlet24292 .calendar .label-groups div {
+    margin-left: 5px; } }
+
+#userPortlet24292 .calendar .label-groups div.gray {
+  background-color: #666;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-left: 5px; }
+
+#userPortlet24292 .calendar .label-groups div.gray a {
+  font-size: 14px;
+  color: #ffffff; }
+
+#userPortlet24292 .calendar table {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px; }
+
+#userPortlet24292 .calendar table thead th {
+  padding-bottom: 5px;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center; }
+
+#userPortlet24292 .calendar table thead td {
+  padding-bottom: 5px;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center; }
+
+#userPortlet24292 .calendar table tbody td {
+  position: relative;
+  height: 35px;
+  padding: 5px;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: top; }
+
+#userPortlet24292 .calendar table thead tr th:first-child,
+#userPortlet24292 .calendar table tbody tr td:first-child {
+  color: #DD3838; }
+
+#userPortlet24292 .calendar table thead tr th:last-child,
+#userPortlet24292 .calendar table tbody tr td:last-child {
+  color: #459ABD; }
+
+#userPortlet24292 .calendar table tbody td > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%; }
+
+#userPortlet24292 .calendar table tbody td > span.today {
+  color: #fff;
+  background-color: #68A4C6; }
+
+#userPortlet24292 .calendar table tbody td .label {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  text-align: center; }
+
+#userPortlet24292 .calendar table tbody td .label > span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 2px;
+  border-radius: 50%; }
+
+#userPortlet24292 .content {
+  width: 100%;
+  height: 90%;
+  padding-top: 20px; }
+
+#userPortlet24292 .content .box {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid #EDEDED;
+  overflow-y: scroll; }
+
+#userPortlet24292 .content .box .list {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px; }
+
+#userPortlet24292 .content .box .list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 123px;
+  height: 100%;
+  border-right: 1px dashed #DBDBDB;
+  background-color: #F5FBFF;
+  z-index: 0; }
+
+#userPortlet24292 .content .box .list span {
+  z-index: 1; }
+
+#userPortlet24292 .content .box .list .date {
+  width: 105px;
+  text-align: right;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet24292 .content .box .list .label {
+  margin: 5px 12px 0; }
+
+#userPortlet24292 .content .box .list .txt {
+  width: calc( 100% -  140px); }
+</style><style>#userPortlet135 .edu {
+  width: 100%;
+  height: 100%; }
+
+#userPortlet135 .edu .edu-current {
+  display: flex; }
+
+#userPortlet135 .edu .edu-current div {
+  position: relative;
+  width: 50%;
+  padding-left: 10px;
+  color: #0571AF;
+  font-size: 14px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet135 .edu .edu-current div {
+    font-size: 12px; } }
+
+#userPortlet135 .edu .edu-current div::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0571AF; }
+
+#userPortlet135 .edu .edu-current div span {
+  font-size: 16px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet135 .edu .edu-current div span {
+    font-size: 15px; } }
+
+#userPortlet135 .edu .edu-current div.all {
+  color: #666; }
+
+#userPortlet135 .edu .edu-current div.all::before {
+  background-color: #666; }
+
+#userPortlet135 .edu .edu-chart {
+  display: flex;
+  align-items: center;
+  height: calc( 100% - 25px); }
+
+#userPortlet135 .edu .edu-chart .chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center; }
+
+#userPortlet135 .edu .edu-chart .chart .progress-bar {
+  position: relative;
+  width: 95px;
+  height: 95px;
+  margin: 10px 0;
+  border-radius: 50%; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet135 .edu .edu-chart .chart .progress-bar {
+    width: 75px;
+    height: 75px; } }
+
+#userPortlet135 .edu .edu-chart .chart .progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 14px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet135 .edu .edu-chart .chart .progress-bar span {
+    font-size: 12px; } }
+
+#userPortlet135 .edu .edu-chart .chart ul {
+  margin: 0; }
+
+#userPortlet135 .edu .edu-chart .chart ul li {
+  margin-bottom: 2px;
+  color: #999;
+  font-size: 14px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #userPortlet135 .edu .edu-chart .chart ul li {
+    font-size: 12px; } }
+
+#userPortlet135 .edu .edu-chart .chart ul li span.tit {
+  color: #666;
+  margin-right: 7px; }
+
+#userPortlet135 .edu .edu-chart .chart ul li span.my {
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet135 .edu .edu-chart .chart.chart1 ul li span.my {
+  color: #0571AF; }
+
+#userPortlet135 .edu .edu-chart .chart.chart2 ul li span.my {
+  color: #38A0DC; }
+
+#userPortlet135 .edu .edu-chart .chart.chart3 ul li span.my {
+  color: #3AB115; }
+</style><style>#userPortlet4794 .onestop {
+  width: 100%;
+  height: calc( 100% - 45px);
+  margin-bottom: 10px;
+  border-top: 2px solid #0571AF;
+  overflow-y: scroll; }
+
+#userPortlet4794 .onestop .list {
+  padding: 5px 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 160%;
+  border-bottom: 1px solid #E3E3E3; }
+
+#userPortlet4794 .btn-groups a {
+  font-size: 14px; }
+</style><style>#userPortlet123 .webmail {
+  width: 100%;
+  height: 100%; }
+
+#userPortlet123 .webmail .list {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 4px 0;
+  border-bottom: 1px solid #E3E3E3; }
+
+#userPortlet123 .webmail .list:last-child {
+  border-bottom: none; }
+
+#userPortlet123 .webmail .list .icon {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #F2F2F2; }
+
+#userPortlet123 .webmail .list .icon::before {
+  content: '\f0e0';
+  color: #F26600;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Font Awesome 6 Pro"; }
+
+#userPortlet123 .webmail .list .content {
+  width: calc( 85%);
+  padding-left: 7px; }
+
+#userPortlet123 .webmail .list .content .sender {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet123 .webmail .list .content a {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet123 .webmail .list .date {
+  width: 100px;
+  color: #666;
+  font-size: 12px;
+  text-align: right; }
+
+#userPortlet123 .webmail .list.open .icon {
+  color: #666;
+  background-color: #F2F2F2; }
+
+#userPortlet123 .webmail .list.open .icon::before {
+  content: '\f2b6';
+  color: #999; }
+
+#userPortlet123 .webmail .list.open .content .sender {
+  color: #ccc; }
+
+#userPortlet123 .webmail .list.open .content a,
+#userPortlet123 .webmail .list.open .date {
+  color: #999; }
+</style><style>#userPortlet122 {
+  /* modal */
+  /* empolyment-list style */ }
+  #userPortlet122 .empolyment {
+    width: 100%;
+    height: 100%; }
+  #userPortlet122 .empolyment .empolyment-search {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  #userPortlet122 .empolyment .empolyment-search select {
+    width: 70px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2; }
+  #userPortlet122 .empolyment .empolyment-search input[type="text"] {
+    width: calc( 80% - 140px);
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #userPortlet122 .empolyment .empolyment-search input[type="text"] {
+      width: calc( 100% - 140px); } }
+  #userPortlet122 .empolyment .empolyment-search a {
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0571AF; }
+  #userPortlet122 .empolyment-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc( 100% - 30px);
+    min-height: 200px; }
+  #userPortlet122 .empolyment-info i {
+    padding-bottom: 20px;
+    color: #5686C5;
+    font-size: 48px; }
+  #userPortlet122 .empolyment-info p {
+    color: #333;
+    font-size: 14px;
+    text-align: center; }
+  #userPortlet122 .empolyment-modal .modal-content {
+    padding: 15px;
+    border-radius: 0; }
+  @media (min-width: 991px) {
+    #userPortlet122 .empolyment-modal .modal-content {
+      padding: 30px 50px; } }
+  #userPortlet122 .empolyment-modal .modal-header {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px 0 10px 0;
+    border: none; }
+  #userPortlet122 .empolyment-modal .modal-header .modal-title {
+    color: #0571AF;
+    font-size: 20px;
+    font-family: s-core_dream6_bold; }
+  #userPortlet122 .empolyment-modal .modal-header .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    background-color: #333;
+    opacity: 1 !important; }
+  @media (min-width: 991px) {
+    #userPortlet122 .empolyment-modal .modal-header .close {
+      top: -14px;
+      right: -34px; } }
+  #userPortlet122 .empolyment-modal .modal-body {
+    padding: 0; }
+  #userPortlet122 table.table.empolyment-list {
+    width: 100%;
+    margin-bottom: 30px;
+    border-top: 2px solid #0571AF; }
+  #userPortlet122 table.table.empolyment-list caption {
+    position: relative;
+    color: #666;
+    font-size: 16px;
+    text-align: left;
+    caption-side: top;
+    padding: 0 0 5px 10px; }
+  #userPortlet122 table.table.empolyment-list caption::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #666; }
+  #userPortlet122 table.table.empolyment-list colgroup {
+    display: none; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list colgroup {
+      display: table-column-group; } }
+  #userPortlet122 table.table.empolyment-list thead {
+    display: none; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list thead {
+      display: table-header-group; } }
+  #userPortlet122 table.table.empolyment-list thead tr th {
+    padding: 0.5rem;
+    color: #0869A1;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid #0571AF;
+    background-color: #fff; }
+  #userPortlet122 table.table.empolyment-list tbody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list tbody {
+      display: contents; } }
+  #userPortlet122 table.table.empolyment-list tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #DBDBDB; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list tbody tr {
+      display: table-row-group;
+      padding: 0;
+      border: none; } }
+  #userPortlet122 table.table.empolyment-list tbody tr td {
+    width: 50%;
+    padding: 4px 10px 4px 0;
+    color: #333;
+    font-size: 14px;
+    border: none;
+    background-color: #fff; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list tbody tr td {
+      width: auto;
+      padding: .5rem;
+      color: #333;
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px solid #DBDBDB;
+      background-color: #fff; } }
+  #userPortlet122 table.table.empolyment-list tbody td .m-title {
+    display: block;
+    width: 100%;
+    color: #38A0DC;
+    font-size: 14px; }
+  @media (min-width: 991px) {
+    #userPortlet122 table.table.empolyment-list tbody td .m-title {
+      display: none; } }
+</style><style>@charset "UTF-8";
+#userPortlet118 .duty-container {
+  width: 100%; }
+
+#userPortlet118 .duty-section + .duty-section {
+  padding-top: 20px; }
+
+#userPortlet118 #daily-duty-section {
+  min-height: 105px; }
+
+#userPortlet118 .section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 28px; }
+
+#userPortlet118 #daily-duty-section .section-header {
+  /* justify-content: space-between; */ }
+
+#userPortlet118 .current-month {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333; }
+
+#userPortlet118 .day-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+
+#userPortlet118 .day-controls > span {
+  padding: 0 10px;
+  color: #2E948E;
+  font-size: 12px;
+  font-family: "s-core_dream6_bold", sans-serif;
+  width: 60px;
+  text-align: center; }
+
+#userPortlet118 #my-weekly-duty-section .section-header {
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 12px; }
+
+#userPortlet118 #my-weekly-duty-section .section-header > .duty-title {
+  font-weight: bold;
+  color: #333; }
+
+#userPortlet118 #my-weekly-duty-section .section-header > .duty-location {
+  color: #333;
+  font-weight: bold; }
+
+#userPortlet118 #my-weekly-duty-section .section-header .week-navigator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto; }
+
+#userPortlet118 .week-navigator .week-range-text {
+  display: inline-block;
+  width: 85px;
+  text-align: center;
+  color: #2E948E;
+  font-size: 12px;
+  font-family: "s-core_dream6_bold", sans-serif; }
+
+#userPortlet118 .day-controls button, #userPortlet118 .week-navigator button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #2E948E;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #D5E6EF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s; }
+
+#userPortlet118 .day-controls button:hover, #userPortlet118 .week-navigator button:hover {
+  background-color: #c0d9e6; }
+
+#userPortlet118 .duty-section table {
+  width: 100%;
+  border-top: 2px solid #11A69D;
+  table-layout: fixed;
+  border-collapse: collapse; }
+
+#userPortlet118 .duty-section thead th,
+#userPortlet118 .duty-section tbody td {
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #DBDBDB;
+  border-left: 1px solid #DBDBDB;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet118 .duty-section thead th {
+  font-weight: 600;
+  background-color: #E7F5F3; }
+
+#userPortlet118 .duty-section table th:first-child,
+#userPortlet118 .duty-section table td:first-child {
+  border-left: none; }
+
+#userPortlet118 #my-duty-table th:nth-child(n+6),
+#userPortlet118 #my-duty-table td:nth-child(n+6) {
+  display: none;
+  /* 이 부분을 주석처리하면 토요일/일요일이 다시 나타납니다. */ }
+
+#userPortlet118 .js-work-list tbody tr td:nth-of-type(2) {
+  color: #1D948D;
+  font-weight: 600; }
+
+#userPortlet118 #my-duty-table td.on-duty {
+  font-weight: bold;
+  color: #11A69D; }
+
+#userPortlet118 #my-duty-table td.today {
+  border: 2px solid #E63946;
+  font-weight: bold; }
+
+#userPortlet118 .week-navigator button:disabled,
+#userPortlet118 .week-navigator button.disabled {
+  opacity: 0.4;
+  /*cursor: not-allowed;*/ }
+</style><style>#userPortlet142 .lib {
+  width: 100%;
+  height: 100%; }
+
+#userPortlet142 .lib .lib-box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; }
+
+#userPortlet142 .lib .lib-box > div {
+  width: 49%;
+  padding: 8px 10px;
+  border-radius: 5px; }
+
+#userPortlet142 .lib .lib-box > div.blue-bg {
+  color: #0571af;
+  background-color: #def1fc; }
+
+#userPortlet142 .lib .lib-box > div.orange-bg {
+  color: #b14e06;
+  background-color: #ffeee1; }
+
+#userPortlet142 .lib .lib-box > div .tit {
+  font-size: 14px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet142 .lib .lib-box > div .tit i {
+  margin-right: 7px; }
+
+#userPortlet142 .lib .lib-box > div .number {
+  text-align: right;
+  font-size: 14px; }
+
+#userPortlet142 .lib .lib-box > div .number span {
+  font-size: 28px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet142 .lib .lib-box > div .number span a {
+  color: #0571AF; }
+
+#userPortlet142 .lib .lib-box > div.orange-bg .number span a {
+  color: #b14e06; }
+
+#userPortlet142 .lib-list {
+  margin: 0;
+  padding-top: 15px;
+  width: 100%;
+  height: calc( 100% - 80px); }
+
+#userPortlet142 .lib-list li {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+  padding: 5px 0 5px 15px;
+  position: relative;
+  color: #333;
+  border-bottom: 1px solid #F3F3F3; }
+
+#userPortlet142 .lib-list li::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #333; }
+
+#userPortlet142 .lib-list li a {
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+</style><style>@charset "UTF-8";
+#userPortlet4796 {
+  /* modal */
+  /* 포틀릿 설문조사 상세 */ }
+  #userPortlet4796 .polls {
+    width: 100%;
+    height: 100%; }
+  #userPortlet4796 .polls .a-poll {
+    position: relative;
+    width: 100%;
+    height: 83%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #E3E3E3; }
+  #userPortlet4796 .polls .a-poll .title {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+    font-family: 's-core_dream5_medium'; }
+  #userPortlet4796 .polls .a-poll .title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  #userPortlet4796 .polls .a-poll .title i {
+    padding-top: 3px;
+    padding-right: 10px;
+    color: #0571AF;
+    font-size: 18px; }
+  #userPortlet4796 .polls .a-poll .period {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #0571AF;
+    font-size: 14px; }
+  #userPortlet4796 .polls .a-poll .period i {
+    padding-top: 3px;
+    padding-right: 10px;
+    color: #0571AF;
+    font-size: 18px; }
+  #userPortlet4796 .polls .a-poll .content {
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; }
+  @media (min-width: 991px) {
+    #userPortlet4796 .polls .a-poll .content {
+      -webkit-line-clamp: 3; } }
+  #userPortlet4796 .polls .a-poll .vote-box {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0571AF; }
+  #userPortlet4796 .poll-paging {
+    padding-top: 12px;
+    color: #999;
+    font-size: 14px; }
+  #userPortlet4796 .poll-paging div {
+    display: inline-block;
+    padding: 0 20px; }
+  #userPortlet4796 .poll-paging div .poll-count {
+    color: #0571AF; }
+  #userPortlet4796 .poll-paging a {
+    color: #999; }
+  #userPortlet4796 .poll-modal .modal-content {
+    padding: 15px;
+    border-radius: 0; }
+  @media (min-width: 991px) {
+    #userPortlet4796 .poll-modal .modal-content {
+      padding: 30px 50px; } }
+  #userPortlet4796 .poll-modal .modal-header {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid #0571AF; }
+  #userPortlet4796 .poll-modal .modal-header .modal-title {
+    color: #0571AF;
+    font-size: 18px;
+    font-family: s-core_dream6_bold; }
+  #userPortlet4796 .poll-modal .modal-header .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    background-color: #333;
+    opacity: 1 !important; }
+  @media (min-width: 991px) {
+    #userPortlet4796 .poll-modal .modal-header .close {
+      top: -14px;
+      right: -34px; } }
+  #userPortlet4796 .poll-modal .modal-body {
+    padding: 0; }
+  #userPortlet4796 .poll-view .poll-content {
+    width: 100%;
+    padding: 15px 0;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #DBDBDB; }
+  #userPortlet4796 .poll-view .poll-content .tit {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-family: "s-core_dream6_bold"; }
+  #userPortlet4796 .poll-view .poll-content .date {
+    padding: 10px 0;
+    color: #666; }
+  #userPortlet4796 .poll-view .poll-question {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #DBDBDB; }
+  #userPortlet4796 .poll-view .poll-section .poll-section-title {
+    position: relative;
+    margin: 15px 0 0 0;
+    padding-left: 10px;
+    color: #333;
+    font-size: 16px;
+    font-family: "s-core_dream6_bold"; }
+  #userPortlet4796 .poll-view .poll-section .poll-section-title::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #333; }
+  #userPortlet4796 .poll-view .poll-question .card-header {
+    padding: 0;
+    border: none;
+    background: transparent; }
+  #userPortlet4796 .poll-view .poll-question .card-header .card-title {
+    padding-bottom: 10px; }
+  #userPortlet4796 .poll-view .poll-question .card-header .card-title .q-ask {
+    display: flex;
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    font-family: "s-core_dream6_bold"; }
+  #userPortlet4796 .poll-view .poll-question .card-header .card-title .q-ask span.num {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "s-core_dream4_regular";
+    background: #0869A1; }
+  #userPortlet4796 .poll-view .poll-question .card-header .card-title .q-ask span.txt {
+    width: calc(100% - 35px);
+    padding-top: 2px; }
+  #userPortlet4796 .poll-view .poll-question .card-header .card-title .poll-item-desc {
+    display: block;
+    width: 100%;
+    margin-top: -2px;
+    padding-left: 35px; }
+  #userPortlet4796 .poll-view .poll-question .card-body {
+    padding: 0 0 0 35px; }
+  #userPortlet4796 .poll-view .poll-question .card-body.poll-item-body-PERSONINFO {
+    padding-left: 0; }
+  #userPortlet4796 .poll-view .poll-question .card-body input[type="text"],
+  #userPortlet4796 .poll-view .poll-question .card-body input[type="email"],
+  #userPortlet4796 .poll-view .poll-question .card-body select {
+    height: 34px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #DBDBDB;
+    background-color: #F2F2F2; }
+  #userPortlet4796 .poll-view .poll-question .card-body textarea {
+    width: 100%;
+    min-height: 65px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #DBDBDB;
+    background-color: #F2F2F2; }
+  #userPortlet4796 .poll-view .poll-question .card-body .list-group .list-group-item {
+    padding: 3px 0;
+    border: none; }
+</style><style>#userPortlet121 {
+  /*.meal-box .meal-list .content .time .label {*/
+  /*    display: inline-flex;*/
+  /*    justify-content: center;*/
+  /*    align-items: center;*/
+  /*    padding: .1rem .5rem;*/
+  /*    margin-left: 5px;*/
+  /*    color: #fff;*/
+  /*    font-size: 12px;*/
+  /*    border-radius: 5px;*/
+  /*    background-color: #258209;*/
+  /*}*/ }
+  #userPortlet121 .meal {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal {
+      flex-wrap: nowrap; } }
+  #userPortlet121 .meal-date {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 15%; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date {
+      display: block;
+      width: 33%;
+      height: 100%;
+      padding-right: 10px;
+      margin-top: -9px;
+      padding-bottom: 0; } }
+  @media (min-width: 1400px) {
+    #userPortlet121 .meal-date {
+      padding-right: 20px; } }
+  #userPortlet121 .meal-date .date-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #258209; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .date-box {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      /*border: 1px solid #DBDBDB;*/ } }
+  #userPortlet121 .meal-date .date-box .month {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 10px;
+    font-size: 14px; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .date-box .month {
+      justify-content: center;
+      width: 100%;
+      padding: 0px 0 0 0;
+      text-align: center; } }
+  #userPortlet121 .meal-date .date-box .day {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .date-box .day {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      /*padding-bottom: 40px;*/
+      padding-bottom: 0; } }
+  #userPortlet121 .meal-date .date-box .day .today {
+    margin: 0 10px; }
+  #userPortlet121 .meal-date .date-box .day .calendar-day {
+    font-size: 26px;
+    font-family: "s-core_dream6_bold"; }
+  #userPortlet121 .meal-date .date-box .day a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #2C9A0A; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .date-box .day a {
+      position: absolute;
+      bottom: 0px;
+      width: 50%;
+      height: 36px;
+      background: transparent;
+      color: #2c9a0a; }
+    #userPortlet121 .meal-date .date-box .day a.meal-prev {
+      left: -15px;
+      border-radius: 0 0 0 5px; }
+    #userPortlet121 .meal-date .date-box .day a.meal-prev::after {
+      /*content: '';*/
+      /*position: absolute;*/
+      /*right: 0;*/
+      /*display: inline-block;*/
+      /*width: 1px;*/
+      /*height: 17px;*/
+      /*border-right: 1px solid rgba(255, 255, 255, .5);*/
+      content: none; }
+    #userPortlet121 .meal-date .date-box .day a.meal-next {
+      right: -15px;
+      border-radius: 0 0 5px 0; } }
+  #userPortlet121 .meal-date .meal-place {
+    display: none; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .meal-place {
+      display: block;
+      margin-top: 0px; } }
+  #userPortlet121 .meal-date .meal-place .place-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    padding: .2rem .5rem;
+    margin-left: 5px;
+    color: #333;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2;
+    cursor: pointer; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-date .meal-place .place-title {
+      width: 100%;
+      margin-top: 3px;
+      margin-left: 0;
+      padding: .3rem .5rem; } }
+  #userPortlet121 .meal-date .meal-place .place-title.active {
+    color: #fff;
+    background-color: #333; }
+  #userPortlet121 .meal-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 85%;
+    padding-top: 10px;
+    border-top: 1px dashed #E3E3E3; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-box {
+      width: 70%;
+      height: 100%;
+      padding-top: 0;
+      padding-left: 5px;
+      border-top: none;
+      border-left: 1px dashed #E3E3E3; } }
+  @media (min-width: 1400px) {
+    #userPortlet121 .meal-box {
+      padding-left: 20px; } }
+  #userPortlet121 .meal-box .meal-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center; }
+  #userPortlet121 .meal-box .meal-tab .tab-title {
+    display: block;
+    width: 49%; }
+  #userPortlet121 .meal-box .meal-tab .tab-title a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .3rem 1rem;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #757575; }
+  #userPortlet121 .meal-box .meal-tab .tab-title.active a {
+    background-color: #0571AF; }
+  #userPortlet121 .meal-box .meal-list {
+    width: 100%;
+    height: calc( 100% - 45px);
+    padding: 0 2.5px; }
+  #userPortlet121 .meal-box .meal-list .content {
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-box .meal-list .content {
+      width: 100%; } }
+  #userPortlet121 .meal-box .meal-list .content .time {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px; }
+  #userPortlet121 .meal-box .meal-list .content .time i {
+    margin-right: 5px; }
+  #userPortlet121 .meal-box .meal-list .content .time .green-txt {
+    color: #258209;
+    font-family: 's-core_dream6_bold'; }
+  #userPortlet121 .meal-box .meal-list .content .time .label {
+    display: flex;
+    justify-content: flex-start;
+    padding: .1rem .5rem;
+    color: #333;
+    font-size: 12px;
+    position: relative; }
+  #userPortlet121 .meal-box .meal-list .content .time .label:before {
+    content: '';
+    position: absolute;
+    padding-left: 3px;
+    width: 3px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+  #userPortlet121 .meal-box .meal-list .content .alert {
+    height: calc( 100% - 35px);
+    margin: 0;
+    padding: 13px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow-y: scroll; }
+  #userPortlet121 .meal-box .meal-list .content .alert ul {
+    display: flex;
+    flex-wrap: wrap; }
+  #userPortlet121 .meal-box .meal-list .content .alert ul li {
+    position: relative;
+    padding: 2px 30px 2px 10px;
+    color: #333;
+    font-size: 14px; }
+  #userPortlet121 .meal-box .meal-list .content .alert ul li::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #333; }
+  #userPortlet121 .m-meal {
+    position: relative; }
+  #userPortlet121 .m-meal.m-meal-open {
+    display: block !important; }
+  @media (min-width: 991px) {
+    #userPortlet121 .m-meal.reaction {
+      display: none; } }
+  @media (max-width: 991px) {
+    #userPortlet121 .m-meal.reaction {
+      display: block; } }
+  #userPortlet121 .meal-place .meal-select {
+    display: none; }
+  #userPortlet121 .meal-place.m-meal .meal-select {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 3px 20px 3px 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    min-width: 129px; }
+  #userPortlet121 .meal-place.m-meal .meal-select:before {
+    position: absolute;
+    content: '\f078';
+    font-family: "Font Awesome 6 Pro";
+    right: 3px; }
+  @media (min-width: 1200px) {
+    #userPortlet121 .meal-place.m-meal .meal-select {
+      padding: 4px 5px; } }
+  #userPortlet121 .m-meal .meal-place-items {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 100;
+    /*overflow-y: scroll;*/
+    max-height: 160px; }
+  #userPortlet121 .m-meal .meal-place-items .place-title {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 0px;
+    border: 0;
+    padding: 5px;
+    border-bottom: 1px solid #dbdbdb; }
+  #userPortlet121 .meal-date .meal-place.m-meal .place-title {
+    width: 100%;
+    margin-left: 0; }
+  #userPortlet121 .m-meal .meal-place-items div:hover {
+    background-color: #f0f0f0; }
+  #userPortlet121 .m-meal.open .meal-place-items {
+    display: block; }
+</style><style>#userPortlet5446 .year-table {
+  width: 100%; }
+
+#userPortlet5446 .year-table thead th {
+  padding: 10px 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  border: 1px solid #E3E3E3; }
+
+#userPortlet5446 .year-table tbody td {
+  padding: 7px 3px;
+  text-align: center;
+  border: 1px solid #E3E3E3; }
+
+#userPortlet5446 .year-table tbody td strong {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-family: "s-core_dream6_bold"; }
+
+#userPortlet5446 .year-table tbody td span {
+  display: block;
+  color: #666;
+  font-size: 12px; }
+
+#userPortlet5446 .year-table thead th:nth-of-type(1) {
+  background-color: #333; }
+
+#userPortlet5446 .year-table thead th:nth-of-type(2) {
+  background-color: #0571AF; }
+
+#userPortlet5446 .year-table thead th:nth-of-type(3) {
+  background-color: #2C9A0A; }
+
+#userPortlet5446 .year-table thead th:nth-of-type(4) {
+  background-color: #F26600; }
+
+#userPortlet5446 .year-table tbody td:nth-of-type(1) {
+  background-color: #F2F2F2; }
+</style><style>#userPortlet4795 .link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0; }
+
+#userPortlet4795 .link-list li {
+  width: 48%;
+  margin-bottom: 15px; }
+
+#userPortlet4795 .link-list li a {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  color: #333;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid #EFEFEF;
+  background-color: #F2F2F2; }
+
+#userPortlet4795 .link-list li a::after {
+  content: '\f08e';
+  font-family: "Font Awesome 6 Pro"; }
+
+#userPortlet4795 .link-list li a span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet4795 .link-list li.all a {
+  color: #fff;
+  background-color: #0571AF; }
+
+#userPortlet4795 .link-list li.all a::after {
+  content: '\f03a'; }
+</style><style>@charset "UTF-8";
+#userPortlet23974 .course-list {
+  margin: 0;
+  width: 100%;
+  padding-top: 15px; }
+
+#userPortlet23974 .course-list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #333;
+  border-radius: 5px;
+  background-color: #F2F2F2; }
+
+#userPortlet23974 .course-list li::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #666; }
+
+#userPortlet23974 .course-list li span.text {
+  width: calc(100% - 100px);
+  font-size: 14px;
+  -webkit-line-clamp: 2;
+  /* 두 줄까지만 표시 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  height: calc(2 * 1.4em);
+  /* 2줄 높이 (line-height 기준) */
+  -webkit-box-orient: vertical; }
+
+#userPortlet23974 .course-list li .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 26px;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #666; }
+</style><style>#userPortlet26459 .course-list {
+  margin: 0;
+  width: 100%;
+  padding-top: 15px; }
+
+#userPortlet26459 .course-list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #333;
+  border-radius: 5px;
+  background-color: #F2F2F2; }
+
+#userPortlet26459 .course-list li::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #666; }
+
+#userPortlet26459 .course-list li span.text {
+  display: inline-block;
+  width: calc(100% - 100px);
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet26459 .course-list li .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 26px;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #666; }
+</style><style>#userPortlet26458 .course-list {
+  margin: 0;
+  width: 100%;
+  padding-top: 15px; }
+
+#userPortlet26458 .course-list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #333;
+  border-radius: 5px;
+  background-color: #F2F2F2; }
+
+#userPortlet26458 .course-list li::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #666; }
+
+#userPortlet26458 .course-list li span.text {
+  display: inline-block;
+  width: calc(100% - 100px);
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#userPortlet26458 .course-list li .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85px;
+  height: 26px;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #666; }
+</style><style>#userPortlet26462 .bus {
+  width: 100%;
+  height: 100%; }
+
+#userPortlet26462 .bus .tab-wrap {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+#userPortlet26462 .bus .tab-wrap .tab-title {
+  display: inline-flex; }
+
+#userPortlet26462 .bus .tab-wrap .tab-title a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem 1rem;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #999; }
+
+#userPortlet26462 .bus .tab-wrap .tab-title.active a {
+  background-color: #0571AF; }
+
+#userPortlet26462 .bus .bus-box {
+  position: relative;
+  height: 490px;
+  max-height: calc(100% - 50px); }
+
+#userPortlet26462 .bus .bus-box p {
+  font-size: 13px; }
+
+#userPortlet26462 .bus #map {
+  width: 100%;
+  height: 410px;
+  border-radius: 5px;
+  border: 1px solid #E3E3E3; }
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  #userPortlet26462 .bus #map {
+    max-height: calc(100% - 100px); } }
+</style><style>#userPortlet4793 .reginfo-wrap {
+  width: 100%;
+  border-top: 2px solid #0571AF; }
+
+#userPortlet4793 .reginfo-wrap .reginfo-list {
+  display: flex;
+  padding: 10px 10px 8px;
+  border-bottom: 1px solid #E3E3E3; }
+
+#userPortlet4793 .reginfo-wrap .reginfo-list .number {
+  display: inline-flex;
+  justify-content: center;
+  width: 34px;
+  height: 20px;
+  padding-top: 2px;
+  color: #fff;
+  font-size: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(pub/site/portal/images/common/nom_bg.svg); }
+
+#userPortlet4793 .reginfo-wrap .reginfo-list a {
+  position: relative;
+  display: block;
+  width: calc( 100% - 34px);
+  padding-left: 5px;
+  color: #333;
+  font-size: 14px; }
+
+#userPortlet4793 .reginfo-wrap .reginfo-list a::after {
+  content: '\f08e';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 12px;
+  font-family: "Font Awesome 6 Pro"; }
+</style></head>
+<body>
+<!--<div class="top-banner text-center">
+	<a href="https://portal.jejunu.ac.kr/board/notice.htm?act=view&seq=240487" ><img src="pub/site/portal/images/common/top_banner.jpg" alt="2025년 2월 3일 학생경력관리 시스템이 신규오픈 합니다." class="d-none d-lg-block img-fluid"></a>
+	<a href="https://portal.jejunu.ac.kr/board/notice.htm?act=view&seq=240487" ><img src="pub/site/portal/images/common/top_banner_m.jpg" alt="2025년 2월 3일 학생경력관리 시스템이 신규오픈 합니다." class="d-lg-none img-fluid"></a>
+	<p class="close-btn"><a ><i class="fal fa-times"><small>닫기</small></i></a></p>
+</div>-->
+<a href="#main-index" class="sr-only skip-nvi sr-only-focusable">본문 바로가기</a>
+
+<div id="header" class="header">
+	<div class="container">
+		<h1><a href="portal_index.htm"><img src="pub/site/portal/images/common/main_logo.svg" alt="제주대학교 포털"></a></h1>
+		<div class="btn-group">
+			<!--<a class="bell-btn d-lg-none" href="#"><i class="fa-solid fa-bell"><span>알림</span></i><span class="bell-label">5</span></a>-->
+			<a class="search-btn d-lg-none" href="#"><img src="pub/site/portal/images/common/search_icon.svg" alt="검색 열기"></a>
+			<a class="menu-btn d-lg-none" href="#"><i class="fa-solid fa-bars"><span>메뉴 열기</span></i></a>
+		</div>
+		<div class="search-box">
+			<form action="sitehelp/searchmenu.htm">
+				<label for="q" class="d-lg-none">메뉴검색</label>
+				<input type="text" value="" id="q" name="q" title="메뉴검색" placeholder="메뉴검색">
+				<button type="submit" title="검색"><i class="fa-solid fa-magnifying-glass"><span>메뉴검색</span></i></button>
+				<a href="#" class="close-btn d-lg-none"><i class="fa-regular fa-xmark"><span>검색 닫기</span></i></a>
+			</form>
+		</div>
+	</div><!-- container -->
+	<div class="m-menu">
+		<div class="container">
+			<div class="top-util">
+				<ul class="list-unstyled link-group">
+					<li class="ml-0"><a href="api/user/sso/tis" title="새창" target="_blank">통합정보</a></li>
+					<li><a href="api/user/sso/jnuclass" title="새창" target="_blank">JNUclass</a></li>
+					<!--<li><a href="api/user/sso/eclips" title="새창" target="_blank">e-CLIPs</a></li>-->
+					<li><a href="http://jejunu.ac.kr" title="새창" target="_blank">홈페이지</a></li>
+				</ul>
+				<a href="portal_index.htm" class="d-lg-none"><i class="fa-solid fa-house"><span>메인으로</span></i></a>
+				<div class="login-box">
+					<a href="#" class="js-logout">로그아웃</a>
+					<a href="mypage.htm">마이페이지</a>
+				</div>
+ <a href="index.htm?act=edit" class="d-none d-lg-block"><i class="fa-solid fa-gear"><span>설정</span></i></a>  				<a href="activities/manual.htm"><i class="fa-regular fa-circle-question"><span>도움말</span></i></a>
+				<div class="language">
+					<a href="#"><i class="fa-solid fa-globe"><span>언어선택목록</span></i></a>
+					<div class="language-list">
+						<a href="?lang=ko">한국어</a>
+						<a href="?lang=en">English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="gnb" class="gnb">
+			<div class="container">
+				<h2 class="sr-only">주메뉴</h2>
+             						<div class="gnb-menu">
+								<h3><a class="" href="support.htm">행정지원</a></h3>
+							<ul class="list-unstyled gnb-submenu" style="display: none;">
+ 									<li>
+										
+											<a class=" " href="support/rule.htm">대학규정</a>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="support/academic.htm">학사일정</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="support/academic/calendar.htm">학사일정</a></li>
+  														<li><a class="" href="support/academic/cancellation.htm">휴강일일정</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="support/personnel.htm">인사급여</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="support/personnel/staffsearch.htm">교직원검색</a></li>
+  														<li><a class="" href="support/personnel/facultyinfo.htm">인사기본정보</a></li>
+  														<li><a class="" href="support/personnel/salary.htm">급여내역조회</a></li>
+  														<li><a class="" href="support/personnel/promotion.htm">승진후보자명부순위</a></li>
+  														<li><a class="" href="support/personnel/performance.htm">성과평가결과</a></li>
+  														<li><a class="" href="support/personnel/duty.htm">근무성적평가결과</a></li>
+ 											</ul>
+									</li>
+    									<li>
+										
+											<a class=" " href="support/qsreference.htm">평판도조사QR</a>
+									</li>
+ 							</ul>
+						</div>
+  						<div class="gnb-menu">
+								<h3><a class="" href="activities.htm">교내활동</a></h3>
+							<ul class="list-unstyled gnb-submenu" style="display: none;">
+ 									<li>
+										
+											<a class=" " href="activities/manual.htm">포털이용안내</a>
+									</li>
+    									<li>
+										
+											<a class="  menu-3deps " href="activities/information.htm">캠퍼스안내</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="activities/information/bus.htm">캠퍼스순환버스</a></li>
+  														<li><a class="" href="activities/information/map.htm">캠퍼스맵</a></li>
+  														<li><a class="" href="activities/information/cafeteria.htm">식당메뉴안내</a></li>
+  														<li><a class="" href="activities/information/facility.htm">시설이용안내</a></li>
+  														<li><a class="" href="activities/information/office365.htm">오피스365인증</a></li>
+  														<li><a class="" href="activities/information/software.htm">학내SW이용안내</a></li>
+  														<li><a class="" href="activities/information/wifi.htm">WIFI이용안내</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="activities/onestop.htm">ONE-STOP서비스</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="activities/onestop/repair.htm">시설물보수신청</a></li>
+  														<li><a class="" href="activities/onestop/itoutage.htm">IT장애신청</a></li>
+ 											</ul>
+									</li>
+          									<li>
+										
+											<a class="  menu-3deps " href="activities/lifelong.htm">평생교육원</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="activities/lifelong/information.htm">평생교육원 안내</a></li>
+  														<li><a class="" href="activities/lifelong/class.htm">수강신청/강좌조회</a></li>
+  														<li><a class="" href="activities/lifelong/myclass.htm">수강신청내역</a></li>
+   											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="activities/language.htm">언어교육원</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="activities/language/information.htm">언어교육원 안내</a></li>
+  														<li><a class="" href="activities/language/class.htm">수강신청/강좌조회</a></li>
+  														<li><a class="" href="activities/language/myclass.htm">수강신청내역</a></li>
+   											</ul>
+									</li>
+                									<li>
+										
+											<a class="  menu-3deps " href="activities/comparative.htm">비교과프로그램</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="activities/comparative/guide.htm">비교과프로그램 소개</a></li>
+  														<li><a class="" href="activities/comparative/notice.htm">비교과프로그램 공지사항</a></li>
+  														<li><a class="" href="activities/comparative/apply.htm">비교과프로그램 신청하기</a></li>
+  														<li><a class="" href="activities/comparative/applysearch.htm">비교과프로그램 신청내역</a></li>
+  														<li><a class="" href="activities/comparative/survey.htm">비교과프로그램 설문조사</a></li>
+ 											</ul>
+									</li>
+ 							</ul>
+						</div>
+  						<div class="gnb-menu">
+								<h3><a class="" href="board.htm">게시판</a></h3>
+							<ul class="list-unstyled gnb-submenu" style="display: none;">
+ 									<li>
+										
+											<a class=" " href="board/notice.htm">공지사항</a>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="board/professor.htm">교원공지</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="board/professor/academic.htm">학사</a></li>
+  														<li><a class="" href="board/professor/education.htm">교무</a></li>
+  														<li><a class="" href="board/professor/ability.htm">교수역량</a></li>
+ 											</ul>
+									</li>
+    									<li>
+										
+											<a class=" " href="board/transfer2.htm">직원인사(코러스)</a>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/facultynews.htm">교직원동정</a>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="board/undergraduate.htm">학생공지</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="board/undergraduate/academic.htm">학사안내</a></li>
+  														<li><a class="" href="board/undergraduate/classwork.htm">수업</a></li>
+  														<li><a class="" href="board/undergraduate/scholarships.htm">장학</a></li>
+  														<li><a class="" href="board/undergraduate/registration.htm">등록</a></li>
+  														<li><a class="" href="board/undergraduate/volunteer.htm">봉사</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/event.htm">행사알림</a>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/jnuclass.htm">JNUclass(연계)</a>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/jnunews.htm">JNU NEWS</a>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="board/recruitment.htm">채용정보</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="board/recruitment/eclips.htm">채용정보</a></li>
+  														<li><a class="" href="board/recruitment/staffing.htm">교내채용정보</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/jnuboard.htm">제주대게시판</a>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/portalnotice.htm">포털공지사항</a>
+									</li>
+    									<li>
+										
+											<a class=" " href="board/qna.htm">포털문의</a>
+									</li>
+  									<li>
+										
+											<a class=" " href="board/corusnotice.htm">KORUS 공지</a>
+									</li>
+      									<li>
+										
+											<a class=" " href="board/korusopinion.htm">KORUS 의견</a>
+									</li>
+   							</ul>
+						</div>
+  						<div class="gnb-menu">
+								<h3><a class="" href="book.htm">시설물예약</a></h3>
+							<ul class="list-unstyled gnb-submenu" style="display: none;">
+ 									<li>
+										
+											<a class="  menu-3deps " href="book/sports.htm">체육시설물</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="book/sports/info.htm">시설안내</a></li>
+  														<li><a class="" href="book/sports/map.htm">위치안내</a></li>
+  														<li><a class="" href="book/sports/notice.htm">공지사항</a></li>
+  														<li><a class="" href="book/sports/apply.htm">예약신청</a></li>
+  														<li><a class="" href="book/sports/check.htm">나의예약</a></li>
+  														<li><a class="" href="book/sports/data.htm">주의사항</a></li>
+  														<li><a class="" href="book/sports/form.htm">신청양식</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="book/hall.htm">아라컨벤션홀</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="book/hall/info.htm">시설안내</a></li>
+  														<li><a class="" href="book/hall/apply.htm">예약신청</a></li>
+  														<li><a class="" href="book/hall/check.htm">나의예약</a></li>
+  														<li><a class="" href="book/hall/status.htm">예약현황</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="book/training.htm">제주대학교연수원</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="book/training/info.htm">시설안내</a></li>
+  														<li><a class="" href="book/training/apply.htm">예약신청</a></li>
+  														<li><a class="" href="book/training/check.htm">나의예약</a></li>
+  														<li><a class="" href="book/training/status.htm">예약현황</a></li>
+ 											</ul>
+									</li>
+  									<li>
+										
+											<a class="  menu-3deps " href="book/muse.htm">아라뮤즈홀</a>
+											<ul class="list-unstyled">
+ 														<li><a class="" href="book/muse/notice.htm">공지사항</a></li>
+  														<li><a class="" href="book/muse/info.htm">시설안내</a></li>
+  														<li><a class="" href="book/muse/event.htm">공연달력</a></li>
+  														<li><a class="" href="book/muse/apply.htm">정기대관</a></li>
+  														<li><a class="" href="book/muse/every.htm">수시대관</a></li>
+  														<li><a class="" href="book/muse/check.htm">나의예약</a></li>
+  														<li><a class="" href="book/muse/data.htm">서식자료</a></li>
+ 											</ul>
+									</li>
+   							</ul>
+						</div>
+                                 			</div>
+		</div><!-- gnb -->
+		<a href="#" class="menu-closebtn d-lg-none"><i class="fa-regular fa-xmark"><span>메뉴 닫기</span></i></a>
+	</div><!-- m-menu -->
+
+
+</div><!-- header -->
+
+
+<div id="main-index" class="main-index">
+     <div class="portlet-content">
+<div class="layout layout-MANAGED layout-3 layout-false">
+	<div class="container"><style type="text/css" gs-style-id="gs-id-0"></style>
+		<div class="grid-stack gs-id-0 gs-6" gs-current-row="6" style="min-height: 1920px;">
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="11" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-id="11" gs-no-move="true" gs-x="0" gs-y="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet11"><div class="card-body overflow-auto portlet-body">
+<div class="name">최현석 <span>제주대학교</span></div>
+<div class="info">직원(일반직원) 접속중
+        <span class="certify">
+            <a href="login.htm?act=certifyCode&amp;removeUrl=true" data-toggle="modal" class="js-global-view-modal" data-title="2차인증 발급코드"><span></span>2차인증 하기<i class="fa-regular fa-arrow-right"></i></a>
+        </span>
+</div>
+<div class="link">
+    <a href="api/user/sso/tis" target="_blank" title="새창"><span class="icon"><i class="fa-solid fa-building-columns"></i></span>통합정보</a>
+    <a href="api/user/sso/lib" target="_blank" title="새창"><span class="icon"><i class="fa-solid fa-book-open"></i></span>중앙도서관</a>
+    <a href="api/user/sso/mail" target="_blank" title="새창"><span class="icon"><i class="fa-solid fa-envelope"></i></span>메일</a>
+    <a href="https://jejunu.korus.ac.kr/" target="_blank" title="새창"><span class="icon"><i class="fa-solid fa-newspaper"></i></span>KORUS</a>
+</div>
+
+
+<div class="access">
+    <div><i class="fa-regular fa-desktop mr-2"></i>최근 접속 IP : <span id="lastUserIp">27.100.250.27</span></div>
+    <div><i class="fa-regular fa-clock mr-2"></i>최근 접속 시간 : <span id="lastLoginDt">2025-07-28 09:10:04</span></div>
+</div>
+<div class="alim"><a href="mypage/pushlist.htm"><i class="fa-solid fa-bell"></i>알림 <span class="js-push-unread">0</span></a></div>
+
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="115" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-id="115" gs-no-move="true" gs-y="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet115"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">공지사항</div></div><div class="card-body overflow-auto portlet-body">
+
+<div class="board-wrap">
+    <div class="board-tab">
+        <div class="title active" data-target="tab-note-1" data-link="board/notice.htm" data-api="board/notice.htm?_out=json&amp;pageSize=4" data-cat="${b.cat}" data-cht="board"><a href="#">공지</a></div>
+        <ul class="list-unstyled" id="tab-note-1"><li><a href="board/notice.htm?act=view&amp;seq=256352" title="제주대학교 영자신문사 The Islander 수습기자 모집">제주대학교 영자신문사 The Islander 수습기자 모집</a><span class="date">07-28</span></li><li><a href="board/notice.htm?act=view&amp;seq=256350" title="「책 읽는 제주대학교」 7월 5주차">「책 읽는 제주대학교」 7월 5주차</a><span class="date">07-28</span></li><li><a href="board/notice.htm?act=view&amp;seq=256330" title="[국립대학육성사업 발전협의회] 국립대학육성사업 대학생 홍보대사 12기 모집">[국립대학육성사업 발전협의회] 국립대학육성사업 대학생 홍보대사 12기 모집</a><span class="date">07-27</span></li><li><a href="board/notice.htm?act=view&amp;seq=256295" title="[언어교육원]2025학년도 교내 토익특별반 어학 성적 달성 프로그램 수강생 모집 안내">[언어교육원]2025학년도 교내 토익특별반 어학 성적 달성 프로그램 수강생 모집 안내</a><span class="date">07-25</span></li></ul>
+    </div>
+    <div class="board-tab">
+        <div class="title" data-target="tab-note-2" data-link="board/undergraduate/classwork.htm" data-api="board/undergraduate/classwork.htm?_out=json&amp;pageSize=4" data-cat="236" data-cht="board"><a href="#">수업</a></div>
+        <ul class="list-unstyled d-none" id="tab-note-2">
+        </ul>
+    </div>
+    <div class="board-tab">
+        <div class="title" data-target="tab-note-3" data-link="board/undergraduate/registration.htm" data-api="board/undergraduate/registration.htm?_out=json&amp;pageSize=4" data-cat="237" data-cht="board"><a href="#">등록</a></div>
+        <ul class="list-unstyled d-none" id="tab-note-3">
+        </ul>
+    </div>
+    <div class="board-tab">
+        <div class="title" data-target="tab-note-4" data-link="board/undergraduate/scholarships.htm" data-api="board/undergraduate/scholarships.htm?_out=json&amp;pageSize=4" data-cat="238" data-cht="board"><a href="#">장학</a></div>
+        <ul class="list-unstyled d-none" id="tab-note-4">
+        </ul>
+    </div>
+    <div class="board-tab">
+        <div class="title" data-target="tab-note-5" data-link="board/jnuclass.htm" data-api="api/jnu/class/get.jsp" data-cat="${b.cat}" data-cht="jnuclass"><a href="#">JNUclass</a></div>
+        <ul class="list-unstyled d-none" id="tab-note-5">
+        </ul>
+    </div>
+</div><!--board-wrap-->
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="116" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="4" gs-id="116" gs-no-move="true" gs-y="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet116"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">교직원동정</div><div class="portlet-tools ml-auto"><div class="btn-group"><a href="https://portal.jejunu.ac.kr/board/facultynews.htm" target="_self" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a></div></div></div><div class="card-body overflow-auto portlet-body">
+
+<ul class="list-unstyled board-list">
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2033" title="삼가 감사 인사 드립니다(언론홍보학과 김경호)">삼가 감사 인사 드립니다(언론홍보학과 김경호)</a> <span class="date">07-28</span></li>
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2032" title="[부고] 중앙도서관 학술정보운영실 이정효실장님 모친상 알림">[부고] 중앙도서관 학술정보운영실 이정효실장님 모친상 알림</a> <span class="date">07-27</span></li>
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2031" title="감사 인사 드립니다. (정치외교학과 조교 김수연)">감사 인사 드립니다. (정치외교학과 조교 김수연)</a> <span class="date">07-25</span></li>
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2030" title="어머니 마지막 길, 함께해 주셔서 감사합니다(공과대학.김계돈)">어머니 마지막 길, 함께해 주셔서 감사합니다(공과대학.김계돈)</a> <span class="date">07-23</span></li>
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2029" title="삼가 감사 인사 드립니다(언론홍보학과 김희정)">삼가 감사 인사 드립니다(언론홍보학과 김희정)</a> <span class="date">07-23</span></li>
+    <li><a href="board/facultynews.htm?act=view&amp;pstNo=2028" title="감사 인사를 드립니다(생물학과 김명숙)">감사 인사를 드립니다(생물학과 김명숙)</a> <span class="date">07-22</span></li>
+</ul>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="247" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-y="1" gs-id="247" gs-no-move="true" gs-x="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet247"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">주요서비스링크</div></div><div class="card-body overflow-auto portlet-body">
+
+    <div class="sso-link">
+        <div><a href="api/user/sso/bis" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_03.svg" alt="경영통계"></span>
+            <span class="txt">경영통계</span>
+        </a></div>
+        <div><a href="api/user/sso/jnubps" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_16.svg" alt="성과관리"></span>
+            <span class="txt">성과관리</span>
+        </a></div>
+        <div><a href="api/user/sso/sanhak" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_11.svg" alt="산학 J-RISS"></span>
+            <span class="txt">J-RISS</span>
+        </a></div>
+        <div><a href="api/sso/o365.jsp" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_06.svg" alt="오피스365"></span>
+            <span class="txt">오피스365</span>
+        </a></div>
+        <div><a href="activities/information/software.htm" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_18.svg" alt="소프트웨어 이용안내"></span>
+            <span class="txt">소프트웨어 이용안내</span>
+        </a></div>
+        <div><a onclick="sslCnugw()" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_17.svg" alt="(구)전자문서"></span>
+            <span class="txt">(구)전자문서</span>
+        </a></div>
+        <div><a href="https://helpu.kr/dreamy/" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_24.svg" alt="헬프유(원격1)"></span>
+            <span class="txt">헬프유(원격1)</span>
+        </a></div>
+        <div><a href="http://rs.jejunu.ac.kr/" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_23.svg" alt="넷클리닉(원격2)"></span>
+            <span class="txt">넷클리닉(원격2)</span>
+        </a></div>
+        <div><a href="https://safety.jejunu.ac.kr/" title="새창" target="_blank">
+            <span class="icon"><img src="pub/site/portal/images/common/icon_09.svg" alt="연구실안전 관리시스템"></span>
+            <span class="txt">연구실안전 관리시스템</span>
+        </a></div>
+    </div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="135" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-y="1" gs-id="135" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet135"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">교육이수현황</div></div><div class="card-body overflow-auto portlet-body">
+
+<!--
+
+TIS_GHM_EDUTRNG_CRTR_MTTR_V
+
+TT_HR_CRTR -- 총시간 기준
+MSTRY_DSGN_CRTR -- 부처 지정기준
+NPHIL_CRTR --국정철학기준
+TT_HR_PRFMNC -- 총시간 실적
+MSTRY_DSGN_PRFMNC --부처지정실적
+NPHIL_PRFMNC -- 국정철학실적
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edu">
+    <div class="edu-current">
+        <div class="all">전체(기준) : <span>0시간 0분</span></div>
+        <div>실적(인정) : <span>0시간 0분</span></div>
+    </div>
+    <div class="edu-chart">
+        <div class="chart chart1">
+
+            <div class="progress-bar" style="background: radial-gradient(closest-side, white 65%, transparent 67% 100%), conic-gradient(#0571AF 0%, #CCCCCC 0);"><span>부처<br>지정</span></div>
+            <ul>
+                <li><span class="tit">실적</span><span class="my">0시간 0분</span></li>
+                <li><span class="tit">기준</span><span>0시간 0분</span></li>
+            </ul>
+
+        </div>
+        <div class="chart chart2">
+            <div class="progress-bar" style="background: radial-gradient(closest-side, white 65%, transparent 67% 100%), conic-gradient(#38A0DC 0%, #CCCCCC 0);"><span>국정<br>철학</span></div>
+            <ul>
+                <li><span class="tit">실적</span><span class="my">0시간 0분</span></li>
+                <li><span class="tit">기준</span><span>0시간 0분</span></li>
+            </ul>
+
+        </div>
+        <div class="chart chart3">
+
+            <div class="progress-bar" style="background: radial-gradient(closest-side, white 65%, transparent 67% 100%), conic-gradient(#3AB115 0%, #CCCCCC 0);"><span>필수<br>교육</span></div>
+            <ul>
+                <li><span class="tit">실적</span><span class="my">0시간 0분</span></li>
+                <li><span class="tit">기준</span><span>0시간 0분</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="123" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="4" gs-y="1" gs-id="123" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet123"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">웹메일</div><div class="portlet-tools ml-auto"><div class="btn-group"><a href="https://portal.jejunu.ac.kr/api/user/sso/mail" target="_self" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a></div></div></div><div class="card-body overflow-auto portlet-body">
+<div class="webmail">
+    <div class="nodata">
+        신규 메일이 없습니다.
+    </div>
+</div>
+
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="24292" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-y="2" gs-id="24292" gs-no-move="true" gs-x="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet24292"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">학사일정</div></div><div class="card-body overflow-auto portlet-body">
+<div class="schedule">
+    <div class="calendar">
+        <div class="date">
+            <div class="year">2025</div>
+            <div class="month">
+                <a class="my-schedule-btn-prev"><i class="fa-regular fa-chevron-left"><span>7월</span></i></a>
+                <span>7월</span>
+                <a class="my-schedule-btn-next"><i class="fa-regular fa-chevron-right"><span>7월</span></i></a>
+            </div>
+        </div>
+
+        <div class="label-groups">
+            <!--            <div><span class="label orange"></span>학사</div>-->
+            <!--            <div><span class="label green"></span>MY</div>-->
+
+            <div class="gray"><a href="support/academic/calendar.htm">캘린더 보기 <i class="fa-regular fa-angle-right"></i></a></div>
+
+        </div>
+        <div id="my-schedule" class="calendar-wrap">
+
+        <div class="calendar"><header style="display: none;"><h2 class="month">7월 <div class="year">2025</div></h2><a class="simple-calendar-btn btn-prev" href="#"></a><a class="simple-calendar-btn btn-next" href="#"></a></header><table><thead><td>일</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td></thead><tbody><tr><td data-date="2025-06-29"><div class="day wrong-month" data-date="2025-06-29">29</div><div class="label"></div></td><td data-date="2025-06-30"><div class="day wrong-month" data-date="2025-06-30">30</div><div class="label"></div></td><td data-date="2025-07-01"><div class="day" data-date="2025-07-01">1</div><div class="label"></div></td><td data-date="2025-07-02"><div class="day" data-date="2025-07-02">2</div><div class="label"></div></td><td data-date="2025-07-03"><div class="day" data-date="2025-07-03">3</div><div class="label"></div></td><td data-date="2025-07-04"><div class="day" data-date="2025-07-04">4</div><div class="label"></div></td><td data-date="2025-07-05"><div class="day" data-date="2025-07-05">5</div><div class="label"></div></td></tr><tr><td data-date="2025-07-06"><div class="day" data-date="2025-07-06">6</div><div class="label"></div></td><td data-date="2025-07-07"><div class="day" data-date="2025-07-07">7</div><div class="label"></div></td><td data-date="2025-07-08"><div class="day" data-date="2025-07-08">8</div><div class="label"></div></td><td data-date="2025-07-09"><div class="day" data-date="2025-07-09">9</div><div class="label"></div></td><td data-date="2025-07-10"><div class="day" data-date="2025-07-10">10</div><div class="label"></div></td><td data-date="2025-07-11"><div class="day" data-date="2025-07-11">11</div><div class="label"></div></td><td data-date="2025-07-12"><div class="day" data-date="2025-07-12">12</div><div class="label"></div></td></tr><tr><td data-date="2025-07-13"><div class="day" data-date="2025-07-13">13</div><div class="label"></div></td><td data-date="2025-07-14"><div class="day" data-date="2025-07-14">14</div><div class="label"></div></td><td data-date="2025-07-15"><div class="day" data-date="2025-07-15">15</div><div class="label"></div></td><td data-date="2025-07-16"><div class="day" data-date="2025-07-16">16</div><div class="label"></div></td><td data-date="2025-07-17"><div class="day" data-date="2025-07-17">17</div><div class="label"></div></td><td data-date="2025-07-18"><div class="day" data-date="2025-07-18">18</div><div class="label"></div></td><td data-date="2025-07-19"><div class="day" data-date="2025-07-19">19</div><div class="label"></div></td></tr><tr><td data-date="2025-07-20"><div class="day" data-date="2025-07-20">20</div><div class="label"></div></td><td data-date="2025-07-21"><div class="day" data-date="2025-07-21">21</div><div class="label"></div></td><td data-date="2025-07-22"><div class="day" data-date="2025-07-22">22</div><div class="label"></div></td><td data-date="2025-07-23"><div class="day" data-date="2025-07-23">23</div><div class="label"></div></td><td data-date="2025-07-24"><div class="day" data-date="2025-07-24">24</div><div class="label"></div></td><td data-date="2025-07-25"><div class="day" data-date="2025-07-25">25</div><div class="label"></div></td><td data-date="2025-07-26"><div class="day" data-date="2025-07-26">26</div><div class="label"></div></td></tr><tr><td data-date="2025-07-27"><div class="day" data-date="2025-07-27">27</div><div class="label"></div></td><td data-date="2025-07-28"><div class="day today" data-date="2025-07-28">28</div><div class="label"></div></td><td data-date="2025-07-29"><div class="day" data-date="2025-07-29">29</div><div class="label"></div></td><td data-date="2025-07-30"><div class="day" data-date="2025-07-30">30</div><div class="label"></div></td><td data-date="2025-07-31"><div class="day" data-date="2025-07-31">31</div><div class="label"></div></td><td data-date="2025-08-01"><div class="day wrong-month" data-date="2025-08-01">1</div><div class="label"></div></td><td data-date="2025-08-02"><div class="day wrong-month" data-date="2025-08-02">2</div><div class="label"></div></td></tr></tbody></table><div class="event-container"><div class="close"></div><div class="event-wrapper"></div></div></div></div>
+    </div><!--calendar-->
+    <div class="content">
+        <div class="box">
+            <div class="js-my-event-list"></div>
+            <div class="js-academy-event-list"><div class="list"><span class="date text-orange">06.30~07.18</span><span class="label"></span><span class="txt">하기계절수업 개강</span></div><div class="list"><span class="date text-orange">07.02~07.09</span><span class="label"></span><span class="txt">제2학기 재입학 신청 기간</span></div><div class="list"><span class="date text-orange">07.09~07.16</span><span class="label"></span><span class="txt">(대학원) 제1학기 석·박사학위논문 제출(도서관)</span></div><div class="list"><span class="date text-orange">07.18</span><span class="label"></span><span class="txt">하기계절수업 종강</span></div><div class="list"><span class="date text-orange">07.30~08.01</span><span class="label"></span><span class="txt">제2학기 희망과목담기 기간</span></div></div>
+        </div>
+    </div>
+</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="118" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-y="2" gs-id="118" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet118"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">당직정보</div></div><div class="card-body overflow-auto portlet-body">
+<div class="duty-container">
+    <section id="daily-duty-section" class="duty-section">
+        <div class="section-header">
+            <span class="current-month">본부당직 : 2025년 7월</span>
+            <div class="day-controls">
+                <button type="button" class="work-prev"><i class="fa-regular fa-chevron-left"></i></button>
+                <span class="current-day"><span class="work-calendar-day">28</span>일</span>
+                <button type="button" class="work-next"><i class="fa-regular fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <table class="js-work-list">
+            <thead>
+            <tr>
+                <th>일자</th><th>구분</th><th>소속</th><th>성명</th>
+            </tr>
+            </thead>
+            <tbody><tr><td>7.28(월)</td><td>숙직</td><td>총무과</td><td>윤희선</td></tr></tbody>
+        </table>
+    </section>
+
+    <section id="my-weekly-duty-section" class="duty-section" style="display: none;"> <div class="section-header">
+    </div>
+        <table id="my-duty-table" class="table">
+            <thead>
+            <tr></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</div>
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="4793" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="4" gs-y="2" gs-id="4793" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet4793"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">신청승인정보</div></div><div class="card-body overflow-auto portlet-body">
+<div class="reginfo-wrap">
+    <div class="reginfo-list">
+        <span class="number">13건</span>
+        <a href="api/user/sso/approval?MENU_CD=2010306" target="_blank">사진변경신청승인(학과)</a>
+    </div>
+    <div class="reginfo-list">
+        <span class="number">2건</span>
+        <a href="api/user/sso/approval?MENU_CD=2010307" target="_blank">학적정정신청승인(본부)</a>
+    </div>
+    <div class="reginfo-list">
+        <span class="number">1건</span>
+        <a href="api/user/sso/approval?MENU_CD=2010502" target="_blank">휴학신청승인(학과)</a>
+    </div>
+    <div class="reginfo-list">
+        <span class="number">9건</span>
+        <a href="api/user/sso/approval?MENU_CD=2010709" target="_blank">복수전공포기승인(소속학과)</a>
+    </div>
+    <div class="reginfo-list">
+        <span class="number">3건</span>
+        <a href="api/user/sso/approval?MENU_CD=2010710" target="_blank">복수전공포기승인(전공학과)</a>
+    </div>
+    <div class="reginfo-list">
+        <span class="number">9건</span>
+        <a href="api/user/sso/approval?MENU_CD=2040906" target="_blank">수강포기승인(학과)</a>
+    </div>
+</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="4794" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-y="3" gs-id="4794" gs-no-move="true" gs-x="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet4794"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">ONE-STOP서비스</div></div><div class="card-body overflow-auto portlet-body">
+
+    <div class="onestop">
+        <div class="list">
+            <p>학내 PC 및 주변기기 고장점검 및 지원</p>
+            <p class="text-primary">디지털정보처(754-4681~2)
+            </p>
+        </div>
+        <div class="list">
+            <p>유, 무선 인터넷 접속 장애점검 및 지원</p>
+            <p class="text-primary">디지털정보처(754-4683~4684)</p>
+        </div>
+        <div class="list">
+            <p>인터넷전화(일반전화) 고장점검 및 지원</p>
+            <p class="text-primary">디지털정보처(754-2400)</p>
+        </div>
+    </div>
+    <div class="btn-groups text-center">
+        <a href="activities/onestop/repair.htm" class="btn btn-primary">시설물보수신청<i class="fa-regular fa-chevron-right ml-2"></i></a>
+        <a href="activities/onestop/itoutage.htm" class="btn btn-success">IT장애신청<i class="fa-regular fa-chevron-right ml-2"></i></a>
+    </div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="122" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-y="3" gs-id="122" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet122"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">교직원검색</div></div><div class="card-body overflow-auto portlet-body">
+
+<div class="empolyment">
+    <div class="empolyment-search">
+        <select name="searchType" id="">
+            <option value="q">이름</option>
+            <option value="deptnm">부서</option>
+            <option value="telnum">번호</option>
+            <option value="asntask">업무</option>
+        </select>
+        <input id="empQ" type="text">
+        <a id="searchEmp" href="emp.htm" data-toggle="modal" class="js-global-portlet-view-modal btn btn-primary" data-title="교직원 검색">검색</a>
+    </div>
+    <div class="empolyment-info">
+        <i class="fa-solid fa-users"></i>
+        <p>이름, 부서 등을 이용하여 조회하시면 해당 직원의 검색 결과를 확인하실 수 있습니다.</p>
+    </div>
+</div>
+
+
+<!--<div class="modal empolyment-modal fade" id="empolymentModal" tabindex="-1" aria-labelledby="empolymentModalLabel" aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="empolymentModalLabel">교직원검색 결과</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <table class="table empolyment-list">-->
+<!--                    <caption>총 결과 : <span class="text-primary">2</span></caption>-->
+<!--                    <thead>-->
+<!--                        <tr>-->
+<!--                            <th>성명</th>-->
+<!--                            <th>부서</th>-->
+<!--                            <th>전화번호</th>-->
+<!--                            <th>담당업무</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                    <tbody>-->
+<!--                        <tr>-->
+<!--                            <td><div class="m-title">성명</div>홍길동</td>-->
+<!--                            <td><div class="m-title">부서</div>기획평가과</td>-->
+<!--                            <td><div class="m-title">전화번호</div>064-754-2111</td>-->
+<!--                            <td class="text-left"><div class="m-title">담당업무</div>기획평가과 업무 총괄</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td><div class="m-title">성명</div>홍길동</td>-->
+<!--                            <td><div class="m-title">부서</div>정보정책과</td>-->
+<!--                            <td><div class="m-title">전화번호</div>064-754-2111</td>-->
+<!--                            <td class="text-left"><div class="m-title">담당업무</div>정보대내외 대학평가, 교육수요 자만족도관리센터 업무 등정책 업무 총괄</td>-->
+<!--                        </tr>-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--                <div class="text-center">-->
+<!--                    <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">확인</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="121" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="4" gs-y="3" gs-id="121" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet121"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">오늘의 식단</div></div><div class="card-body overflow-auto portlet-body">
+
+<div class="meal">
+    <div class="meal-date">
+        <div class="date-box">
+            <div class="month"><span class="calendar-year">2025</span>.<span class="calendar-month">07</span></div>
+            <div class="day">
+                <a class="meal-prev"><i class="fa-regular fa-chevron-left"><span>이전일</span></i></a>
+                <span class="today"><span class="calendar-day">28</span><span class="calendar-week">(월)</span></span>
+                <a class="meal-next"><i class="fa-regular fa-chevron-right"><span>다음일</span></i></a>
+            </div>
+        </div>
+        <div class="meal-place ">
+            <div class="meal-select">백두관</div>
+            <div class="meal-place-items">
+                <div class="place-title active" data-place="MEALFIX_002" data-lunch="11:00 ~ 14:30" data-dinner="11:30 ~ 13:30" data-price="6,000원" data-price-dinner="6,500원">백두관</div>
+                <div class="place-title " data-place="MEALFIX_003" data-lunch="11:00 ~ 14:00" data-dinner="17:00 ~ 19:00" data-price="조합원:6,000원, 일반:7000원 " data-price-dinner="조합원,일반:7,000원">사라캠퍼스</div>
+                <div class="place-title " data-place="MEALFIX_001" data-lunch="월~금 11:40 ~ 13:30 / 토~일 11:40 ~ 13:00" data-dinner="월~일 17:00 ~ 19:00 " data-price="5,500원">학생생활관6호관</div>
+                <div class="place-title " data-place="FIXMENU_002" data-lunch="10:30~15:00">교수회관</div>
+                <div class="place-title " data-place="FIXMENU_001" data-lunch="11:00 ~ 14:30" data-dinner="17:00 ~19:30">학생생활관1호관</div>
+                <!--<div class="place-title" data-tab="meal-2">학생생활관</a></div>-->
+            </div>
+        </div>
+
+        <div class="meal-place m-meal reaction">
+            <div class="meal-select">백두관</div>
+            <div class="meal-place-items">
+                <div class="place-title active" data-place="MEALFIX_002" data-lunch="11:00 ~ 14:30" data-dinner="11:30 ~ 13:30" data-price="6,000원" data-price-dinner="6,500원">백두관</div>
+                <div class="place-title sara " data-place="MEALFIX_003" data-lunch="11:00 ~ 14:00" data-dinner="17:00 ~ 19:00" data-price="조합원:6,000원, 일반:7000원 " data-price-dinner="조합원,일반:7,000원">사라캠퍼스</div>
+                <div class="place-title " data-place="MEALFIX_001" data-lunch="월~금 11:40 ~ 13:30 / 토~일 11:40 ~ 13:00" data-dinner="월~일 17:00 ~ 19:00 " data-price="5,500원">학생생활관6호관</div>
+                <div class="place-title " data-place="FIXMENU_002" data-lunch="10:30~15:00">교수회관</div>
+                <div class="place-title " data-place="FIXMENU_001" data-lunch="11:00 ~ 14:30" data-dinner="17:00 ~19:30">학생생활관1호관</div>
+                <!--<div class="place-title" data-tab="meal-2">학생생활관</a></div>-->
+            </div>
+        </div>
+
+    </div><!--meal-date-->
+    <div class="meal-box">
+
+        <div class="meal-tab">
+            <div class="tab-title active" data-tab="meal-lunch"><a href="#">점심특식1</a></div>
+            <div class="tab-title" data-tab="meal-dinner"><a href="#">점심특선2</a></div>
+        </div>
+
+        <div id="meal-lunch" class="meal-list">
+            <div class="content">
+                <div class="time"><i class="fa-regular fa-alarm-clock"></i>운영 <span class="green-txt js-lunch-time">11:00~14:30</span> <span class="label js-meal-price">6,000원</span></div>
+                <div class="alert alert-success js-meal-lunch">식당 공사로 인해  미운영합니다.
+, --&gt; 대체매장 : 교수회관
+,      (7/28~8/22) : 정식메뉴운영
+, </div>
+            </div>
+        </div>
+        <div id="meal-dinner" class="meal-list d-none">
+            <div class="content">
+                <div class="time"><i class="fa-regular fa-alarm-clock"></i>운영 <span class="green-txt js-dinner-time">11:30~13:30</span> <span class="label js-meal-price">6,000원</span></div>
+                <div class="alert alert-success js-meal-dinner"> 미운영(6/23~8/29)</div>
+            </div>
+        </div>
+    </div><!--meal-box-->
+</div><!--meal-->
+
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="4796" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-y="4" gs-id="4796" gs-no-move="true" gs-x="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet4796"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">설문조사</div></div><div class="card-body overflow-auto portlet-body">
+	
+	<div class="nodata">참여할 설문이 없습니다.</div>
+
+<div class="modal poll-modal fade" id="pollListModal" tabindex="-1" aria-labelledby="pollListModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="pollListModalLabel">설문조사</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body" id="pollListModalBody">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="142" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-y="4" gs-id="142" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet142"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">도서관서비스</div><div class="portlet-tools ml-auto"><div class="btn-group"><a href="https://portal.jejunu.ac.kr/api/user/sso/lib" target="_blank" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a></div></div></div><div class="card-body overflow-auto portlet-body">
+
+
+<div class="lib">
+    <div class="lib-box">
+        <div class="blue-bg">
+            <div class="tit"><i class="fa-regular fa-book-circle-arrow-right"></i>도서대출</div>
+            <div class="number"><span><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/mylibrary/charges" target="_blank" class="js-libary-chg-cnt">0</a></span>건</div>
+        </div>
+        <div class="orange-bg">
+            <div class="tit"><i class="fa-regular fa-bookmark-slash"></i>도서미납</div>
+            <div class="number"><span><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/mylibrary/charges" target="_blank" class="js-libary-delay-cnt">0</a></span>건</div>
+        </div>
+    </div>
+    <ul class="lib-list list-unstyled">
+        <li><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/bbs/notice/5224" target="_blank" title="임시 휴관 중 &lt;캠퍼스 대출&gt; 가능 안내">임시 휴관 중 &lt;캠퍼스 대출&gt; 가능 안내</a></li>
+        <li><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/bbs/notice/5214" target="_blank" title="2025.8월 EBSCO 온라인 이용교육 안내">2025.8월 EBSCO 온라인 이용교육 안내</a></li>
+        <li><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/bbs/notice/5206" target="_blank" title="무선인터넷 일시 중단 안내(7/15(화) 18~21시)">무선인터넷 일시 중단 안내(7/15(화) 18~21시)</a></li>
+        <li><a href="https://lib.jejunu.ac.kr/sso/business.jsp?returnURL=/bbs/notice/5201" target="_blank" title="[학술정보운영실] 2025학년도 1학기 국가근로장학생 추가 선발 안내(~7/11금)">[학술정보운영실] 2025학년도 1학기 국가근로장학생 추가 선발 안내(~7/11금)</a></li>
+    </ul>
+</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="5446" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="4" gs-y="4" gs-id="5446" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet5446"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">연가일수</div></div><div class="card-body overflow-auto portlet-body">
+
+<div class="nodata">해당하는 데이터가 없습니다.</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="23974" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-y="5" gs-id="23974" gs-no-move="true" gs-x="0">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet23974"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">비교과프로그램</div></div><div class="card-body overflow-auto portlet-body">
+<div class="nodata">신청기간이 아닙니다.</div>
+
+</div></div></div>
+				</div>
+				<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="4795" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-x="2" gs-y="5" gs-id="4795" gs-no-move="true">
+					<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet4795"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-no-tools "><div class="card-title mr-auto portlet-title">바로가기</div></div><div class="card-body overflow-auto portlet-body">
+
+<ul class="list-unstyled link-list">
+	<li><a href="https://www.ktcu.or.kr" target="_blank"><span>교직원공제회</span></a></li>
+	<li><a href="https://www.gwp.or.kr" target="_blank"><span>맞춤형복지시스템</span></a></li>
+	<li><a href="https://www.keris.or.kr" target="_blank"><span>한국교육학술정보원</span></a></li>
+	<li><a href="https://www.nrf.re.kr" target="_blank"><span>한국연구재단</span></a></li>
+	<li><a href="https://www.geps.or.kr" target="_blank"><span>공무원연금공단</span></a></li>
+	<li><a href="https://jejunu.nhi.go.kr/" target="_blank"><span>제주대학교 사이버교육센터</span></a></li>
+	<li><a href="https://www.kisti.re.kr" target="_blank"><span>한국과학기술정보연구원</span></a></li>
+	<li><a href="https://www.moe.go.kr" target="_blank"><span>교육부</span></a></li>
+</ul>
+
+</div></div></div>
+				</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+	
+	
+	<div class="layout layout-NORMAL layout-4700 layout-false">
+		<div class="container"><style type="text/css" gs-style-id="gs-id-18"></style>
+			<div class="grid-stack gs-id-18 gs-6" gs-current-row="2" style="min-height: 640px;">
+					<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="26458" data-layout="4700" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-id="26458" gs-x="0" gs-y="0">
+						<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet26458"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">평생교육원</div><div class="portlet-tools ml-auto"><div class="btn-group"><a href="activities/lifelong/class.htm" target="_self" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a></div></div></div><div class="card-body overflow-auto portlet-body">
+<div class="nodata">교육과정 신청기간이 아닙니다.</div>
+
+</div></div></div>
+					</div>
+					<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="26459" data-layout="4700" data-height="1" data-width="2" data-sort="0" gs-w="2" gs-id="26459" gs-x="2" gs-y="0">
+						<div class="grid-stack-item-content"><div class="card portlet height-1 width-2  " id="userPortlet26459"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">언어교육원</div><div class="portlet-tools ml-auto"><div class="btn-group"><a href="activities/language/class.htm" target="_self" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a></div></div></div><div class="card-body overflow-auto portlet-body">
+<div class="nodata">교육과정 신청기간이 아닙니다.</div>
+
+</div></div></div>
+					</div>
+					<div class="grid-stack-item portlet-container ui-draggable-disabled ui-resizable-disabled" data-seq="26462" data-layout="4700" data-height="2" data-width="2" data-sort="0" gs-w="2" gs-h="2" gs-id="26462" gs-x="4" gs-y="0">
+						<div class="grid-stack-item-content"><div class="card portlet height-2 width-2  " id="userPortlet26462"><div class="card-header portlet-header d-flex portlet-header-has-title  portlet-header-has-tools "><div class="card-title mr-auto portlet-title">캠퍼스순환버스</div><div class="portlet-tools ml-auto"><div class="btn-group"></div></div></div><div class="card-body overflow-auto portlet-body">
+<div class="bus">
+    <div class="tab-wrap">
+        <div class="tab-title active" data-category="A"><a href="#">A노선</a></div>
+<!--        <div class="tab-title" data-category="B"><a href="#">B노선</a></div>-->
+    </div>
+
+    <div id="bus-1" class="bus-box">
+        <p class="pb-3">※ 버스 위치는 시간표 기준입니다.(실시간 위치는 추후 제공 예정)</p>
+        <div style=""><img class="js-bus-img" src="pub/site/portal/images/portlet/bus.png" style="width: 30px; display: inline; position: absolute; top: 239px; left: 50%; transform: translate(-50%, -50%) rotate(179.335deg); z-index: 5;">
+        </div>
+        <div id="map" tabindex="0" style="position: relative; overflow: hidden; background: rgb(248, 249, 250);"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0; cursor: url(&quot;https://ssl.pstatic.net/static/maps/mantle/1x/openhand.cur&quot;), default;"><div style="position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); z-index: 0;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 3px; left: 2px; z-index: 1;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 0; user-select: none;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 1; user-select: none;"><div style="position: absolute; top: 0px; left: 0px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; display: block; width: 0px; height: 0px; overflow: visible; box-sizing: content-box !important;"><div draggable="false" unselectable="on" style="position: absolute; top: 531px; left: 195px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223231/105193.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 531px; left: 451px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223232/105193.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 275px; left: 195px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223231/105192.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 275px; left: 451px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223232/105192.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 275px; left: -61px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223230/105192.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 531px; left: -61px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223230/105193.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 275px; left: -317px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223229/105192.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 531px; left: -317px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223229/105193.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 19px; left: -317px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223229/105191.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 19px; left: -61px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223230/105191.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 19px; left: 195px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223231/105191.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: 19px; left: 451px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223232/105191.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -237px; left: -317px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223229/105190.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -237px; left: -61px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223230/105190.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -237px; left: 195px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223231/105190.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div><div draggable="false" unselectable="on" style="position: absolute; top: -237px; left: 451px; z-index: 0; margin: 0px; padding: 0px; border: 0px solid transparent; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; opacity: 1; width: 256px; height: 256px;"><img draggable="false" unselectable="on" alt="" crossorigin="anonymous" width="256" height="256" src="https://nrbe.pstatic.net/styles/basic/1753418091/18/223232/105190.png?mt=bg.ol.sw.ar.lko" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; opacity: 1; position: absolute; left: 0px; top: 0px; z-index: 0; width: 256px; height: 256px;"></div></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 100;"><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 101;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;"></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; display: block; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;"></div></div></div><div style="position: absolute; display: none; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; overflow: visible; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background-color: rgb(255, 255, 255); z-index: 10000; opacity: 0.5;"></div></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; right: 0px;"><div style="border: 0px none; margin: -3px 0px 0px; padding: 0px; pointer-events: none; float: right; height: 20px;"><div style="position: relative; width: 60px; height: 14px; margin: 0px 12px 6px 2px; overflow: hidden; pointer-events: auto;"><span style="display: block; margin: 0px; padding: 0px 4px; text-align: center; font-size: 10px; line-height: 11px; font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-weight: 700; color: rgb(34, 34, 37); text-shadow: rgba(255, 255, 255, 0.8) -1px 0px, rgba(255, 255, 255, 0.8) 0px 1px, rgba(255, 255, 255, 0.8) 1px 0px, rgba(255, 255, 255, 0.8) 0px -1px;">30m</span><img src="https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-b.png" width="54" height="3" alt="" style="position: absolute; left: 3px; bottom: 0px; z-index: 2; display: block; width: 54px; height: 3px; overflow: hidden; margin: 0px; padding: 0px; border: 0px none; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important;"><img src="https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-l.png" width="3" height="8" alt="" style="position:absolute;left:0;bottom:0;z-index:2;display:block;width:3px;height:8px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"><img src="https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-r.png" width="3" height="8" alt="" style="position:absolute;right:0;bottom:0;z-index:2;display:block;width:3px;height:8px;overflow:hidden;margin:0;padding:0;border:0 none;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></div></div><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: right;"><a href="https://ssl.pstatic.net/static/maps/mantle/notice/legal.html" target="_blank" style="display: block; width: 45px; height: 10px; overflow: hidden; margin: 0px 5px 7px 12px; pointer-events: auto;"><img src="https://ssl.pstatic.net/static/maps/mantle/1x/naver-logo-normal-new.png" width="45" height="10" alt="NAVER" style="display:block;width:45px;height:10px;overflow:hidden;border:0 none;margin:0;padding:0;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;"></a></div></div><div style="position: absolute; z-index: 100; margin: 0px; padding: 0px; pointer-events: none; bottom: 0px; left: 0px;"><div style="border: 0px none; margin: 0px; padding: 0px; pointer-events: none; float: left; height: 19px;"><div class="map_copyright" style="margin: 0px; padding: 0px 0px 2px 10px; height: 19px; line-height: 19px; color: rgb(68, 68, 68); font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; clear: both; white-space: nowrap; pointer-events: none;"><div style="float: left;"><span style="white-space: pre; color: rgb(68, 68, 68);">© NAVER Corp.</span></div><a href="#" style="font-family: Helvetica, AppleSDGothicNeo-Light, nanumgothic, NanumGothic, 나눔고딕, Dotum, 돋움, sans-serif; font-size: 11px; line-height: 19px; margin: 0px 0px 0px 5px; padding: 0px; color: rgb(68, 68, 68); float: left; pointer-events: auto; text-decoration: underline; display: none;">더보기</a><div style="float: left;"><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; display: none; color: rgb(68, 68, 68);"> /OpenStreetMap</a></div></div></div></div><div style="border: 1px solid rgb(41, 41, 48); background: rgb(255, 255, 255); padding: 15px; color: rgb(51, 51, 51); position: absolute; font-size: 11px; line-height: 1.5; clear: both; display: none; max-width: 350px !important; max-height: 300px !important;"><h5 style="font-size: 12px; margin-top: 0px; margin-bottom: 10px;">지도 데이터</h5><a href="#" style="position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; font-size: 14px; line-height: 14px; display: block; overflow: hidden; color: rgb(68, 68, 68); text-decoration: none; font-weight: bold; text-align: center;">x</a><div><span style="white-space: pre; color: rgb(68, 68, 68); float: left;">© NAVER Corp.</span><a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a></div></div></div>
+        <div class="text-center mt-3"><a href="activities/information/bus.htm" class="btn btn-sm btn-dark">상세시간표 보기 <i class="fa-regular fa-arrow-up-right-from-square"></i></a></div>
+    </div>
+
+</div>
+
+</div></div></div>
+					</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+<!--	-->
+<!--	-->
+
+
+
+
+</div>
+</div><!-- main-index -->
+
+
+<div id="footer" class="footer">
+	<div class="container">
+		<div class="row clearfix">
+			<p class="foot-logo d-none d-lg-block"><a href="index.htm"><img src="pub/site/portal/images/common/footer_logo.svg" alt="제주대학교"></a></p>
+			<div class="footer-contents">
+				<ul class="footer-util list-unstyled">
+					<li><a href="https://www.jejunu.ac.kr/siteassist/privacy.htm" title="새창" target="_blank" style="color:#7CC9FF;">개인정보처리방침</a></li>
+				</ul><!-- footer-util -->
+				<address>
+					(63243) 제주특별자치도 제주시 제주대학로 102(아라일동 제주대학교) <br>
+					Copyright(c) 2023 JEJU NATIONAL UNIVERSITY. All rights reserved.
+				</address>
+				<div class="mt-3 d-lg-none"><a href="#" class="btn btn-white">원격지원서비스<i class="fa-regular fa-arrow-up-right-from-square"></i></a></div>
+				<!-- <p class="comment">본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사 처벌됨을 유념하시기 바랍니다.</p> -->
+			</div><!-- footer-contents -->
+		</div><!-- row -->
+	</div><!-- container -->
+</div><!-- footer -->
+
+
+
+
+<div class="quick-wrap">
+	<div class="quick-groups">
+		<a href="#" class="quick-btn"><span class="icon"></span>QUICK LINK</a>
+		<a href="#" id="backtotop" class="top-btn"><i class="fa-regular fa-chevron-up"></i>TOP</a>
+	</div>
+	<div class="quick-list">
+		<a href="http://jejunu.ac.kr/" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_02.svg" alt="제주대학교"></span>
+			<span class="txt">홈페이지</span>
+		</a>
+		<a href="api/user/sso/tis" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_01.svg" alt="통합정보"></span>
+			<span class="txt">통합정보</span>
+		</a>
+		<a href="api/user/sso/jnuclass" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_05.svg" alt="JNUClass"></span>
+			<span class="txt">JNUClass</span>
+		</a>
+		<!--
+		<a href="api/user/sso/eclips" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_07.svg" alt="e-CLIPs"></span>
+			<span class="txt">e-CLIPs</span>
+		</a>-->
+		<a href="https://lib.jejunu.ac.kr/sso/business.jsp" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_04.svg" alt="도서관"></span>
+			<span class="txt">중앙도서관</span>
+		</a>
+		<a href="api/user/sso/mail" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_12.svg" alt="웹메일"></span>
+			<span class="txt">웹메일</span>
+		</a>
+		<a href="api/user/sso/sanhak" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_11.svg" alt="J-RISS"></span>
+			<span class="txt">J-RISS</span>
+		</a>
+		<a href="api/user/sso/bis" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_03.svg" alt="경영통계"></span>
+			<span class="txt">경영통계</span>
+		</a>
+		<a href="api/user/sso/jnubps" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_16.svg" alt="성과관리"></span>
+			<span class="txt">성과관리</span>
+		</a>
+		<a href="https://jejunu.korus.ac.kr/" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_13.svg" alt="코러스"></span>
+			<span class="txt">KORUS</span>
+		</a>
+		<a onclick="sslCnugw()" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_17.svg" alt="구)전자문서"></span>
+			<span class="txt">(구)전자문서</span>
+		</a>
+		<a href="activities/information/software.htm" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_18.svg" alt="소프트웨어 이용안내"></span>
+			<span class="txt">소프트웨어 이용안내</span>
+		</a>
+		<a href="https://helpu.kr/dreamy/" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_24.svg" alt="헬프유(원격1)"></span>
+			<span class="txt">헬프유(원격1)</span>
+		</a>
+		<a href="http://rs.jejunu.ac.kr/" title="새창" target="_blank">
+			<span class="icon"><img src="pub/site/portal/images/common/icon_23.svg" alt="넷클리닉(원격2)"></span>
+			<span class="txt">넷클리닉(원격2)</span>
+		</a>
+	</div>
+</div>
+<div id="formReceiverContaienr" class="d-none">
+	<iframe src="about:blank" title="모듈 처리 프레임" id="formReceiver" name="formReceiver"></iframe>
+</div>
+
+<div id="globalViewModal" class="modal default-modal" tabindex="-1" role="dialog"> <!--  data-backdrop="static" data-keyboard="false" -->
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="globalViewModalTitle"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body" id="globalViewModalBody">
+			
+				<div class="regCertify d-none">
+	<ul class="list-unstyled  list-borderT">
+		<li>2차인증 사용을 위해 전용앱 다운로드 후 <span class="text-warning">최초 1회 기기 등록</span>이 필요합니다.</li>
+	</ul>
+	<form id="" action="" method="post" class="">
+		<div class="card modal-card login-card">
+			<div class="card-body d-flex flex-wrap certify">
+				<div class="col-12 col-lg-6 form-group">
+					<div class="col-12 col-form-label text-blue">기관코드</div>
+					<div class="col-12">U1034</div>
+				</div>
+				<div class="col-12 col-lg-6 form-group">
+					<div class="col-12 col-form-label text-blue">아이디</div>
+					<div class="col-12">chs1217</div>
+				</div>
+				<div class="col-12 col-lg-6 form-group">
+					<div class="col-12 col-form-label text-blue">발급코드</div>
+					<div class="col-12 code-group">
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 form-group">
+					<div class="col-12 col-form-label text-blue">만료기간</div>
+					<!-- 						<div class="col-12 col-lg-9">${_date.db($expireDate)}</div> -->
+					<div class="col-12 col-lg-9"></div>
+
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="mt-2">
+		<a class="btn btn-sm btn-secondary" href="https://play.google.com/store/apps/details?id=kr.co.ideatec.ionepass&amp;hl=ko&amp;gl=US" title="새창" target="_blank">안드로이드 APP<i class="fa-regular fa-arrow-right ml-1"></i></a>
+		<a class="btn btn-sm btn-secondary" href="https://apps.apple.com/kr/app/ionepass%ED%86%B5%ED%95%A9%EC%9D%B8%EC%A6%9D/id1526228740" title="새창" target="_blank">iOS APP<i class="fa-regular fa-arrow-right ml-1"></i></a>
+		<a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#certifyInfo"><i class="fa-regular fa-circle-question mr-2"></i>2차 인증 이용안내</a>
+	</div>
+	<ul class="list-unstyled mt-2">
+		<li class="mt-1">※ 2차인증 : 타인에 의한 계정 도용 방지 등 로그인 보안성 강화를 위해 인증앱을 통한 추가인증을 거쳐야만 로그인할 수 있는 이중보안 서비스</li>
+		<li class="mt-1">※ 보안 강화를 위하여 로그인 시 2차인증 단계를 필수로 진행하려면 마이페이지 로그인설정에서 2차인증 설정을 활성화하세요.</li>
+	</ul>
+	<div class="text-center mt-3"><button class="btn btn-primary btn-certify">닫기</button></div>
+</div>
+
+<div class="joinCertify">
+	<div class="certify-wrap d-flex justify-content-between mt-3 flex-wrap">
+		<div>
+			<span class="text-black mr-3"><strong>01</strong></span><a href="#" class="btn btn-primary sendCertify">인증 요청</a>
+			<p class="mt-2"><span class="text-primary">[인증요청]</span>버튼을 클릭하면 스마트폰 통합인증앱에 메시지가 전송됩니다.</p>
+		</div>
+		<div>
+			<span class="text-black mr-3"><strong>02</strong></span><a href="#" class="btn btn-primary checkCertify" disabled="true">인증 확인</a>
+			<p class="mt-2">스마트폰 통합인증앱에서 인증요청 확인을 완료하였으면 <span class="text-primary">[인증확인]</span>버튼 클릭하세요.</p>
+		</div>
+	</div>
+
+<!--	<div class="text-center">-->
+<!--		<p class="my-5">인증요청 버튼을 누르면 통합인증앱에 메시지가 전송됩니다.</p>-->
+<!--		<a href="#" class="btn btn-primary sendCertify">인증 요청</a>-->
+<!--		<a href="#" class="btn btn-primary checkCertify" disabled="true">인증 확인</a>-->
+<!--	</div>-->
+	<div class="help-wrap">
+		<div class="help-title"><i class="fa-solid fa-square-info mr-1"></i>도움말</div>
+		<ul class="list-unstyled">
+			<li>2차 인증 사용을 위해 최초 1회 기기 등록이 필요합니다</li>
+			<li>ionepass통합인증앱 설치 후 인증수단을 등록해주세요.
+				<div class="d-inline-block">
+					<a class="btn btn-sm btn-secondary" href="https://play.google.com/store/apps/details?id=kr.co.ideatec.ionepass&amp;hl=ko&amp;gl=US" title="새창" target="_blank">안드로이드 APP<i class="fa-regular fa-arrow-right ml-1"></i></a>
+					<a class="btn btn-sm btn-secondary" href="https://apps.apple.com/kr/app/ionepass%ED%86%B5%ED%95%A9%EC%9D%B8%EC%A6%9D/id1526228740" title="새창" target="_blank">iOS APP<i class="fa-regular fa-arrow-right ml-1"></i></a>
+				</div>
+			</li>
+			<li>통합인증앱 재설치 등으로 인증요청에 문제가 발생할 경우 디지털정보처(064-754-8391)로 연락해주세요.</li>
+			<li class="text-danger"><strong>기기변경, 앱 오류 등 발생으로 2차인증이 불가한 경우 <span style="color: #000;  font-size: 16px;">휴대폰본인확인</span>을 통해 2차인증을 재설정합니다.</strong>
+			<span class="d-flex justify-content-center w-100"><a href="#" class="btn btn-sm btn-primary mt-1 resetCertify" disabled="true">본인 확인</a></span></li>
+		</ul>
+	</div>
+	<ul class="list-unstyled mt-2">
+		<li class="mt-1">※ 2차인증 : 타인에 의한 계정 도용 방지 등 로그인 보안성 강화를 위해 인증앱을 통한 추가인증을 거쳐야만 로그인할 수 있는 이중보안 서비스</li>
+		<li class="mt-1">※ 보안 강화를 위하여 로그인 시 2차인증 단계를 필수로 진행하려면 마이페이지 로그인설정에서 2차인증 설정을 활성화하세요.</li>
+	</ul>
+</div>
+
+<div class="modal fade default-modal" id="certifyInfo" tabindex="-1" aria-labelledby="certifyInfoLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="certifyInfoLabel">2차 인증 이용안내</div>
+				<button type="button" class="close" id="certifyInfo-close">
+					<i class="fal fa-xmark"><span>닫기</span></i>
+				</button>
+			</div>
+			<div class="modal-body">
+			
+			
+				<!-- ********************************************** -->
+				<!-- ********************************************** -->
+				<!-- ********************************************** -->
+				<div class="certify-info">
+					<div class="step-title border-0"><span class="text-label mr-1">STEP 01</span> 최초 기기 등록</div>
+					<div class="info-list">
+						<div class="text">
+							<p class="pb-3">1. 아이디 / 비밀번호 입력 후 로그인 버튼을 클릭하면 2차인증 발급코드 화면이 제공됩니다.</p>
+							<p>2. 앱스토어 / 구글플레이에서 앱 다운로드 후 앱을 실행합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">2차 인증 발급화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_01.jpg" alt="2차 인증 발급화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>3. 기관코드 / 아이디 / 발급코드 입력 후 등록 버튼을 클릭합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">통합인증 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_02.jpg" alt="통합인증 화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>4. 인증서비스 목록에서 제주대학을 선택합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">통합인증 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_03.jpg" alt="인증서비스 목록 화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>5. 2차인증에서 사용할 인증수단을 선택하여 등록합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">인증수단 등록 확면</span>
+							<img src="/pub/site/portal/images/common/cd_img_04.jpg" alt="인증수단 등록 확면">
+						</div>
+					</div>
+					<div class="step-title"><span class="text-label mr-1">STEP 02</span> 2차인증 요청하기</div>
+					<div class="info-list">
+						<div class="text">
+							<p class="pb-3">1. 아이디 / 비밀번호 입력 후 로그인 버튼을 클릭하면 2차인증 요청 팝업이 제공됩니다.</p>
+							<p>2. [인증 요청] 버튼을 클릭합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">2차인증 팝업 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_05.webp" alt="2차인증 팝업 화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>3. 2차인증 앱에서 인증요청을 확인하고 [인증진행] 버튼을 클릭합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">2차인증 앱 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_06.jpg" alt="2차인증 앱 화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>4. 기 설정한 인증수단으로 인증을 완료합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">2차인증 앱 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_07.jpg" alt="2차인증 앱 화면">
+						</div>
+					</div>
+					<div class="info-list">
+						<div class="text">
+							<p>5. 2차인증이 완료되고 포털 메인화면으로 이동합니다.</p>
+						</div>
+						<div class="img">
+							<span class="text-label">2차인증 앱 화면</span>
+							<img src="/pub/site/portal/images/common/cd_img_08.webp" alt="2차인증 앱 화면">
+						</div>
+					</div>
+				</div>		<!-- end of certify-info -->
+			</div>	<!-- end of modal-body -->
+		</div>
+	</div>
+</div>
+
+<form id="reqPCCForm" name="reqPCCForm" method="post">
+	<input type="hidden" name="reqInfo" value="0F466DD7534065CE6D77B4D4DA37532F7D7935A24CA769D2687888159B6B65CFE75469ED23EB0BD6F6FDA0EF95CE9E21F1F794092853B553D1BF627D09F275A7D35EA0431E25347657005E039EA24C56442C2590571C915C5DD21601ADDC76DB13148C00BA3F2BBD24A0C17D83FB4BFBB71E552BA3373C731DBCB9DF42D0490B4F8FF16C25BDB7D884B09A634B69CA1635107EAE7D5C5E64004C89C0F2CC454AE1933A02451ACC2E9C0A08BD8FCD6BA3C7EABAA9EF05E8EC61B8C0E17A928EAAC232BCC2245D515C2C24E58A6CD86048FF13F929DDC2EE18371C7CCA82CD45DF7A1F2A13DCEC67F8B2E7ADBA01EA00BE0E24DC0C788F9416A83C7FEFC0F9B3E0B0BD6D4EBED9DEB63C4E0FE8D09A088C6ED77457AADCD50D936637C3A194C90FC801AD15F5396A4D1B9D4F4A4CCA78AAF563912D13042A6869712D691A2D0DF88C76D6199C5A7105E4A8F25FA679762D2DFF65F33C5FF2D1F88964B5F8C14305AB8CFEF8FD6826816B45592971CD1A94A4D013DE4BFBEF3A534FAF333C6F848399904FC2D3DBA06553E806B75887FC6F10DCDF97143BEAD80513CCC9491E73E3DC641EFB536FDB7D0263FBA55802FD0F205823F0B02A6606E69E7DD72AD889737D91031E5458FE3D3F814F3047B5E3AECEBC7E4FC3320DB46F0DB20001E6CBCA">
+	<input type="hidden" name="retUrl" value="32https://portal.jejunu.ac.kr/login.htm?act=selfcheck&amp;removeUrl=true">
+	<input type="hidden" name="verSion" value="2">
+</form>
+
+<script>
+	$(function() {
+		let rtnCode = "CHECK";
+		let rtnTid = "";
+		if ( rtnCode == "CHECK")
+		{
+			$(".joinCertify").removeClass("d-none");
+			$("#globalViewModalTitle").html("2차인증요청");
+		}
+		else
+		{
+			$("#globalViewModalTitle").html("2차인증 발급코드");
+			$(".regCertify").removeClass("d-none");
+			let cerCode = "";
+			console.log("");
+			codeValue = "";
+			for ( var i = 0 ; i < 5 ; i++)
+			{
+				codeValue += "<span>"+cerCode.substring(i, i+1)+"</span>";
+			}
+
+			$(".code-group").html(codeValue);
+
+		}
+
+		$(".btn-certify").click(function () {
+
+			$("#globalViewModalTitle").html("2차인증요청");
+
+			$.ajax({
+				url: '/login.htm',
+				dataType: 'json',
+				data: {
+					act: 'checkUserStatus',
+					_out : 'json'
+				},
+				success: function(rtn) {
+					if ( rtn.returnMap.returnCode == '0000')
+					{
+						$(".regCertify").addClass("d-none");
+						$(".joinCertify").removeClass("d-none");
+					}
+					else
+					{
+						alert(rtn.returnMap.returnMessage );
+					}
+				}
+			});
+
+
+		});
+
+		$('.sendCertify').click(function () {
+
+			$.ajax({
+				url: '/login.htm',
+				dataType: 'json',
+				data: {
+					act: 'callCertify',
+					_out : 'json'
+				},
+				success: function(rtn) {
+					rtnTid = rtn.tid;
+					alert("인증요청되었습니다.\n휴대폰에서 인증을 완료해주시고 인증확인버튼을 눌러주세요!");
+				}
+			});
+		});
+
+		$('.checkCertify').click(function () {
+
+			$.ajax({
+				url: '/login.htm',
+				dataType: 'json',
+				data: {
+					act: 'callCertifyCheck',
+					tid: rtnTid,
+					_out : 'json'
+				},
+				success: function(rtn) {
+					if ( rtn.returnMap.returnCode == '0000')
+					{
+						location.href = "index.htm";
+					}
+					else if ( rtn.returnMap.returnCode == '1013')
+					{
+						alert("사용자 인증이 완료되지 않았습니다.");
+					}
+					else if ( rtn.returnMap.returnCode == '1014')
+					{
+						if ( confirm("인증유효시간이 초과되었습니다.\n 재요청하시겠습니까?") )
+						{
+							$('.sendCertify').click();
+						}
+					}
+					else
+					{
+						alert(rtn.returnMap.returnMessage );
+					}
+				}
+			});
+		});
+
+
+		$('.resetCertify').click(function () {
+			var PCC_window = window.open('', 'PCCV3Window', 'width=400, height=630, resizable=1, scrollbars=no, status=0, titlebar=0, toolbar=0, left=300, top=200' );
+			if(PCC_window == null){ alert(" ※ 윈도우 XP SP2 또는 인터넷 익스플로러 7 사용자일 경우에는 \n    화면 상단에 있는 팝업 차단 알림줄을 클릭하여 팝업을 허용해 주시기 바랍니다. \n\n※ MSN,야후,구글 팝업 차단 툴바가 설치된 경우 팝업허용을 해주시기 바랍니다."); }
+			document.reqPCCForm.action = 'https://pcc.siren24.com/pcc_V3/jsp/pcc_V3_j10_v2.jsp';
+			document.reqPCCForm.target = 'PCCV3Window';
+			$('#reqPCCForm').submit();
+		});
+	});
+</script>
+
+<script>
+	$(function() {
+		$("#certifyInfo-close").click(function(){
+			$("#certifyInfo").hide();
+			$(".modal-backdrop").hide();
+		});
+	});
+
+	function fn_resetCertify()
+	{
+
+		$.ajax({
+			url: '/login.htm',
+			dataType: 'json',
+			data: {
+				act: 'resetCertify',
+				_out : 'json'
+			},
+			success: function(rtn) {
+
+				if ( rtn.rtnCode == "OK")
+				{
+					if (  rtn.returnMap.returnCode == "0000")
+					{
+						if ( confirm("초기화 완료 되었습니다.") )
+						{
+							location.reload();
+						}
+					}
+					else
+					{
+						alert(rtn.returnMap.returnMessage);
+					}
+				}
+				else
+				{
+					alert(rtn.rtnMsg);
+				}
+			}
+		});
+
+	}
+</script>
+			
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<script src="pub/plugin/lodash/lodash.min.js"></script>
+<script src="pub/plugin/jquery/jquery.min.js"></script>
+<!--<script src="pub/plugin/jquery-ui/jquery-ui.min.js"></script>-->
+<script src="pub/plugin/bootstrap/js/bootstrap.bundle.min.js" defer=""></script>
+<script src="pub/plugin/moment/moment-with-locales.min.js"></script>
+<script src="pub/plugin/js-cookie/js.cookie.min.js"></script>
+<script src="pub/plugin/urijs/URI.min.js"></script>
+<script src="pub/plugin/sweetalert2/sweetalert2.min.js"></script>
+<script src="pub/plugin/bootbox/bootbox.min.js"></script>
+<!--<script src="pub/plugin/waitme/waitMe.min.js"></script>-->
+<!--<script src="pub/plugin/gritter/js/jquery.gritter.min.js"></script>-->
+<script src="pub/common/js/functions.js"></script>
+<script src="pub/site/portal/js/layout.js" defer=""></script>
+<script src="pub/site/portal/js/report.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+		initDatepicker();
+
+		$(document).bind("contextmenu", function(e){
+			showError('', '마우스 오른쪽 버튼을 사용하실 수 없습니다.');
+			return false;
+		});
+
+		$('img').bind("contextmenu",function(e){
+			showError('', '마우스 오른쪽 버튼을 사용하실 수 없습니다.');
+			return false;
+		});
+
+		$('img').bind("selectstart",function(e){
+			showError('', '마우스 오른쪽 버튼을 사용하실 수 없습니다.');
+			return false;
+		});
+	});
+
+	document.oncontextmenu=function(){return false;} // 우클릭 방지
+	// document.onselectstart=function(){return false;} // 드래그 방지
+</script>
+
+
+
+<script src="pub/plugin/simple-calendar-master/dist/jquery.simple-calendar.js"></script>
+
+<script>
+	$(function () {
+	});
+</script>
+
+<script src="pub/plugin/swiper/swiper-bundle.min.js"></script>
+<script>
+	var swiper1 = new Swiper(".infoImg1", {
+		pagination: {
+			el: '.info-img1 .swiper-pagination',
+			clickable: true
+		}
+	});
+	var swiper2 = new Swiper(".infoImg2", {
+		pagination: {
+			el: '.info-img2 .swiper-pagination',
+			clickable: true
+		}
+	});
+	var swiper3 = new Swiper(".infoImg3", {
+		pagination: {
+			el: '.info-img3 .swiper-pagination',
+			clickable: true
+		}
+	});
+</script>
+
+
+
+
+	<script src="pub/plugin/gridstack/gridstack-all.js"></script>
+	<script>
+		(function ($) {
+			$(function () {
+				const _head = $('head'), _body = $('body'), EDIT = false;
+
+				const grids = GridStack.initAll({
+					column: 6,
+					disableResize: true,
+					disableDrag: !EDIT,
+					draggable: {
+						handle: 'button.portlet-buttons-move'
+					},
+					cellHeight: 320,
+					animate: false
+				});
+
+				const _portlets = $('.portlet-container'), _portlets_count = _portlets.length;
+				let _loaded_portlet = 0;
+				_portlets.each(function () {
+					let _portlet = $(this), _portlet_data = _portlet.data();
+					$.getJSON('/portlet/' + _portlet_data.seq, function (data) {
+						if (data.style) {
+							_head.append($('<style>' + data.style + '</style>'));
+						}
+
+						let html = '<div class="card portlet height-' + _portlet_data.height + ' width-' + _portlet_data.width + '  "  id="' + data.portletId + '">';
+						if (data.title || (data.tools && data.tools.length > 0)) {
+							let headerClass = 'card-header portlet-header d-flex';
+							let target = "_self";
+							headerClass += data.title ? ' portlet-header-has-title ' : ' portlet-header-no-title ';
+							headerClass += data.tools && data.tools.length > 0 ? ' portlet-header-has-tools ' : ' portlet-header-no-tools ';
+							html += '<div class="' + headerClass + '">';
+							if (data.title) html += '<div class="card-title mr-auto portlet-title">' + data.title + '</div>';
+							if (data.tools && data.tools.length > 0) {
+								html += '<div class="portlet-tools ml-auto"><div class="btn-group">';
+								_.each(data.tools, function (tool) {
+									switch (tool) {
+										case 'PORTLET_LINK':
+											if( data.linkOpen =='BLANK') target = "_blank"
+											html += '<a href="' + data.link + '" target="'+target+'" class="btn btn-sm btn-outline-white portlet-buttons-link"><i class="fal fa-plus"></i></a>';
+											break;
+										case 'MOVE':
+											if (EDIT) {
+												// html += '<button type="button" class="btn btn-sm btn-outline-white portlet-buttons-move"><i class="fal fa-arrows-up-down-left-right"></i></button>';
+											}
+											break;
+										case 'CLOSE':
+											if (EDIT) {
+												html += '<button type="button" class="btn btn-sm btn-outline-white portlet-buttons-close"><i class="fal fa-times"></i></button>';
+											}
+											break;
+									}
+								});
+								html += '</div></div>';
+							}
+							html += '</div>'
+						}
+						if (data.html) {
+							html += '<div class="card-body overflow-auto portlet-body">' + data.html + '</div>';
+						}
+						html += '</div>';
+						_portlet.find('.grid-stack-item-content').html(html);
+
+						_loaded_portlet++;
+						if (_loaded_portlet >= _portlets_count) {
+							_.each(grids, function (grid) {
+								grid.compact();
+								if (EDIT) {
+									console.log(grid.opts.draggable.handle);
+									grid.opts.draggable.handle = '.portlet-buttons-move';
+									grid.enableMove(true);
+									console.log(grid.opts.draggable.handle);
+								}
+							});
+
+							$('.portlet-buttons-close').on('click', function () {
+								const _this = $(this).closest('.portlet-container'), _data = _this.data();
+								bootbox.confirm({
+									message: '선택한 포틀릿을 제거하시겠습니까 ?',
+									centerVertical: true,
+									callback: function (ok) {
+										if (ok) {
+											doForm({
+												act: 'removePortlet',
+												seq: _data.seq,
+												layout: _data.layout
+											});
+										}
+									}
+								})
+							});
+						}
+						if (data.script) {
+							$('<script>').text(data.script).appendTo(_body);
+						}
+					});
+
+				});
+
+				$(document).on('click', '.js-global-portlet-view-modal', function () {
+					const _globalViewModal = $('#globalViewModal'), _globalViewModalTitle = $('#globalViewModalTitle'), _globalViewModalBody = $('#globalViewModalBody');
+					let url = $(this).attr('href');
+					let param = "";
+					_globalViewModalTitle.html($(this).data('title'));
+					_globalViewModalBody.load(url, param, function (data) {
+						if (!data.error) {
+							_globalViewModal.modal();
+						}
+					});
+				});
+				
+
+			});
+		})(jQuery);
+	</script>
+
+	<script>
+		$(function() {
+			/*팝업*/
+			if($('.popup-modal').length > 0) {
+				function setCookie(name, value, expiredays) {
+					var today = new Date();
+					console.log(today.getDate())
+					today.setDate(today.getDate() + expiredays);
+					document.cookie = name + '=' + escape(value) + '; expires=' + today.toGMTString();
+				}
+
+				function getCookie(name) {
+					var cookie = document.cookie;
+					if (document.cookie != "") {
+						var cookie_array = cookie.split("; ");
+						console.log(cookie_array)
+						for (var index in cookie_array) {
+							var cookie_name = cookie_array[index].split("=");
+							if (cookie_name[0] == "mycookie") {
+								return cookie_name[1];
+							}
+						}
+					}
+					return;
+				}
+
+				var popupSwiper = new Swiper('.popup-modal .swiper-container', {
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
+					loop: true,
+					pagination: {
+						el: '.popup-modal .swiper-pagination',
+						clickable: true,
+					}
+				});
+
+				$(".popup-modal .modal-today-close").click(function () {
+					$("#popupModal").modal("hide");
+					setCookie("mycookie", 'popupEnd', 1);
+				})
+
+				var checkCookie = getCookie("mycookie");
+				if (checkCookie == 'popupEnd') {
+					$("#popupModal").modal("hide");
+				} else {
+					$('#popupModal').modal("show");
+				}
+			}
+
+		});
+
+	</script>
+
+
+
+
+
+
+<script src="pub/plugin/swiper/swiper-bundle.min.js"></script>
+
+
+<script>function userPortlet11Script() {
+
+    $(function() {
+        $.ajax({
+            type : 'POST',
+            url : '/mypage/pushlist.htm',
+            data : {act: 'unread',_out : 'json'},
+            dataType : 'json',
+            success : function(data){
+                $(".js-push-unread").html(data.count);
+            },error : function (data) {
+            }
+        });
+
+        function timestampToDb(timestamp){
+            const date = new Date(timestamp);
+            const year = date.getFullYear(), month = (date.getMonth() + 1).toString().padStart(2, '0'), day = date.getDate().toString().padStart(2, '0');
+            const hour = date.getHours().toString().padStart(2, '0'), minute = date.getMinutes().toString().padStart(2, '0'), second = date.getSeconds().toString().padStart(2, '0')
+            return year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
+        }
+        $.ajax({
+            type : 'POST',
+            url : '/mypage/logdata.htm',
+            data : {act: 'recent', _out : 'json'},
+            dataType : 'json',
+            success : function(data){
+                if(data.recentLogin){
+                    $("#lastUserIp").html(data.recentLogin.ip);
+                    $("#lastLoginDt").html(timestampToDb(data.recentLogin.loginTime));
+                }
+            },error : function (data) {
+            }
+        });
+
+    });
+
+    const _globalViewModal = $('#globalViewModal'), _globalViewModalTitle = $('#globalViewModalTitle'), _globalViewModalBody = $('#globalViewModalBody');
+    if (_globalViewModal.length > 0) {
+        $('.js-global-view-modal').each(function () {
+            const _button = $(this), _button_data = _button.data();
+
+            _button.on('click', function (e) {
+                e.preventDefault();
+
+                let url = '';
+                if (_button[0].tagName == 'A') {
+                    url = _button.attr('href');
+                } else if (_button[0].tagName == 'BUTTON') {
+                    url = _button.data('href');
+                }
+
+                let param = _button_data['param'] || {};
+                param['_out'] = 'body';
+
+                if (_button_data['callback']) param['callback'] = _button_data['callback'];
+
+
+                if (_button_data.title) {
+                    _globalViewModalTitle.html(_button_data.title);
+                } else {
+                    _globalViewModalTitle.html(_button.html());
+                }
+
+                _globalViewModalBody.load(url, param, function (data) {
+                    if (!data.error) {
+                        _globalViewModal.modal();
+
+                        if(_button_data['modalId'])  {
+                            _globalViewModal.attr('id',_button_data['modalId']);
+                        }
+
+                        if(_button_data['modalClass'])  {
+                            _globalViewModal.addClass(_button_data['modalClass']);
+                        }
+
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.js-global-close-modal', function () {
+            _globalViewModal.modal('hide');
+        });
+    }
+
+}
+userPortlet11Script();</script><script>function userPortlet115Script() {
+
+    $(function() {
+
+        $('.board-tab .title').click(function(){
+            $('.board-tab .title').removeClass('active');
+            $('.board-tab ul').addClass('d-none');
+            $(this).addClass('active');
+            $(this).trigger('active');
+            $(this).parents().find('>ul').removeClass('d-none');
+            return false;
+        });
+
+        $('.board-tab .title:first').trigger('click');
+    });
+
+    function dateFormat(str) {
+        let date = new Date(str);
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+
+        month = month >= 10 ? month : '0' + month;
+        day = day >= 10 ? day : '0' + day;
+
+        return month + '-' + day;
+    }
+
+    function timestampToMD(timestamp) {
+        const date = new Date(timestamp), month = (date.getMonth() + 1).toString().padStart(2, '0'), day = date.getDate().toString().padStart(2, '0');
+        return month + '-' + day;
+    }
+
+    function escapeHTML(text) {
+        return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"g, "&quot;").replace(/'/g, "&#x27;").replace(/\//g, "&#x2F;");
+    }
+
+    const loadArticles = {};
+    $('.board-tab .title').on('active', function () {
+        const _this = $(this), data = _this.data(), _target = $('#' + data.target);
+        if (!_.has(loadArticles, data.target)) {
+            $.ajax({
+                url: data.api,
+                type: 'GET',
+                dataType: 'json',
+                data: {
+                    size: 4
+                },
+                success: function (response) {
+                    const listItems = (_.has(response, 'data')) ? response.data.articleList
+                                        : (_.has(response, 'posts')) ? response.posts : (_.has(response, 'list'))? response.list : [];
+                    const actUrl = data.link + '?act=view&seq=';
+                    const _cht = data.cht;
+
+                    let html = '';
+                    _.each(listItems, function (a) {
+                        if (_cht === "board") {
+                            html += '<li>';
+                            if (a.stat === 'OK') {
+                                html += '<a href="' + (actUrl + a.seq) + '" title="' + escapeHTML(a.title) + '">' + escapeHTML(a.title) + '</a>';
+                            } else {
+                                html += '<a style="text-decoration: line-through;" > 삭제된 게시물 입니다.</a>';
+                            }
+                            html += '<span class="date">' + timestampToMD(a.wtime) + '</span>';
+                            html += '</li>';
+                        } else if (_cht === "jnuclass") {
+                            html += '<li>';
+                            html += '<a href="' + data.link + '?act=view&postId=' + a.post_id + '" title="' + escapeHTML(a.post_title) + '">' + escapeHTML(a.post_title) + '</a>';
+                            html += '<span class="date">' + timestampToMD(a.created_at) + '</span>';
+                            html += '</li>';
+                        }
+                        // } else if (_cht === "abeek") {
+                        //     html += '<li>';
+                        //     html += '<a href="' + data.link + '?act=view&pstSn=' + a.pstSn + '" title="' + escapeHTML(a.pstTtl) + '">' + escapeHTML(a.pstTtl) + '</a>';
+                        //     html += '<span class="date">' + dateFormat(a.pstWrtday) + '</span>';
+                        //     html += '</li>';
+                        // }
+                    })
+                    _target.html(html);
+                },
+                error: function (error) {
+                    console.warn('Error fetching data', error);
+                }
+            });
+        }
+    });
+
+
+}
+userPortlet115Script();</script><script>function userPortlet116Script() {
+
+    
+
+
+
+}
+userPortlet116Script();</script><script>function userPortlet247Script() {
+
+}
+userPortlet247Script();</script><script>function userPortlet24292Script() {
+
+
+    let container;
+    let academicList;
+    let oldYear;
+
+    $(function() {
+
+        let calendarEvent = [];
+
+        $(".my-schedule-btn-prev").click(function(){
+            $("#my-schedule .btn-prev").click();
+        });
+
+        $(".my-schedule-btn-next").click(function(){
+            $("#my-schedule .btn-next").click();
+        });
+
+        container = $("#my-schedule").simpleCalendar({
+            fixedStartDay: 0,             // Display existing event
+            displayEvent: false,             // Display existing event
+            displayTitle: true,             // Display existing event
+            displayHeader : false,
+            yearText : ".schedule .calendar .year",
+            displayDayHtml : "label",
+            monthText : ".schedule .calendar .month span",
+            onInit : function (calendar) {
+                $(".js-my-event-list").html('');
+                $(".js-academy-event-list").html('');
+                let now = new Date();
+                initAcademyEventList(now.getFullYear(),now.getMonth()+1);
+                // setMyEvent(now.getFullYear(),now.getMonth()+1);
+                // setMyConsultEvent(now.getFullYear(),now.getMonth()+1);
+                oldYear = now.getFullYear();
+            },
+            onMonthChange : function (month,year) {
+                $(".js-my-event-list").html('');
+                $(".js-academy-event-list").html('');
+                if (oldYear != year) {
+                    oldYear = year;
+                    initAcademyEventList(year,month+1);
+                } else {
+                    setAcademyEvent(year,month+1);
+                }
+                // setMyEvent(year,month+1);
+                // setMyConsultEvent(year,month+1);
+            }
+        });
+
+
+    });
+
+
+    function initAcademyEventList(year,month) {
+        $.ajax({
+            url: '/api/jnu/schedule/get.jsp',
+            dataType: 'json',
+            data: {
+                _out: 'json',
+                year: year
+            },
+            success: function(data) {
+                if(data.academicList) {
+                    data.academicList.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+                    academicList = data.academicList;
+                    setAcademyEvent(year, month);
+                }
+            }
+        });
+    }
+
+    function setAcademyEvent(year,month) {
+        month = month < 10 ? '0' + month : month;
+
+        for (var event of academicList) {
+            if (isYearMonthWithinRange(event.startDate, event.endDate, year + '-' + month)) {
+
+                var start = new Date(event.startDate);
+                var end = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
+
+                for (var currentDate = start; currentDate <= end; currentDate.setDate(currentDate.getDate() + 1)) {
+                    var currentDateFmt = dateFormat(currentDate);
+                    /*
+                    if ($("#my-schedule td[data-date='" + currentDateFmt + "'] .label .orange").length == 0) {
+                        $("#my-schedule td[data-date='" + currentDateFmt + "'] .label").append('<span class="orange"></span>');
+                    }*/
+                }
+
+                let startDate = dateFormat(new Date(event.startDate));
+                let startDay = startDate.split("-");
+
+                let period = startDay[1] + '.' + startDay[2];
+
+                if (event.endDate) {
+                    let endDate = dateFormat(new Date(event.endDate));
+
+                    let endDay = endDate.split("-");
+                    if (period != endDay[2]) period += '~' + endDay[1] + '.' + endDay[2];
+                }
+
+                $(".js-academy-event-list").append('<div class="list"><span class="date text-orange">' + period + '</span><span class="label"></span><span class="txt">' + event.contents + '</span></div>');
+            }
+
+        }
+    }
+
+    function isYearMonthWithinRange(startDate, endDate, currentDate) {
+        currentDate = new Date(currentDate);
+        startDate = new Date(startDate);
+
+        if(endDate) endDate = new Date(endDate);
+        else endDate = startDate;
+
+        var currentYear = currentDate.getFullYear();
+        var currentMonth = currentDate.getMonth() + 1;
+
+        var startYear = startDate.getFullYear();
+        var startMonth = startDate.getMonth() + 1;
+        var endYear =  endDate.getFullYear();
+        var endMonth = endDate.getMonth() + 1;
+
+        if((currentYear > startYear || (currentYear == startYear && currentMonth >= startMonth)) &&
+            (currentYear < endYear || (currentYear == endYear && currentMonth <= endMonth)))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    function setMyConsultEvent(year,month) {
+
+        if(month < 10) month = '0'+month;
+
+        $.ajax({
+            url: '/classwork/academic/calendar.htm',
+            dataType: 'json',
+            data: {
+                act: 'consultList',
+                _out: 'json',
+                year: year,
+                month: month
+            },
+            success: function(data) {
+
+                for (var event of data.consultList) {
+                    let cYear = event.consultYmd.substring(0, 4);
+                    let cMonth = event.consultYmd.substring(4, 6);
+                    let cDay = event.consultYmd.substring(6, 8);
+
+                    let currentDateFmt = cYear + "-" + cMonth + "-" + cDay;
+                    let currentDateDot = cMonth + "." + cDay;
+
+                    if($("#my-schedule td[data-date='"+currentDateFmt+"'] .label .green").length == 0) {
+                        $("#my-schedule td[data-date='"+currentDateFmt+"'] .label").append('<span class="green"></span>');
+                    }
+
+                    $(".js-my-event-list").append('<div class="list"><span class="date text-green">'+currentDateDot+'</span><span class="label green"></span><span class="txt">교수상담일정</span></div>');
+                }
+
+            }
+        });
+    }
+
+  
+
+    function dateFormat(date) {
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+
+        month = month >= 10 ? month : '0' + month;
+        day = day >= 10 ? day : '0' + day;
+        hour = hour >= 10 ? hour : '0' + hour;
+        minute = minute >= 10 ? minute : '0' + minute;
+
+        return date.getFullYear() + '-' + month + '-' + day;
+    }
+
+
+}
+userPortlet24292Script();</script><script>function userPortlet135Script() {
+
+
+
+}
+userPortlet135Script();</script><script>function userPortlet4794Script() {
+
+
+}
+userPortlet4794Script();</script><script>function userPortlet123Script() {
+
+}
+userPortlet123Script();</script><script>function userPortlet122Script() {
+
+    $("select[name='searchType']").change(function (){
+        if($(this).val() === "telnum"){
+            $('#empQ').attr('placeholder', '뒷자리 4자리 입력')
+        }else {
+            $('#empQ').attr('placeholder', '')
+        }
+    })
+
+    $('#searchEmp').click(function (){
+
+        let type = $("select[name='searchType']").val();
+        let qValue = $('#empQ').val();
+        if(!qCheck(type, qValue)) { return false; }
+
+        $(this).attr("href","emp.htm?"+type+"="+qValue);
+
+    })
+
+    function qCheck(type, qValue){
+        if(qValue === "") {
+            alert("검색어를 입력해야 합니다.")
+            return false;
+        }else if(type === 'telnum'){
+            if(isNaN(Number(qValue))){
+                alert("번호 검색은 숫자만 입력해야 합니다.")
+                return false;
+            }else if(qValue.length !== 4){
+                alert("번호 검색은 뒷자리 4자리를 입력해야 합니다.")
+                return false;
+            }
+        }
+        return true;
+    }
+
+}
+userPortlet122Script();</script><script>function userPortlet118Script() {
+
+        let workCurrentDate;
+        let myDutyWeekDate;
+        let myYearlyDuties = [];
+        let currentLoadedYear = null;
+
+        $(function() {
+            workCurrentDate = new Date();
+            setCalendar(workCurrentDate);
+            $(document).on('click', '.work-prev', function() {
+                workCurrentDate.setDate(workCurrentDate.getDate() - 1);
+                setCalendar(workCurrentDate);
+            });
+            $(document).on('click', '.work-next', function() {
+                workCurrentDate.setDate(workCurrentDate.getDate() + 1);
+                setCalendar(workCurrentDate);
+            });
+
+            myDutyWeekDate = new Date();
+            loadMyDutyYearlyData();
+
+            $(document).on('click', '#my-duty-prev-week', function() {
+                const previousYear = myDutyWeekDate.getFullYear();
+                myDutyWeekDate.setDate(myDutyWeekDate.getDate() - 7);
+                if (myDutyWeekDate.getFullYear() !== previousYear) {
+                    loadMyDutyYearlyData();
+                } else {
+                    renderMyDutyTable(myDutyWeekDate);
+                }
+            });
+            $(document).on('click', '#my-duty-next-week', function() {
+                const previousYear = myDutyWeekDate.getFullYear();
+                myDutyWeekDate.setDate(myDutyWeekDate.getDate() + 7);
+                if (myDutyWeekDate.getFullYear() !== previousYear) {
+                    loadMyDutyYearlyData();
+                } else {
+                    renderMyDutyTable(myDutyWeekDate);
+                }
+            });
+        });
+
+        function setCalendar(fromDate) {
+            const titleText = '본부당직 : ' + fromDate.getFullYear() + '년 ' + (fromDate.getMonth() + 1) + '월';
+            $(".current-month").html(titleText);
+            $(".work-calendar-day").html(String(fromDate.getDate()));
+            getWorkDay();
+        }
+
+        function getWorkDay() {
+            const days_ko = ['일', '월', '화', '수', '목', '금', '토'];
+            const setDate = dateFormatForApi(workCurrentDate, '.');
+            $.ajax({
+                url: '/api/patis/duty.jsp',
+                dataType: 'json',
+                data: { date: setDate.replaceAll(".", "") },
+                success: function(data) {
+                    let addHtml = "";
+                    if (data && data.dutyList && data.dutyList.length > 0) {
+                        const displayMonth = workCurrentDate.getMonth() + 1;
+                        const displayDay = String(workCurrentDate.getDate()).padStart(2, '0');
+                        const displayDateString = displayMonth + '.' + displayDay;
+
+                        $.each(data.dutyList, function(key, value) {
+                            if (key < 5) {
+                                let nm = value.usernm;
+                                let deptnm = value.deptnm;
+                                if (value.ondutychgprcsyn === 'Y') {
+                                    nm = value.agtempnm;
+                                    deptnm = value.agtdeptnm;
+                                }
+
+                                addHtml += "<tr><td>" + displayDateString + "(" + days_ko[workCurrentDate.getDay()] + ")</td><td>" + value.ondutycdnm + "</td><td>" + deptnm + "</td><td>" + nm + "</td></tr>";
+                            }
+                        });
+                    } else {
+                        addHtml += "<tr><td colspan='4'>당직정보가 존재하지 않습니다.</td></tr>";
+                    }
+                    $(".js-work-list tbody").html(addHtml);
+                },
+                error: function() {
+                    $(".js-work-list tbody").html("<tr><td colspan='4'>데이터를 불러오는 데 실패했습니다.</td></tr>");
+                }
+            });
+        }
+
+        let location = "";
+
+        function loadMyDutyYearlyData() {
+            if (!myDutyWeekDate) return;
+            const yearToLoad = myDutyWeekDate.getFullYear();
+            if (currentLoadedYear === yearToLoad) {
+                renderMyDutyTable(myDutyWeekDate);
+                return;
+            }
+            $.ajax({
+                url: '/api/patis/myDuty.jsp',
+                dataType: 'json',
+                data: { year: yearToLoad },
+                success: function(data) {
+                    myYearlyDuties = data.myDutyList || [];
+                    currentLoadedYear = yearToLoad;
+
+                    if (myYearlyDuties.length === 0) {
+                        $('#my-weekly-duty-section').hide();
+                    } else {
+                        $('#my-weekly-duty-section').show();
+                        location = myYearlyDuties[0].chcMttrList;
+                        renderMyDutyTable(myDutyWeekDate);
+                    }
+                },
+                error: function() {
+                    $('#my-weekly-duty-section').hide();
+                }
+            });
+        }
+
+        function renderMyDutyTable(date) {
+            const weekInfo = findDutyWeek(date);
+            const days_ko = ['일', '월', '화', '수', '목', '금', '토'];
+
+            let headerHtml = "";
+            const headerDay = new Date(weekInfo.monday);
+            for (let i = 0; i < 7; i++) {
+                const shortDate = (headerDay.getMonth() + 1) + '.' + headerDay.getDate();
+                headerHtml += '<th>' + days_ko[headerDay.getDay()] + '[' + shortDate + ']</th>';
+                headerDay.setDate(headerDay.getDate() + 1);
+            }
+            $("#my-duty-table thead tr").html(headerHtml);
+
+            const friday = new Date(weekInfo.monday);
+            friday.setDate(friday.getDate() + 4);
+            const shortFormat = (d) => (d.getMonth() + 1) + '.' + d.getDate();
+            const weekRangeText = shortFormat(weekInfo.monday) + ' ~ ' + shortFormat(friday);
+            const locationText = location;
+
+            const newNavHtml =
+                    '<span class="duty-title">학생지도 : </span>' +
+                    '<span class="duty-location">' + locationText + '</span>' +
+                    '<div class="week-navigator">' +
+                    '<button type="button" id="my-duty-prev-week"><i class="fa-regular fa-chevron-left"></i></button>' +
+                    '<span class="week-range-text">' + weekRangeText + '</span>' +
+                    '<button type="button" id="my-duty-next-week"><i class="fa-regular fa-chevron-right"></i></button>' +
+                    '</div>';
+            $("#my-weekly-duty-section .section-header").html(newNavHtml);
+
+            const searchYear = myDutyWeekDate.getFullYear();
+            const firstValidDay = new Date(searchYear, 2, 1);
+            const lastValidDay = new Date(searchYear, 11, 31);
+
+            let firstDisplayableMonday = findDutyWeek(firstValidDay).monday;
+            const dayOfWeekOfFirstValidDay = firstValidDay.getDay();
+            if (dayOfWeekOfFirstValidDay === 6 || dayOfWeekOfFirstValidDay === 0) {
+                firstDisplayableMonday.setDate(firstDisplayableMonday.getDate() + 7);
+            }
+
+            let lastDisplayableMonday = findDutyWeek(lastValidDay).monday;
+            const dayOfWeekOfLastValidDay = lastValidDay.getDay(); // 0=일요일, 6=토요일
+
+            if (dayOfWeekOfLastValidDay === 6 || dayOfWeekOfLastValidDay === 0) {
+                lastDisplayableMonday.setDate(lastDisplayableMonday.getDate() - 7);
+            }
+
+            if (weekInfo.monday.getTime() <= firstDisplayableMonday.getTime()) {
+                $('#my-duty-prev-week').prop('disabled', true).addClass('disabled');
+            } else {
+                $('#my-duty-prev-week').prop('disabled', false).removeClass('disabled');
+            }
+
+            if (weekInfo.monday.getTime() >= lastDisplayableMonday.getTime()) {
+                $('#my-duty-next-week').prop('disabled', true).addClass('disabled');
+            } else {
+                $('#my-duty-next-week').prop('disabled', false).removeClass('disabled');
+            }
+
+            const weekDuties = myYearlyDuties.filter(duty => {
+                const ymd = duty.ondutyymd;
+                if (!ymd || ymd.length !== 8) return false;
+                const year = ymd.substring(0, 4);
+                const month = ymd.substring(4, 6);
+                const day = ymd.substring(6, 8);
+                const dutyDate = new Date(year, month - 1, day);
+                if (isNaN(dutyDate.getTime())) return false;
+                const nextDayOfSunday = new Date(weekInfo.sunday);
+                nextDayOfSunday.setDate(weekInfo.sunday.getDate() + 1);
+                return dutyDate >= weekInfo.monday && dutyDate < nextDayOfSunday;
+            });
+
+            if (weekDuties.length > 0) {
+                // $('#my-duty-table').show();
+            } else {
+                // $('#my-duty-table').hide();
+            }
+
+            const dutyMap = new Map();
+            weekDuties.forEach(duty => {
+                const key = duty.ondutyymd.substring(0,4) + '-' + duty.ondutyymd.substring(4,6) + '-' + duty.ondutyymd.substring(6,8);
+                if (dutyMap.has(key)) {
+                    dutyMap.get(key).push(duty.ondutycdnm);
+                } else {
+                    dutyMap.set(key, [duty.ondutycdnm]);
+                }
+            });
+
+            let tableHtml = "<tr>";
+            const currentDay = new Date(weekInfo.monday);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            for (let i = 0; i < 7; i++) {
+                const dayString = dateFormatForApi(currentDay, '-');
+                const dutyInfo = dutyMap.get(dayString);
+                const isToday = currentDay.getTime() === today.getTime();
+                let classList = '';
+                if (dutyInfo) classList += 'on-duty ';
+                if (isToday) classList += 'today';
+
+                let cellHtml = '<td class="' + classList.trim() + '"';
+                if (dutyInfo) cellHtml += ' title="' + dutyInfo.join('\n') + '"';
+                cellHtml += '>';
+
+                if (dutyInfo) {
+                    cellHtml += 'O';
+                } else {
+                    cellHtml += '&nbsp;';
+                }
+
+                cellHtml += '</td>';
+                tableHtml += cellHtml;
+                currentDay.setDate(currentDay.getDate() + 1);
+            }
+            tableHtml += "</tr>";
+
+            $("#my-duty-table tbody").html(tableHtml);
+        }
+
+        function findDutyWeek(date) {
+            const currentDate = new Date(date);
+            const dayOfWeek = currentDate.getDay();
+            const diffToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
+            const monday = new Date(currentDate);
+            monday.setHours(0, 0, 0, 0);
+            monday.setDate(currentDate.getDate() + diffToMonday);
+            const sunday = new Date(monday);
+            sunday.setDate(monday.getDate() + 6);
+            return { monday, sunday };
+        }
+
+        function dateFormatForApi(date, separator) {
+            const year = date.getFullYear();
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const day = date.getDate().toString().padStart(2, '0');
+            return separator ? [year, month, day].join(separator) : year + month + day;
+        }
+    
+}
+userPortlet118Script();</script><script>function userPortlet142Script() {
+
+}
+userPortlet142Script();</script><script>function userPortlet4796Script() {
+
+	$('.polls').each(function () {
+		const _polls = $(this), _pollSize = _polls.data('size'), _pollNoText = _polls.find('.poll-count');
+		let _pollNo = 1
+		_polls.find('.poll-next').on('click', function () {
+			if (_pollNo >= _pollSize) return;
+			_polls.find('.a-poll-' + _pollNo).addClass('d-none');
+			_pollNo++;
+			_polls.find('.a-poll-' + _pollNo).removeClass('d-none');
+			_pollNoText.text(_pollNo);
+
+		});
+		_polls.find('.poll-prev').on('click', function () {
+			if (_pollNo <= 1) return;
+			_polls.find('.a-poll-' + _pollNo).addClass('d-none');
+			_pollNo--;
+			_polls.find('.a-poll-' + _pollNo).removeClass('d-none');
+			_pollNoText.text(_pollNo);
+		});
+		_polls.find('.poll-do-vote').on('click', function () {
+			const _this = $(this);
+			$('#pollListModalBody').load('/poll.htm?act=vote&_out=body&poll=' + _this.data('seq'), function () {
+				$('#pollListModal').modal();
+			});
+		});
+	});
+	window.pollOK = function (msg) {
+		showInfo(msg);
+		$('#pollListModalBody').html('');
+		$('#pollListModal').modal('hide');
+		$('.a-poll').not('.d-none').find('button.vote-box').replaceWith('<span class="vote-box">최현석 님은 이미 참여 했습니다.</span>')
+	};
+	window.closePollVoteModal = function () {
+		$('#pollListModal').modal('hide');
+	};
+
+}
+userPortlet4796Script();</script><script>function userPortlet121Script() {
+
+
+    let currentDate;
+    const days_ko = ['일', '월', '화', '수', '목', '금', '토'];
+    let place ='MEALFIX_002';
+    let lunch;
+    let dinner;
+    let price = '6,000원';
+    let priceDinner = '6,500원';
+
+    $(function() {
+
+        currentDate = new Date();
+        setCalendar(currentDate);
+
+        $(document).on('click', '.meal-place .place-title', function ( e ) {
+
+            $(".meal-tab .tab-title:eq(0) a").text("점심특식");
+            $(".meal-tab .tab-title:eq(1) a").text("저녁특식");
+
+
+            $(".meal-place .place-title").removeClass("active");
+            place = $(this).data('place');
+
+            if($(this).data("lunch")) lunch = $(this).data("lunch");
+            else lunch = "";
+
+            if($(this).data("dinner")) dinner = $(this).data("dinner");
+            else dinner = "";
+
+            if($(this).data("price")) price = $(this).data("price");
+            else price = "";
+
+            if($(this).data("price-dinner")) priceDinner = $(this).data("price-dinner");
+            else priceDinner = "";
+
+            console.log(priceDinner);
+
+            $(this).addClass("active");
+
+
+            if($(this).data("place") =='MEALFIX_002') {
+                $(".meal-tab .tab-title:eq(0) a").text("점심특식1");
+                $(".meal-tab .tab-title:eq(1) a").text("점심특식2");
+            }
+
+
+            getMealDay();
+        });
+
+        /*
+        $('.meal-place .place-title').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            $('.meal-place .place-title').removeClass('active');
+            $('.meal-box').addClass('d-none');
+            $(this).addClass('active');
+            $("#"+tab_id).removeClass('d-none');
+            $('.meal-box .meal-list:first-child .title').addClass('active');
+            $('.meal-box .meal-list:first-child .content').removeClass('d-none');
+            return false;
+        })*/
+
+        $('.meal-box .meal-tab .tab-title').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            $('.meal-box .meal-tab .tab-title').removeClass('active');
+            $('.meal-box .meal-list').addClass('d-none');
+            $(this).addClass('active');
+            $("#"+tab_id).removeClass('d-none');
+
+
+            var showPrice = price;
+            if($(".tab-title.active").data('tab') =='meal-dinner' && priceDinner !='') {
+                showPrice = priceDinner;
+            }
+
+
+            if(showPrice) {
+                $(".js-meal-price").html(showPrice);
+                $(".js-meal-price").show();
+            }
+            else $(".js-meal-price").hide();
+
+
+            return false;
+        })
+
+
+        $(document).on('click', '.meal-prev', function ( e ) {
+            currentDate.setDate(currentDate.getDate() -1);
+            setCalendar(currentDate);
+        });
+
+        $(document).on('click', '.meal-next', function ( e ) {
+            currentDate.setDate(currentDate.getDate()+1);
+            setCalendar(currentDate);
+        });
+
+        $('.m-meal .meal-select').on('click', function () {
+            $(this).parent().toggleClass('open');
+        });
+
+        $('.m-meal .meal-place-items div').on('click', function () {
+            const selectedText = $(this).text();
+            $(this).closest('.m-meal').find('.meal-select').text(selectedText);
+            $(this).closest('.m-meal').removeClass('open');
+        });
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.m-meal').length) {
+                $('.m-meal').removeClass('open');
+            }
+        });
+
+    });
+
+    function setCalendar(fromDate) {
+
+        $(".calendar-year").html(fromDate.getFullYear());
+        $(".calendar-month").html(String(fromDate.getMonth()+1).padStart(2, "0"));
+        $(".calendar-day").html(String(fromDate.getDate()).padStart(2, "0"));
+        $(".calendar-week").html("("+days_ko[currentDate.getDay()]+")");
+
+        getMealDay();
+    }
+
+    function getMealDay() {
+
+
+
+        let setDate = currentDate.getFullYear()+"-"+String(currentDate.getMonth()+1).padStart(2, "0")+"-"+String(currentDate.getDate()).padStart(2, "0");
+
+        $.ajax({
+            url: '/api/jnu/meal/get/'+setDate+'/'+place,
+            dataType: 'json',
+            data: {
+                date: setDate,
+                place : place
+            },
+            success: function(data) {
+                $(".js-meal-lunch").html("");
+                $(".js-meal-dinner").html("");
+
+                if(data.dayData) {
+                    if (place.includes("MEALFIX")) {
+                        $(".js-meal-lunch").html(data.dayData['monLunch'].replace(/\n/g, ", "));
+                        $(".js-meal-dinner").html(data.dayData['monDinner'].replace(/\n/g, ", "));
+                    } else {
+                        $(".js-meal-lunch").html(data.dayData['fixMenu'].replace(/\n/g, ", "));
+                        if(place =='FIXMENU_001') $(".js-meal-dinner").html(data.dayData['fixMenu'].replace(/\n/g, ", "));
+                        else $(".js-meal-dinner").html("");
+                    }
+                }
+
+                $(".js-lunch-time").html(lunch);
+                $(".js-dinner-time").html(dinner);
+
+
+                var showPrice = price;
+                if($(".tab-title.active").data('tab') =='meal-dinner' && priceDinner !='') {
+                    showPrice = priceDinner;
+                }
+
+                if(showPrice) {
+                    $(".js-meal-price").html(showPrice);
+                    $(".js-meal-price").show();
+                }
+                else $(".js-meal-price").hide();
+
+            }
+        });
+
+    }
+
+}
+userPortlet121Script();</script><script>function userPortlet5446Script() {
+
+
+
+}
+userPortlet5446Script();</script><script>function userPortlet4795Script() {
+
+}
+userPortlet4795Script();</script><script>function userPortlet23974Script() {
+
+}
+userPortlet23974Script();</script><script>function userPortlet26459Script() {
+
+}
+userPortlet26459Script();</script><script>function userPortlet26458Script() {
+
+}
+userPortlet26458Script();</script><script>function userPortlet26462Script() {
+
+
+
+    let map;
+
+    $(function () {
+
+        setTimeout(function () {
+            setBus("A");
+        }, 50);
+
+        $('.bus .tab-wrap .tab-title').click(function () {
+            $('.bus .tab-wrap .tab-title').removeClass('active');
+            $(this).addClass('active');
+            setBus($(this).data('category'));
+            return false;
+        });
+    });
+
+    loadScript('https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=wsca7ce3lg').then(function (script) {
+        map = new naver.maps.Map('map', {
+            center: new naver.maps.LatLng(33.4592529, 126.5611652),
+            disableDoubleClickZoom: false,
+            disableDoubleTapZoom: false,
+            disableKineticPan: false,
+            disableTwoFingerTapZoom: false,
+            draggable: false,
+            keyboardShortcuts: false,
+            scrollWheel: false,
+            zoom: 18,
+            maxzoom: 18,
+            minzoom: 18
+        });
+    });
+
+
+    function setBus(id) {
+
+        if (map) {
+            let position = new naver.maps.LatLng(33.4592529, 126.5611652);
+            map.setCenter(position);
+        }
+
+        let busTopPosition = ($("#map").height() / 2) + 35;
+        $.ajax({
+            url: '/api/bus/get.jsp',
+            dataType: 'json',
+            data: {
+                act: 'getBus',
+                _out: 'json',
+                id: id
+            },
+            success: function (data) {
+
+                let busStartTime = data.bus.time.split(',');
+                let busStop = JSON.parse(data.busStop);
+
+                $.each(busStartTime, function (i, p) {
+                    let today = new Date();
+
+                    let setTime = new Date();
+                    setTime.setHours(p.substr(0, 2));
+                    setTime.setMinutes(p.substr(2, 2));
+
+                    let endTime = new Date();
+                    endTime.setHours(p.substr(0, 2));
+                    endTime.setMinutes(p.substr(2, 2));
+                    endTime.setMinutes(endTime.getMinutes() + 13);
+
+                    if (setTime.getTime() <= today.getTime() && today.getTime() <= endTime.getTime()) {
+                        startTime = (today.getTime() - setTime.getTime()) / 1000;
+                        let moveTime = startTime;
+                        let currentData;
+                        moveTo = setInterval(() => {
+                            if (moveTime >= 840) {
+                                clearInterval(moveTo);
+                            } else {
+                                currentData = busStop[moveTime];
+                                if (currentData) {
+                                    $(".js-bus-img").css('transform', ' translate(-50%, -50%) rotate(' + (currentData['moveBbearing'] - 180) + 'deg)').css("display", "inline").css("top", busTopPosition + "px");
+                                    let position = new naver.maps.LatLng(currentData['moveLatLng'][0], currentData[['moveLatLng']][1]);
+                                    map.setCenter(position);
+                                }
+
+                                moveTime++;
+                            }
+                        }, 1000);
+                        return false;
+                    } else {
+                        let position = new naver.maps.LatLng(33.4592529, 126.5611652);
+                        $(".js-bus-img").css("display", "block");
+                        map.setCenter(position);
+                        clearInterval(moveTo);
+                    }
+                });
+            }
+        });
+    }
+
+
+
+}
+userPortlet26462Script();</script><script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=wsca7ce3lg" async=""></script><script>function userPortlet4793Script() {
+
+}
+userPortlet4793Script();</script></body></html>
