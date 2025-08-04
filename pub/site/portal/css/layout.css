@@ -730,15 +730,40 @@ body {
 	padding:20px;
 }
 
+.certify-wrap div:first-of-type {
+	padding:20px;
+}
 .certify-wrap div:first-of-type::after {
 	content:"▶";
 	position:absolute;
 	right:0;
-	top: 28px;px;
+	top: 28px;
 	transform: translateX(50%);
 	font-size:24px;
 	color:#0869A1;
 }
+
+
+@media (max-width: 990px) {
+
+	.certify-wrap {
+		background:#fff;
+	}
+
+	.certify-wrap div {
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	padding:0 0 0 10px;
+}
+
+.certify-wrap div:first-of-type {
+	padding:0 10px 0 0;
+}
+
+}
+
+
 
 .certify-wrap span.text-black {
 	position:relative;
