@@ -87,7 +87,7 @@ header div.container div.head-util {
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
-  gap: 3vw;
+  gap: 4vw;
 }
 @media (min-width: 700px) {
   header div.container div.head-util {
@@ -99,7 +99,7 @@ header div.container div.head-util button {
   display: inline-block;
   text-align: center;
   position: relative;
-  font-size: 1.6vw;
+  font-size: 2.4vw;
   border: none;
   background: none;
   color: #fff;
@@ -110,7 +110,7 @@ header div.container div.head-util button i {
   display: block;
   font-size: 6vw;
   color: #fff;
-  margin: 0 auto 0.6vw;
+  margin: 0 auto 1.2vw;
 }
 @media (min-width: 700px) {
   header div.container div.head-util a i,
