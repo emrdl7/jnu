@@ -146,7 +146,7 @@ header div.container-fluid div.head-util button span {
   top: -5px;
   font-size: 9px;
   color: #fff;
-  background: #3282F0;
+  background: #007aff;
   line-height: 18px;
   padding: 0 5px;
   border-radius: 100px;
@@ -205,13 +205,6 @@ header div.search-form input:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-@media (min-width: 700px) {
-  header div.search-form input {
-    flex: 1 1 30vw;
-    padding: 0 1.5vw;
-    width: 7vw;
-  }
-}
 header div.search-form button.submit {
   position: absolute;
   top: 50%;
@@ -223,20 +216,9 @@ header div.search-form button.submit {
   border: 0;
   background-color: transparent;
 }
-@media (min-width: 700px) {
-  header div.search-form button.submit {
-    padding: 0 1.5vw;
-    flex: 1 1 4vw;
-  }
-}
 header div.search-form button.submit i {
   font-size: 4vw;
-  color: #3282f0;
-}
-@media (min-width: 700px) {
-  header div.search-form button.submit i {
-    font-size: 2vw;
-  }
+  color: #007aff;
 }
 
 nav#allMenu {
@@ -310,7 +292,7 @@ nav#allMenu div.head div.util div.language:before {
   position: absolute;
   left: 50%;
   top: -10px;
-  font-size: 10px;
+  font-size: 14px;
   transform: translateX(-50%);
   color: #666666;
 }
@@ -328,7 +310,7 @@ nav#allMenu div.head div.util div.language a:first-of-type {
 }
 nav#allMenu div.menu-box {
   position: relative;
-  background: #3282f0;
+  background: #007aff;
   min-height: 100%;
   word-break: break-word;
 }
@@ -400,7 +382,7 @@ nav#allMenu div.menu-box > ul > li > ul > li > a.active.has:before {
   display: none;
 }
 nav#allMenu div.menu-box > ul > li > ul > li > a.active.has:after {
-  background: #3282f0;
+  background: #007aff;
 }
 nav#allMenu div.menu-box > ul > li > ul > li ul {
   display: none;
@@ -429,13 +411,6 @@ nav#allMenu div.menu-box > ul > li > ul > li ul li a:before {
   top: 5vw;
   border-radius: 50%;
   transform: translateY(-50%);
-}
-@media (min-width: 700px) {
-  nav#allMenu div.menu-box > ul > li > ul > li ul li a:before {
-    width: 0.5vw;
-    height: 0.5vw;
-    top: 2.5vw;
-  }
 }
 
 nav#dock {
@@ -560,7 +535,7 @@ div.dock-library a {
   color: #fff;
 }
 div.dock-library a.app {
-  background: #3282F0;
+  background: #007aff;
   margin-bottom: 5px;
 }
 div.dock-library a.web {
@@ -730,7 +705,7 @@ section.main {
 section.main div.util {
   display: flex;
   padding: 20px 20px 10px;
-  background: #3282F0;
+  background: #007aff;
   gap: 10px;
   border-radius: 10px;
 }
@@ -739,7 +714,7 @@ section.main div.util a {
   position: relative;
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.2;
   word-break: keep-all;
 }
@@ -798,7 +773,7 @@ section.main div.links {
 section.main div.links a {
   position: relative;
   flex: 0 0 calc((100% - 30px) / 4);
-  font-size: 10px;
+  font-size: 12px;
   color: #222;
   border-radius: 10px;
   line-height: 1.4;
@@ -884,18 +859,13 @@ section.main div.bbs {
   background: #fff;
   border-radius: 10px;
 }
-@media (min-width: 700px) {
-  section.main div.bbs {
-    padding: 1.5vw 0;
-  }
-}
 section.main div.bbs div.tabs {
   display: flex;
   margin: 0 0 20px;
   gap: 20px;
 }
 section.main div.bbs div.tabs button {
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
   border: none;
   background: none;
@@ -904,8 +874,8 @@ section.main div.bbs div.tabs button {
   font-weight: 500;
 }
 section.main div.bbs div.tabs button.active {
-  color: #3282f0;
-  border-color: #3282f0;
+  color: #007aff;
+  border-color: #007aff;
   font-weight: 700;
 }
 section.main div.bbs div.tab-data {
@@ -919,7 +889,7 @@ section.main div.bbs div.tab-data ul li {
 }
 section.main div.bbs div.tab-data ul li a {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   color: #666666;
   overflow: hidden;
   white-space: nowrap;
@@ -932,13 +902,6 @@ section.main div.bbs div.tab-data ul li i {
   color: #777;
   font-style: normal;
   font-weight: 200;
-}
-@media (min-width: 700px) {
-  section.main div.bbs div.tab-data ul li i {
-    padding: 0.5vw 0 0;
-    font-size: 1.5vw;
-    width: 7vw;
-  }
 }
 section.main div.bbs div.tab-data a.more {
   display: block;
@@ -963,13 +926,7 @@ section.sub-content,
 div.sub-index {
   position: relative;
   z-index: 1;
-  padding: 20vw 4vw 22vw;
-}
-@media (min-width: 700px) {
-  section.sub-content,
-  div.sub-index {
-    padding: 10vw 2vw 11vw;
-  }
+  padding: 75px 0 70px;
 }
 section.sub-content ul.navigation,
 div.sub-index ul.navigation {
@@ -1166,7 +1123,7 @@ div.sub-index h2.stitle button.share i {
   border: 0;
 }
 .modal.id-card .modal-header {
-  background-color: #3282f0;
+  background-color: #007aff;
 }
 .modal.id-card .modal-header .modal-title {
   margin: 0 auto;
@@ -1209,7 +1166,7 @@ div.sub-index h2.stitle button.share i {
   transform: translateY(-50%) translateX(-50%);
   width: 170px;
   height: 170px;
-  border: 4px solid #3282f0;
+  border: 4px solid #007aff;
   border-radius: 50%;
 }
 .modal.id-card .modal-body .id-card-content div.canvas-outline #time-canvas {
@@ -1338,7 +1295,7 @@ div.sub-index h2.stitle button.share i {
   transform: translateY(-50%) translateX(-50%);
   width: 170px;
   height: 170px;
-  border: 4px solid #3282f0;
+  border: 4px solid #007aff;
   border-radius: 50%;
 }
 .modal.id-card .modal-body .tag-content div.canvas-outline #time-canvas {
@@ -1385,7 +1342,7 @@ div.sub-index h2.stitle button.share i {
 }
 .modal.id-card .modal-body .tag-content p.attention strong {
   font-weight: 700px;
-  color: #3282f0;
+  color: #007aff;
 }
 .modal.id-card .modal-body .tag-content a.how {
   display: block;
