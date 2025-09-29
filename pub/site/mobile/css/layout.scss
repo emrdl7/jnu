@@ -958,7 +958,7 @@ section.main {
         position:absolute;
         left:50%;
         top:50%;
-        transform:translateX(-50%) translateY(-100%);
+        transform:translateX(-50%) translateY(-130%);
         width:24px;
         height:24px;
         
@@ -1072,7 +1072,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
         position: absolute;
         top:50%;
-        transform:translateY(20%);
         left: 0;
         right: 0;
         display: flex;
