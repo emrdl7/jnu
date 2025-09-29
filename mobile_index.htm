@@ -35,17 +35,17 @@
 <body >
 
 <header id="header" class="header">
-    <div class="container">
+    <div class="container-fluid">
         <h1><a href="mobile_index.htm">제주대학교</a></h1>
 
         <div class="head-util">
 	    <!--<a href="mypage/qr.htm"  class="js-global-view-modal" data-modal-id="idCard" data-modal-class="id-card"><i class="fa-regular fa-address-card mr-2"></i>모바일 신분증</a>-->
 	
-		<a href="#" id="lnkIdCard" class="js-global-view-modal"><i class="fa fa-door-open"></i>출입</a>
+		<a href="#" id="lnkIdCard" class="js-global-view-modal door">출입</a>
 
-		<a href="#" id="lnkIdCard" class="js-global-view-modal"><i class="fa-regular fa-address-card"></i>신분증</a>
-		<a href="mypage/pushlist.htm"><i class="fa-solid fa-bell"></i>알림 <span class="js-push-unread">0</span></a>
-		<button class="search"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+		<a href="#" id="lnkIdCard" class="js-global-view-modal idcard">신분증</a>
+		<a href="mypage/pushlist.htm" class="notification">알림 <span class="js-push-unread">0</span></a>
+		<button class="search">검색</button>
         </div>
 
     </div>
@@ -87,35 +87,40 @@
 <section class="main">
 	<div class="container">
 
-		<div class="util row">
+		<div class="util">
 
-			<a  href=" intent://canvas.jejunu.ac.kr#Intent;scheme=canvas-student;package=com.instructure.candroid.xinics2.production;end "    target="_BLANK"><i class="fa-regular fa-chalkboard"></i><span><u>JNU</u>class</span></a>
+			<a class="webmail">웹메일</a>
+			<a class="class"><u>JNU</u>class</a>
+			<a class="duty"><u>당직정보</u>(상황실)</a>
+			<a class="status">교육현황</a>
+			<a class="salary">급여</a>
 
-			<a  href=" Intent://login?#Intent;scheme=jjnumobile;package=kr.co.swit.jjnu;end "    target="_BLANK"><i class="fa-regular fa-arrow-pointer"></i><span>수강신청</span></a>
-
-			<a  class="js-portlet"  data-portlet="{}" data-portlet-seq="200" data-portlet-name="수강정보"  target="_SELF"><i class="fa-light fa-memo-circle-info"></i><span>수강정보</span></a>
-
-			<a  class="js-portlet"  data-portlet="{}" data-portlet-seq="23978" data-portlet-name="시간표"  target="_SELF"><i class="fa-light fa-table"></i><span>시간표</span></a>
-
-			<a  href=" https://play.google.com/store/apps/details?id=com.jeju.jeju_abookn "    target="_BLANK"><i class="fa-regular fa-calendar-circle-user"></i><span>전자출결</span></a>
-			
+	<!-- 		
+			<a class="application">수강신청</a>
+			<a class="info">수강정보</a>
+			<a class="time">강의시간표</a>
+			<a class="attendance">전자출결</a> 
+	-->
 		</div>
 
-		<div class="links row">
-			<p>
- 					<a class="link1 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":178,"portletSeq":59,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":2,"x":0,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":59,"name":"학사일정","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_02.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_02.svg );"><span>학사일정</span></a>
-    					<a class="link3 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":183,"portletSeq":6,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":2,"x":4,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":6,"name":"캠퍼스 순환버스","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":2,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_04.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_04.svg );"><span>캠퍼스 순환버스</span></a>
-    					<a class="link5 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":22312,"portletSeq":110,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":0,"y":2,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":110,"name":"JNUclass 메시지함","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_07.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_07.svg );"><span>JNUclass 메시지함</span></a>
-    					<a class="link7 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":23984,"portletSeq":111,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":0,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":111,"name":"비교과 프로그램","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_00.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_00.svg );"><span>비교과 프로그램</span></a>
+		<div class="links">
+				<a class="link1 js-portlet" href="javascript:"><span><u>학사일정</u></span></a>
+				<a class="link2 js-portlet" href="javascript:"><span><u>캠퍼스</u><u>순환버스</u></span></a>
+				<a class="link3 js-portlet" href="javascript:"><span><u>JNUclass</u><u>메시지함</u></span></a>
+				<a class="link4 js-portlet" href="javascript:"><span><u>비교과</u><u>프로그램</u></span></a>
+				<a class="link5 js-portlet" href="javascript:"><span><u>오늘의</u><u>식단</u></span></a>
+				<a class="link6 js-portlet" href="javascript:"><span><u>도서관</u><u>서비스</u></span></a>
+				<a class="link7 js-portlet" href="javascript:"><span><u>언어교육원</u></span></a>
+				<a class="link8 js-portlet" href="javascript:"><span><u>캠퍼스맵</u></span></a>
 
-   					<a class="link2 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":179,"portletSeq":14,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":2,"y":0,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":14,"name":"오늘의 식단","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":null,"linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_03.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_03.svg );"><span>오늘의 식단</span></a>
-    					<a class="link4 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":6433,"portletSeq":105,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":2,"y":1,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":105,"name":"도서관 서비스","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":"https://lib.jejunu.ac.kr/","linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_05.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_05.svg );"><span>도서관 서비스</span></a>
-    					<a class="link6 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":6435,"portletSeq":46,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":4,"y":2,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":46,"name":"언어교육원","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":"activities/language/class.htm","linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_11.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_11.svg );"><span>언어교육원</span></a>
+				<a class="link9 js-portlet" href="javascript:"><span><u>One-Stop</u><u>서비스</u></span></a>
+				<a class="link10 js-portlet" href="javascript:"><span><u>교직원검색</u></span></a>
+				<a class="link11 js-portlet" href="javascript:"><span><u>연가일수</u></span></a>
 
+				<a class="link12 js-portlet" href="javascript:"><span><u>평생교육원</u></span></a>
+				<a class="link13 js-portlet" href="javascript:"><span><u>설문조사</u></span></a>
+				<a class="link14 js-portlet" href="javascript:"><span><u>팝업존</u></span></a>
 
-						
-    					<a class="link9 js-portlet" href="javascript:" data-portlet='{"ctime":null,"cname":null,"cloginSe":null,"classNm":"UserPortlet.class","utime":null,"uname":null,"seq":6435,"portletSeq":46,"layoutSeq":8,"userId":null,"use":true,"sort":0,"newOrder":0,"config":null,"width":2,"height":1,"x":4,"y":2,"layout":null,"master":{"ctime":null,"cname":null,"cloginSe":null,"classNm":"PortletMaster.class","utime":null,"uname":null,"seq":46,"name":"언어교육원","category":null,"desc":null,"type":null,"use":true,"attribute":null,"targetGroups":null,"targetGroupList":[],"width":2,"height":1,"link":"activities/language/class.htm","linkOpen":null,"icon":"pub/common/portlet-icon/p_icon_11.svg","add":false,"block":false,"portletTemplate":null}}' style="background-image: url( pub/common/portlet-icon/p_icon_26.svg );"><span>캠퍼스맵</span></a>
-   			</p>
 		</div>
 
 
@@ -127,14 +132,22 @@
 
 		<div class="bbs">
 			<div class="tabs">
-					<button class="" data-target="tab1" data-link="board/notice.htm" data-api="board/notice.htm?_out=json&pageSize=5" data-cat="${b.cat}" data-cht="jnuboard" data-no="1">공지</button>
-					<button class="" data-target="tab2" data-link="board/undergraduate/classwork.htm" data-api="board/undergraduate/classwork.htm?_out=json&pageSize=5" data-cat="236" data-cht="jnuboard" data-no="2">수업</button>
-					<button class="" data-target="tab3" data-link="board/undergraduate/registration.htm" data-api="board/undergraduate/registration.htm?_out=json&pageSize=5" data-cat="237" data-cht="jnuboard" data-no="3">등록</button>
-					<button class="" data-target="tab4" data-link="board/undergraduate/scholarships.htm" data-api="board/undergraduate/scholarships.htm?_out=json&pageSize=5" data-cat="238" data-cht="jnuboard" data-no="4">장학</button>
-					<button class="" data-target="tab5" data-link="board/jnuclass.htm" data-api="api/jnu/class/get.jsp" data-cat="${b.cat}" data-cht="jnuclass" data-no="5">JNUclass</button>
+					<button class="active" data-target="tab1">공지</button>
+					<button data-target="tab2">동정</button>
+					<button data-target="tab3">인사</button>
 			</div>
-				<div class="tab-data tab1">
-					<ul class="list-unstyled article-list"></ul>
+				<div class="tab-data tab1 active">
+
+<ul class="list-unstyled article-list">
+	<li><a href="/board/korusnotice.htm?act=view&amp;pstNo=11353">글로컬대학30 사업 선정 감사 서한문</a><i>09.29</i></li>
+	<li><a href="/board/korusnotice.htm?act=view&amp;pstNo=11351">야외음악당 옆 주차장 차량출입 통제 알림</a><i>09.29</i></li>
+	<li><a href="/board/korusnotice.htm?act=view&amp;pstNo=11350">글로컬대학30 최종 선정 기념 이벤트 안내(총장이 쏜다!)</a><i>09.29</i></li>
+	<li><a href="/board/korusnotice.htm?act=view&amp;pstNo=11349">2025년 9월 29일(월) 보도기사 모음</a><i>09.29</i></li>
+	<li><a href="/board/korusnotice.htm?act=view&amp;pstNo=11348">&ZeroWidthSpace;국가정보관리원 화재에 따른 코러스 연계서비스 복구
+			안내</a><i>09.29</i></li>
+</ul>
+
+
 					<a href="javascript:void(0);" onclick="portletBoardRefresh('tab1',this);" class="more refresh">새로고침<span>⟳</span></a>
 					<a href="board/notice.htm" class="more">더보기<span>+</span></a>
 				</div>
@@ -607,11 +620,11 @@
 </nav>
 
 <nav id="dock">
-	<a href="index.htm"><i class="fa-solid fa-house"></i>홈</a>
-	<a href="#back"  class="disable" onclick="return false" ><i class="fa-solid fa-reply"></i>뒤로</a>
-	<a href="mobile/board/all.htm"><i class="fa-solid fa-rectangle-list"></i>게시판</a>
-	<a href="#" class="open-pop"><i class="fa-solid fa-book-open"></i>중앙도서관</a>
-	<button class="menu"><i class="fa-regular fa-bars"></i>MENU</button>
+	<a href="index.htm" class="home"><span>홈</span></a>
+	<a href="#back"  class="disable back" onclick="return false" ><span>뒤로가기</span></a>
+	<a href="#" class="open-pop library"><span>중앙도서관</span></a>
+	<a href="mobile/board/all.htm" class="bbs"><span>게시판</span></a>
+	<button class="menu"><span>메뉴</span></button>
 </nav>
 
 <div class="dock-library">
