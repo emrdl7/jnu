@@ -952,6 +952,10 @@ section.main {
       background-color: #FFF;
       aspect-ratio: 1;
 
+        @media (min-width: 768px) {
+      flex: 0 0 calc((100% - 50px) / 6);
+        }
+
       &::before {
         content:"";
         display:block;
@@ -963,9 +967,17 @@ section.main {
         height:24px;
         
 
-      background-size:100% auto;
-      background-position:center top 20%;
-      background-repeat:no-repeat;
+        background-size:100% auto;
+        background-position:center top 20%;
+        background-repeat:no-repeat;
+
+
+
+        @media (min-width: 768px) {
+          width:36px;
+          height:36px;
+        }
+
       }
 
       &.link1 {
@@ -1079,6 +1091,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         align-items: center;
         justify-content: center;
         height: 28px;
+
+        @media (min-width: 768px) {
+      top:55%;
+        }
 
         u {
           flex: 0 0 100%;
