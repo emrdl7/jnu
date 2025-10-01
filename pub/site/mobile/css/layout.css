@@ -803,6 +803,7 @@ section.main div.links a::before {
   section.main div.links a::before {
     width: 36px;
     height: 36px;
+    transform: translateX(-50%) translateY(-110%);
   }
 }
 section.main div.links a.link1::before {
