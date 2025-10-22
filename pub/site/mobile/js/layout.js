@@ -67,7 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			// If there's no sub-menu, add a click event to navigate to the link
 			const link = menuItem.querySelector("a");
 			link.addEventListener("click", () => {
-				window.location.href = link.getAttribute("href");
+				if(link.target) {
+					window.open(link.getAttribute("href"), link.target);
+				} else {
+					window.location.href = link.getAttribute("href");
+				}
 			});
 		}
 	});
