@@ -447,17 +447,13 @@ nav#dock a.home,
 nav#dock button.home {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 3L23 11.25L21.8 12.85L20 11.5V21H4V11.5L2.2 12.85L1 11.25L12 3ZM18 19V10L12 5.5L6 10V19H18Z' fill='%23222222'/%3E%3C/svg%3E");
 }
-nav#dock a.back,
-nav#dock button.back {
+nav#dock a.goback,
+nav#dock button.goback {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 20V11H6.8L8.4 12.6L7 14L3 10L7 6L8.4 7.4L6.8 9H15C15.55 9 16.0208 9.19583 16.4125 9.5875C16.8042 9.97917 17 10.45 17 11V20H15Z' fill='%23222222'/%3E%3C/svg%3E");
 }
-nav#dock a.back.disable,
-nav#dock button.back.disable {
+nav#dock a.goback.disable,
+nav#dock button.goback.disable {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 20V11H6.8L8.4 12.6L7 14L3 10L7 6L8.4 7.4L6.8 9H15C15.55 9 16.0208 9.19583 16.4125 9.5875C16.8042 9.97917 17 10.45 17 11V20H15Z' fill='%23666666'/%3E%3C/svg%3E");
-}
-nav#dock a.back,
-nav#dock button.back {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 20V11H6.8L8.4 12.6L7 14L3 10L7 6L8.4 7.4L6.8 9H15C15.55 9 16.0208 9.19583 16.4125 9.5875C16.8042 9.97917 17 10.45 17 11V20H15Z' fill='%23222222'/%3E%3C/svg%3E");
 }
 nav#dock a.library,
 nav#dock button.library {
@@ -930,7 +926,7 @@ section.sub-content,
 div.sub-index {
   position: relative;
   z-index: 1;
-  padding: 85px 0 30px;
+  padding: 85px 0;
 }
 section.sub-content ul.navigation,
 div.sub-index ul.navigation {
